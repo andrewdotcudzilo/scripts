@@ -16,9 +16,9 @@ done
 for i in ${arr[@]}
 do
   pid=($(/usr/bin/ipcs -s -i "$i" | awk -v RS="" '{print $36}'))
-  if [! -z "$pid"] && ["$pid" -ne "0"]
+  if [ ! -z "$pid" ] && [ "$pid" -ne "0" ]
   then
-    if [! -d /proc/"$pid" ]
+    if [ ! -d /proc/"$pid" ]
     then
       echo "sem id $i has pid $pid and but should be removed"
       #/usr/bin/ipcrm -s "$i"
