@@ -13,5 +13,6 @@ for i in ${arr[@]}; do
     echo -e "$(date) - Removed semaphore with sem id $i due to terminated pid $pid" >> "$logfile"
   else
     $("$ipcrm_cmd") -s "$i" #no pid associated with semaphore, kill it.
+    echo -e "$(date) - Removed semaphore with sem id $i due to no associated pid found" >> "$logfile"
   fi
 done
