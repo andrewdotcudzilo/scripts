@@ -18,7 +18,7 @@ if [ -z "$cutoff" ] || [ "$cutoff" -lt "0" ]; then exit 1; fi
 n=0 #track sems checked
 d=0 #track sems deleted
 
-if [ ! -f "$logfile"]; then touch "$logfile"; fi;
+if [ ! -f "$logfile" ]; then touch "$logfile"; fi;
 echo "Semaphore cleanup script execution $(date):" >> $logfile
 
 # if we encounter bad/unexpected/0 value we typically skip semaphore/pid/etc
