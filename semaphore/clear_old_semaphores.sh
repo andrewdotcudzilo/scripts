@@ -4,7 +4,7 @@
 logfile=/var/local/clean_semaphores_$(date +%Y_%m_%d_%H_%M_%S).log
 
 #"constants"
-mindiff=84600 # if semaphore last mod < now-(some time mindiff, here 24 hrs) look to remove it.
+mindiff=$((84600*2)) # if semaphore last mod < now-(some time mindiff, here 48 hrs) look to remove it. (made cut off 2 days)
 curdatetime=$(date +%s)
 cutoff=$((curdatetime-mindiff))
 
@@ -39,7 +39,7 @@ do
 
   if [ $checktime -le $cutoff ]
   then
-    echo "semId=$semid PID=$pid - not found in /proc, last heard from at $(date -d @$checkdate) will be removed." >> $logfile
+    echo "semId=$semid PID=$pid - not found in /proc, last heard from at $(date -d @$checktime) will be removed." >> $logfile
     #ipcrm -s "$semid" #uncomment this line to actually remove semaphores
     d=$((d+1))
   fi
