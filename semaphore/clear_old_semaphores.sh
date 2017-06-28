@@ -19,7 +19,7 @@ n=0 #track sems checked
 d=0 #track sems deleted
 
 if [ ! -f "$logfile" ]; then touch "$logfile"; fi;
-echo "Semaphore cleanup script execution $(date):" >> $logfile
+echo "Start: Semaphore cleanup script execution $(date):" >> $logfile
 
 # if we encounter bad/unexpected/0 value we typically skip semaphore/pid/etc
 while read -r line
@@ -40,9 +40,10 @@ do
   if [ $checktime -le $cutoff ]
   then
     echo "semId=$semid PID=$pid - not found in /proc, last heard from at $(date -d @$checkdate) will be removed." >> $logfile
+    #ipcrm -s "$semid" #uncomment this line to actually remove semaphores
     d=$((d+1))
   fi
   n=$((n+1))
 done < /proc/sysvipc/sem
 n=$((n-1))
-echo "System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= 24hrs ago" >> $logfile
+echo "End: System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= 24hrs ago" >> $logfile
