@@ -44,4 +44,5 @@ do
   fi
   n=$((n+1))
 done < /proc/sysvipc/sem
+n=$((n--))
 echo "System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= 24hrs ago" >> $logfile
