@@ -6,7 +6,7 @@ curdatetime=$(date +%s)
 cutoff=$((curdatetime-mindiff))
 
 # error check exit conditions, something wrong
-if [ ! -f /proc/sys/kernel/sem ]; then exit 1; fi;  max=$(cat /proc/sys/kernel/sem | awk '{print $4}'); max=1;
+if [ ! -f /proc/sys/kernel/sem ]; then exit 1; fi;  max=$(cat /proc/sys/kernel/sem | awk '{print $4}'); 
 if [ ! -f /proc/sysvipc/sem ]; then exit 1; fi;  count=$(wc -l /proc/sysvipc/sem | awk '{print $1}')
 if [ -z "$max" ] || [ -z "$count" ] || [ "$max" -lt "1" ] || [ "$count" -lt "1" ]; then exit 1; fi;
 if [ -z "$curdatetime" ] || [ "$curdatetime" -lt "0" ]; then exit 1; fi
