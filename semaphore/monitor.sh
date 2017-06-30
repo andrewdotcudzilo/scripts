@@ -8,17 +8,7 @@ sleep=10
 max_db_size=1000 #megs=1g
 
 if [ -f $db ]; then $(rm -fr ./"$db"); fi;
-if [ ! -f $db ]; then sqlite3 "$db" "CREATE TABLE monitor( \
-  id INTEGER PRIMARY KEY AUTOINCREMENT, \
-  semid INT NOT NULL, \
-  otime INT, \
-  ctime INT NOT NULL, \
-  pid INT NOT NULL, \
-  in_proc CHAR(1) DEFAULT "N", \
-  cmd TEXT DEFAULT NULL, \
-  iteration INT NOT NULL; \
-); \
-INSERT INTO monitor(id, semid, otime, ctime, pid, in_proc, cmd, iteration) VALUES(1, 0, 1, 1, 1, "N", NULL, 0);"
+if [ ! -f $db ]; then sqlite3 "$db" < monitor.sql; fi;
 
 db_size=$(du -m ./"$db" | cut -f 1)
 
