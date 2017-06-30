@@ -12,7 +12,7 @@ if [ ! -f $db ]; then sqlite3 "$db" < monitor.sql; fi;
 
 db_size=$(du -m ./"$db" | cut -f 1)
 
-while [ $db_size < $max_db_size ]
+while [ $db_size -lt $max_db_size ]
 do
   thisIteration=$(date +"%Y-%m-%d %H:%M:%S")
   n=0
