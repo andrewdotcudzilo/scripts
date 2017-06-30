@@ -1,5 +1,4 @@
-CREATE SCHEMA monitor;
-CREATE TABLE monitor.monitor(
+CREATE TABLE monitor(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   semid INT NOT NULL,
   otime INT,
@@ -9,5 +8,4 @@ CREATE TABLE monitor.monitor(
   cmd TEXT DEFAULT NULL,
   iteration INT NOT NULL;
 );
-
-INSERT INTO monitor.monitor(id, semid, otime, ctime, pid, in_proc, cmd, iteration) VALUES(1, 0, 1, 1, 1, "N", NULL, 0);
+INSERT INTO monitor(id, semid, otime, ctime, pid, in_proc, cmd, iteration) VALUES(1, 0, 1, 1, 1, "N", NULL, 0);
