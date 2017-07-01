@@ -4,7 +4,7 @@
 # of disconnects
 
 db="monitor.db"
-sleep=10
+sleep=60 #secs
 max_db_size=1000 #megs=1g
 
 if [ -f $db ]; then $(rm -fr ./"$db"); fi;
