@@ -24,7 +24,7 @@ while [ $db_size -lt $max_db_size ]
 do
   n=0
   thisIteration=$(date +"%Y-%m-%d %H:%M:%S")
-  num_sem=$(wc -l /proc/sysvipc/sem); num_sem=$((num_sem-1));
+  num_sem=$(wc -l < /proc/sysvipc/sem); num_sem=$((num_sem-1)); #get and cast
   if [ -z "$num_sem"] || [ $num_sem -eq 0 ]; then continue; fi;  #if sems=0, skip
 
   #compare last run number of sems to this run's number, if <, thne dump sems to database
@@ -56,7 +56,7 @@ do
     done < /proc/sysvipc/sem
   fi
 
-  last_num=$((num_sem+0)) #cast
+  last_num_sem=$((num_sem)) #cast
   sleep "$sleep"  #we can sleep for less as we technically or just tracking increases, theres more processing, but less data-capture.
   db_size=$(du -m ./"$db" | cut -f 1)
 done

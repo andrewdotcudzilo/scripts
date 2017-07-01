@@ -6,6 +6,6 @@ CREATE TABLE monitor(
   pid INT NOT NULL,
   in_proc CHAR(1) DEFAULT "N",
   cmd TEXT DEFAULT NULL,
-  iteration INT NOT NULL
+  datetime TEXT
 );
-INSERT INTO monitor(id, semid, otime, ctime, pid, in_proc, cmd, iteration) VALUES(1, 0, 1, 1, 1, "N", NULL, 0);
+INSERT INTO monitor(id, semid, otime, ctime, pid, in_proc, cmd, datetime) VALUES(1, 0, 1, 1, 1, "N", NULL, 0);
