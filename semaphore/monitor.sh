@@ -17,21 +17,20 @@ if [ -f $db ]; then $(rm -fr ./"$db"); fi;
 if [ ! -f $db ]; then sqlite3 "$db" < monitor.sql; fi;
 db_size=$(du -m ./"$db" | cut -f 1) #get current db size
 
+echo "RUN: Started $(date) ---- "
+
 #loop while db_size less than max
 while [ $db_size -lt $max_db_size ]
 do
-
-  #get true number of sems used
-  num_sem = $(wc -l /proc/sysvipc/sem); num_sem=$((num_sem-1));
-  if [ -z "$num_sem"] || [ $num_sem -eq 0 ]; then continue; fi;  #if sems=0, skip
-
-  #setup var values for this iteration
   n=0
   thisIteration=$(date +"%Y-%m-%d %H:%M:%S")
+  num_sem=$(wc -l /proc/sysvipc/sem); num_sem=$((num_sem-1));
+  if [ -z "$num_sem"] || [ $num_sem -eq 0 ]; then continue; fi;  #if sems=0, skip
 
   #compare last run number of sems to this run's number, if <, thne dump sems to database
   if [ $last_num_sem -lt $num_sem];
   then
+    echo "RUN: Semaphore change - was $last_num_sem now $num_sem"
     while read -r line
     do
       if [ $n -eq 0 ]; then n=$((n+1)); continue; fi; #skip first line of file
@@ -52,12 +51,12 @@ do
       fi;
 
       sqlite3 monitor.db "INSERT INTO monitor(semid, otime, ctime, pid, in_proc, cmd, datetime) VALUES ($semid, $optime, $ctime, $pid, \"$in_proc\", \"$cmd\", \"$thisIteration\")"
-      echo "INSERT INTO monitor(semid, otime, ctime, pid, in_proc, cmd, datetime) VALUES ($semid, $optime, $ctime, $pid, $in_proc, $cmd, $thisIteration)"
+      #echo "INSERT INTO monitor(semid, otime, ctime, pid, in_proc, cmd, datetime) VALUES ($semid, $optime, $ctime, $pid, $in_proc, $cmd, $thisIteration)"
       n=$((n+1))
     done < /proc/sysvipc/sem
   fi
 
-  last_num_sem=num_sem #assign last run value to current, so next iteration can compare it.
+  last_num=$((num_sem+0)) #cast
   sleep "$sleep"  #we can sleep for less as we technically or just tracking increases, theres more processing, but less data-capture.
   db_size=$(du -m ./"$db" | cut -f 1)
 done
