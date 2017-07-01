@@ -1,36 +1,33 @@
 #!/bin/bash
-
-# recommend running this is a screen session in case
-# of disconnects
-
-#constants
+# script that monitors semapphore usage; dumps to sqlite db on changes(increases)
+# run this in a screen session will you?!
+###
 db="monitor.db"
-sleep=30 #secs
+sleep=20 #secs
 max_db_size=1000 #megs=1g
-
-#some default values for vars
+### var inits
 num_sem=0;
 last_num_sem=0;
-
-# remove old database, create
+### lazy
 if [ -f $db ]; then $(rm -fr ./"$db"); fi;
 if [ ! -f $db ]; then sqlite3 "$db" < monitor.sql; fi;
-db_size=$(du -m ./"$db" | cut -f 1) #get current db size
-
+db_size=$(du -m ./"$db" | cut -f 1) #get current db size;
+### tell them weve started
 echo "RUN: Started $(date) ---- "
 
-#loop while db_size less than max
+## in our use case, size is a concern so loop until size (or user exit)
 while [ $db_size -lt $max_db_size ]
 do
+  ## init vars of loop
   n=0
   thisIteration=$(date +"%Y-%m-%d %H:%M:%S")
-  num_sem=$(wc -l < /proc/sysvipc/sem); num_sem=$((num_sem-1)); #get and cast
-  if [ -z "$num_sem"] || [ $num_sem -eq 0 ]; then continue; fi;  #if sems=0, skip
+  num_sem=$(wc -l < /proc/sysvipc/sem); num_sem=$((num_sem-1));   #-1 because first line is text header
+  if [ -z "$num_sem"] || [ $num_sem -eq 0 ]; then continue; fi;   # cant get num_sem = skip iternation (maybe should exit 1)
 
-  #compare last run number of sems to this run's number, if <, thne dump sems to database
+  ## in our use case, we only want db capture when num_sem increase over time/interations
   if [ $last_num_sem -lt $num_sem];
   then
-    echo "RUN: Semaphore change - was $last_num_sem now $num_sem"
+    echo "RUN: Semaphore change - was $last_num_sem now $num_sem - $(date)"
     while read -r line
     do
       if [ $n -eq 0 ]; then n=$((n+1)); continue; fi; #skip first line of file
