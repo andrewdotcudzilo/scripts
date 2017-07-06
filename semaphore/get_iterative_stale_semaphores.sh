@@ -11,7 +11,10 @@ db="monitor.db"
 lastdate=0
 thisdate=0
 
-sqlite3 "$db" "SELECT datetime FROM monitor WHERE id>1 GROUP BY datetime ORDER BY id ASC" | while read line; do
+sqlite3 "$db" "SELECT datetime FROM monitor WHERE id>1 GROUP BY datetime ORDER BY id ASC" | while read line
+do
+  thisdate="$line"
+
   if [ ! -z "$lastdate" ] && [ "$lastdate" !== "0" ]
   then
     sqlite3 "$db" "
@@ -22,4 +25,6 @@ sqlite3 "$db" "SELECT datetime FROM monitor WHERE id>1 GROUP BY datetime ORDER B
       WHERE c.datetime=\"$thisdate\"
      ) b
     );"
+  fi
+  lastdate=$thisdate
 done
