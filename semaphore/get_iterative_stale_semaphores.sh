@@ -15,7 +15,7 @@ sqlite3 "$db" "SELECT datetime FROM monitor WHERE id>1 GROUP BY datetime ORDER B
 do
   thisdate="$line"
 
-  if [ ! -z "$lastdate" ] && [ "$lastdate" !== "0" ]
+  if [ ! -z "$lastdate" ] && [ "$lastdate" != "0" ]
   then
     sqlite3 "$db" "
     SELECT a.* FROM monitor a WHERE a.datetime=\"$thisdate\" AND a.semid NOT IN(
