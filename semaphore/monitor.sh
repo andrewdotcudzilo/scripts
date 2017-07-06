@@ -24,7 +24,7 @@ do
     echo "RUN: Semaphore change.  Was: $last_run_sem Now: $cur_num_sem - $(date)";
     while read -r line
     do
-      if [ $n -eq 0 ]; then ln=$((ln+1)); continue; fi; #skip first line of file - its headres
+      if [ $ln -eq 0 ]; then ln=$((ln+1)); continue; fi; #skip first line of file - its headres
 
       read semid optime ctime <<< $(echo "$line" | awk '{print $2, $9, $10}')
       if [ -z "$semid" ] || [ $semid -eq 0 ]; then ln=$((ln+1)); continue; fi; #null or owned by pid=0 stay away
