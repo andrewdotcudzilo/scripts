@@ -20,7 +20,7 @@ do
     sqlite3 "$db" "
     SELECT a.* FROM monitor a WHERE a.datetime=\"$thisdate\" AND a.semid NOT IN(
      SELECT b.semid FROM (
-      SLECT c.* FROM monitor c
+      SELECT c.* FROM monitor c
        JOIN monitor d ON c.semid=d.semid AND d.datetime=\"$lastdate\"
       WHERE c.datetime=\"$thisdate\"
      ) b
