@@ -45,7 +45,7 @@ do
       ln=$((ln+1)) #increase l
     done < "$semfile"
   fi
-  last_run_sem=$((cur_num_sem) #cast
+  last_run_sem=$((cur_num_sem)) #cast
   sleep "$sleep"  #we can sleep for less as we technically or just tracking increases, theres more processing, but less data-capture.
   db_size=$(du -m ./"$db" | cut -f 1)
 done
