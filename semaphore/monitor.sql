@@ -8,4 +8,4 @@ CREATE TABLE monitor(
   cmd TEXT DEFAULT NULL,
   datetime TEXT
 );
-INSERT INTO monitor(id, semid, otime, ctime, pid, in_proc, cmd, datetime) VALUES(1, 0, 1, 1, 1, "N", NULL, 0);
+INSERT INTO monitor(id, semid, otime, ctime, pid, in_proc, cmd, datetime) VALUES(0, 0, 1, 1, 1, "N", NULL, 0);
