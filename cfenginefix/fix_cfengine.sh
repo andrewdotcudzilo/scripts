@@ -1,4 +1,5 @@
 #!/bin/bash
+# wont mess things up if cfengine is turned off
 cfconf="/var/cfengine/inputs/update.conf"
 proxy="http://10.16.99.10:8888"
 confpath="http://debian.linux.ops.softcom.biz/update.conf"
