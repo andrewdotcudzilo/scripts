@@ -8,6 +8,6 @@ if [ ! -f  "$cfconf"] || [ -s "$cfconf" ]
 then
   export http_proxy="$proxy"
   wget -O "$cfconf" "$confpath"
-  if [ $? -ne 0 ]; then exit 1; fi;
+  #if [ $? -ne 0 ]; then exit 1; fi;
   unset http_proxy
 fi
