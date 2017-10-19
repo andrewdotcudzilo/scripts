@@ -19,4 +19,4 @@ do
 done < <( exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>5)print $2}')
 
 # restart exim
-/etc/init.d/exim4 stop; sleep 60l killall exim4; sleep 10; while(killall -9 exim4); do sleep 2; done; /etc/init.d/exim4 start
+/etc/init.d/exim4 stop; sleep 60; killall exim4; sleep 10; while(killall -9 exim4); do sleep 2; done; /etc/init.d/exim4 start
