@@ -4,6 +4,9 @@
 # authtenticated accounts are sending out mail to address; giving us an idea
 # of what accounts need to be further investigated for abuse/password issues
 
+#use with > exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c | sort -n
+#to get example domains to search
+
 
 function usage() {
   echo "Usage: $0 search-string"
