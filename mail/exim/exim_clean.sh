@@ -2,6 +2,18 @@
 ### *Ultimate* exim mail cleanup script
 ### this is destructive, know what it does before you try using it.
 
+function usage() {
+  echo "Usage: $0 integer"
+  echo " "
+  echo "Where 'integer' is a minimum number of email messages stuck in que"
+  echo "from a specific address (ie: bingo@trade.bid)"
+  echo "If you don't know what to put, 5 is a decent number"
+  echo "This script is destructive so don't use it if you don't understand it."
+  exit 1
+}
+
+[[ $# -eq 0 ]] && usage
+
 
 # mail older than 7 days
 find /var/spool/exim4/{input,msglog} -type f -mtime +7 -name 1\* | xargs rm -v
@@ -9,9 +21,9 @@ find /var/spool/exim4/{input,msglog} -type f -mtime +7 -name 1\* | xargs rm -v
 # frozen and null sender
 exim -bp | grep '<>\|<"' | awk '{print $3}'' | xargs -n1 exim -Mrm
 
-# for an account, if it has >THRESHOLD of emails in que; considers it spam and removes it
-# this doesn't do abuse cases, so you should do those before
-#THRESHOLD=7
+# run  exipick -b
+
+
 EXIM_PATH=/var/spool/exim4/input/
 while read -r line1
 do
