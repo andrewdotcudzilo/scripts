@@ -49,8 +49,8 @@ done < /proc/sysvipc/sem
 n=$((n-1))
 echo "End: System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= $((MINDIFF/60/60)) hours ago" >> $LOGFILE
 
-if [ $d > 0 ]
+if [ "$d" -gt "0" ]
 then
   /etc/init.d/zabbix-agent restart
-  srvadmin-services restart
+  srvadmin-services.sh restart
 fi
