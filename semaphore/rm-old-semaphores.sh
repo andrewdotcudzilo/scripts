@@ -1,49 +1,56 @@
 #!/bin/bash
-# hey, this will actually remove semaphores, so use with caution
-# hey2, this needs root privs for execution
-logfile=/var/local/clean_semaphores_$(date +%Y_%m_%d_%H_%M_%S).log
+# andrewcu@softcom.com
+# HEY - THIS WILL DELETE STUFF BE CAREFUL
 
-#"constants"
-mindiff=$((84600*2)) # if semaphore last mod < now-(some time mindiff, here 48 hrs) look to remove it. (made cut off 2 days)
-curdatetime=$(date +%s)
-cutoff=$((curdatetime-mindiff))
-
-# error check exit conditions, something wrong
-if [ ! -f /proc/sys/kernel/sem ]; then exit 1; fi;  max=$(cat /proc/sys/kernel/sem | awk '{print $4}');
-if [ ! -f /proc/sysvipc/sem ]; then exit 1; fi;  count=$(wc -l /proc/sysvipc/sem | awk '{print $1}')
-if [ -z "$max" ] || [ -z "$count" ] || [ "$max" -lt "1" ] || [ "$count" -lt "1" ]; then exit 1; fi;
-if [ -z "$curdatetime" ] || [ "$curdatetime" -lt "0" ]; then exit 1; fi
-if [ -z "$cutoff" ] || [ "$cutoff" -lt "0" ]; then exit 1; fi
-
+### constants
+LOGFILE=/var/local/rm-old-semaphores-$(date +%Y_%m_%d_%H_%M_%S).log
+MINDIFF=$((84600*2)) # if semaphore last mod < now-(some time mindiff, here 48 hrs) look to remove it. (made cut off 2 days)
+CURDATETIME=$(date +%s)
+CUTOFF=$((curdatetime-mindiff))
+### VARIABLES
 n=0 #track sems checked
 d=0 #track sems deleted
 
-if [ ! -f "$logfile" ]; then touch "$logfile"; fi;
-echo "Start: Semaphore cleanup script execution $(date):" >> $logfile
+# error check exit conditions, something wrong
+if [ ! -f /proc/sys/kernel/sem ]; then exit 1; fi;  MAX=$(cat /proc/sys/kernel/sem | awk '{print $4}');
+if [ ! -f /proc/sysvipc/sem ]; then exit 1; fi;  COUNT=$(wc -l /proc/sysvipc/sem | awk '{print $1}')
+if [ -z "$MAX" ] || [ -z "$COUNT" ] || [ "$MAX" -lt "1" ] || [ "$COUNT" -lt "1" ]; then exit 1; fi;
+if [ -z "$CURDATETIME" ] || [ "$CURDATETIME" -lt "0" ]; then exit 1; fi
+if [ -z "$CUTOFF" ] || [ "$CUTOFF" -lt "0" ]; then exit 1; fi
+
+
+if [ ! -f "$LOGFILE" ]; then touch "$LOGFILE"; fi;
+echo "Start: Semaphore cleanup script execution $(date):" >> $LOGFILE
 
 # if we encounter bad/unexpected/0 value we typically skip semaphore/pid/etc
 while read -r line
 do
   if [ "$n" -le "0" ]; then n=$((n+1)); continue; fi; #skip first line -- text header
 
-  read semid optime ctime <<< $(echo "$line" | awk '{print $2, $9, $10}')
-  if [ -z "$semid" ] || [ "$semid" -eq "0" ]; then n=$((n+1)); continue; fi; #null or owned by pid=0 stay away
+  read SEMID OPTIME CTIME <<< $(echo "$line" | awk '{print $2, $9, $10}')
+  if [ -z "$SEMID" ] || [ "$SEMID" -eq "0" ]; then n=$((n+1)); continue; fi; #null or owned by pid=0 stay away
 
-  pid=$(ipcs -s -i "$semid" | awk 'FNR==9 {print $0}' | awk '{print $5}')
-  if [ -z "$pid" ] || [ "$pid" -eq "0" ]; then n=$((n+1)); continue; fi; #null or pid=0 stay away
+  PID=$(ipcs -s -i "$SEMID" | awk 'FNR==9 {print $0}' | awk '{print $5}')
+  if [ -z "$PID" ] || [ "$PID" -eq "0" ]; then n=$((n+1)); continue; fi; #null or pid=0 stay away
 
-  if [ -d /proc/"$pid" ]; then n=$((n+1)); continue; fi;
+  if [ -d /proc/"$PID" ]; then n=$((n+1)); continue; fi;
 
-  if [ $optime -gt 0 ]; then checktime=$optime; else checktime=$ctime; fi; #get most recent 'modification'
+  if [ $OPTIME -gt 0 ]; then checktime=$OPTIME; else checktime=$CTIME; fi; #get most recent 'modification'
   if [ -z "$checktime" ] || [ "$checktime" -eq "0" ]; then n=$((n+1)); continue; fi;
 
-  if [ $checktime -le $cutoff ]
+  if [ $checktime -le $CUTOFF ]
   then
-    echo "semId=$semid PID=$pid - not found in /proc, last heard from at $(date -d @$checktime) will be removed." >> $logfile
-    #ipcrm -s "$semid" #uncomment this line to actually remove semaphores
-    d=$((d+1))
+    echo "semId=$SEMID PID=$PID - not found in /proc, last heard from at $(date -d @$checktime) will be removed." >> $LOGFILE
+    #ipcrm -s "$SEMID" #uncomment this line to actually remove semaphores
+    #d=$((d+1))
   fi
   n=$((n+1))
 done < /proc/sysvipc/sem
 n=$((n-1))
-echo "End: System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= 24hrs ago" >> $logfile
+echo "End: System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= $((MINDIFF/60/60)) hours ago" >> $LOGFILE
+
+if [ $d > 0 ]
+then
+  /etc/init.d/zabbix-agent restart
+  srvadmin-services restart
+fi
