@@ -13,7 +13,6 @@ function usage() {
 }
 
 [[ $# -eq 0 ]] && usage
-
 MIN_LIMIT=$1
 
 # mail older than 7 days
@@ -29,7 +28,7 @@ EXIM_PATH=/var/spool/exim4/input/
 while read -r line1
 do
   grep -rl "$line1" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
-done < <( exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT)print $2}')
+done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}')
 
 # restart exim
 /etc/init.d/exim4 stop; sleep 60; killall exim4; sleep 10; while(killall -9 exim4); do sleep 2; done; /etc/init.d/exim4 start
