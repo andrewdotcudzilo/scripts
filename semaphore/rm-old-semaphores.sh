@@ -4,6 +4,7 @@
 
 ### constants
 LOGFILE=/var/local/rm-old-semaphores-$(date +%Y_%m_%d_%H_%M_%S).log
+OMSERVICES=/opt/dell/srvadmin/sbin
 MINDIFF=$((84600*2)) # if semaphore last mod < now-(some time mindiff, here 48 hrs) look to remove it. (made cut off 2 days)
 CURDATETIME=$(date +%s)
 CUTOFF=$((curdatetime-mindiff))
@@ -52,5 +53,5 @@ echo "End: System semaphores=$n, and $d semaphores were deleted because there wa
 if [ "$d" -gt "0" ]
 then
   /etc/init.d/zabbix-agent restart
-  srvadmin-services.sh restart
+  "$OMSERVICES"/srvadmin-services.sh restart
 fi
