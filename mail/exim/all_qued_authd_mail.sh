@@ -18,7 +18,7 @@ do
       echo "$res"
       gotres=1
     fi
-  done < <(exim -bp | grep "$line1" | awk '{print $3}' | sed '/^$/d')
+  done < <(exim -bp | grep "$line1" | awk '{print $3}' | sed '/^$/d') | sort | uniq -c | sort -n
   if [[ $frun == 0 ]] && [[ $gotres > 0 ]]
   then
     echo " --- "
