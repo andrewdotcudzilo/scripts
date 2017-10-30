@@ -6,7 +6,7 @@
 LOGFILE=/var/local/rm-old-semaphores-$(date +%Y_%m_%d_%H_%M_%S).log
 MINDIFF=$((84600*2)) # if semaphore last mod < now-(some time mindiff, here 48 hrs) look to remove it. (made cut off 2 days)
 CURDATETIME=$(date +%s)
-CUTOFF=$((curdatetime-mindiff))
+CUTOFF=$((CURDATETIME-MINDIFF))
 ### VARIABLES
 n=0 #track sems checked
 d=0 #track sems deleted
