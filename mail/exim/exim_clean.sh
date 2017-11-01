@@ -33,7 +33,7 @@ do
   then
     if [[ "$line" =~ "(\.trade|\.bid)" ]]
     then
-      echo "in here; removing $line emails"
+      echo "Removing $line emails"
       grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
     fi
   fi
