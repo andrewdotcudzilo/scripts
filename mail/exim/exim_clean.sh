@@ -34,12 +34,11 @@ do
   then
     if [[ "$ADDR" =~ "(\.trade|\.bid)" ]]
     then
+      echo "in here; removing $ADDR emails"
       grep -rl "$ADDR" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
     fi
   fi
 done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}')
-
-
 
 ### determined too agressivve
 #while read -r line1
