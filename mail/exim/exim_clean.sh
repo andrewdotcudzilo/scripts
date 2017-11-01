@@ -29,16 +29,15 @@ exim -bp | grep '<>\|<"' | awk '{print $3}' | xargs -n1 exim -Mrm
 # this needs testing.
 while read -r line
 do
-  ADDR=$(echo "$line" | awk '{print $2}' | sed 's/^.\(.*\).$/\1/' )
-  if [[ ! -z  $ADDR ]]
+  if [[ ! -z  $line ]]
   then
-    if [[ "$ADDR" =~ "(\.trade|\.bid)" ]]
+    if [[ "$line" =~ "(\.trade|\.bid)" ]]
     then
-      echo "in here; removing $ADDR emails"
-      grep -rl "$ADDR" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+      echo "in here; removing $line emails"
+      grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
     fi
   fi
-done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}')
+done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d' )
 
 ### determined too agressivve
 #while read -r line1
