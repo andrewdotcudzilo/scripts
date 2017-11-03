@@ -37,7 +37,6 @@ do
     if [[ $(echo "$line" | grep "\.trade$") ]]; then DEL=1;
     elif [[ $(echo "$line" | grep "\.bid$") ]]; then DEL=1;
     elif [[ $(echo "$line" | grep "\.returns\.groups\.yahoo\.com$") ]]; then DEL=1;
-    else
     fi
 
     if [[ $DEL>0 ]]
