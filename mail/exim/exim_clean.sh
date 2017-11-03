@@ -31,11 +31,18 @@ while read -r line
 do
   if [[ ! -z  $line ]]
   then
-    if [[ "$line" =~ "(\.trade|\.bid|returns\.groups\.yahoo)" ]]
-    then
-      echo "Removing $line emails"
-      grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
-    fi
+    #i found some linux hosts arent handling or statements correctly in regex
+    DEL=0;
+    if [[ echo "$line" | grep "\.trade$" ]]; then DEL=1;
+    elif [[ echo $"line" | grep "\.bid$" ]]; then DEL=1;
+    elif [[ echo "$line" | grep "\.returns\.groups\.yahoo\.com$" ]]; then DEL=1;
+    else ; fi;
+
+      if [[ $DEL>0 ]]
+      then
+        echo "Removing $line emails"
+        grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+      fi
   fi
 done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d' )
 
