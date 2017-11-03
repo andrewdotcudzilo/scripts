@@ -31,7 +31,7 @@ while read -r line
 do
   if [[ ! -z  $line ]]
   then
-    if [[ "$line" =~ "(\.trade|\.bid|\.returns\.groups\.yahoo\.com)" ]]
+    if [[ "$line" =~ "(\.trade|\.bid|returns\.groups\.yahoo)" ]]
     then
       echo "Removing $line emails"
       grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
