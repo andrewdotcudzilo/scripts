@@ -29,8 +29,8 @@ exim -bp | grep '<>\|<"' | awk '{print $3}' | xargs -n1 exim -Mrm
 # this needs testing.
 while read -r line
 do
+  if [[ ! -z  $line ]]
   then
-    if [[ ! -z  $line ]]
     #i found some linux hosts arent handling or statements correctly in regex
     DEL=0;
 
@@ -64,6 +64,7 @@ do
     grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
   fi
 done < <(grep -o "Authenticated-user:_.*" | awk -F"_" {'print $2'} | awk -F"@" '{print $1 "@" $2}' | sort | uniq -c | sort -n | awk 'if($1==$1+0 && $1>200)print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d')
+
 
 
 
