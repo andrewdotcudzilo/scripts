@@ -29,8 +29,8 @@ exim -bp | grep '<>\|<"' | awk '{print $3}' | xargs -n1 exim -Mrm
 # this needs testing.
 while read -r line
 do
-  if [[ ! -z  $line ]]
   then
+    if [[ ! -z  $line ]]
     #i found some linux hosts arent handling or statements correctly in regex
     DEL=0;
 
@@ -53,6 +53,20 @@ done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n 
 #do
 #  grep -rl "$line1" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
 #done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}')
+
+# this will remove any email with an authenticated sender of $line, if the count is > 200
+while read -r line1
+do
+  if [[ ! -z  $line ]]
+  then
+    echo "removing emails from auth user $line because they have >=200 emails in que and is likely spam"
+    echo "please follow up with abuse cases"
+    grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+  fi
+done < <(grep -o "Authenticated-user:_.*" | awk -F"_" {'print $2'} | awk -F"@" '{print $1 "@" $2}' | sort | uniq -c | sort -n | awk 'if($1==$1+0 && $1>100)print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d')
+
+
+
 
 #stop exim
 /etc/init.d/exim4 stop; sleep 60; killall exim4; sleep 10; while(killall -9 exim4); do sleep 2; done;
