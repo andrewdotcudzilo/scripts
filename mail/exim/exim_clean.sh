@@ -31,7 +31,7 @@ do
   then
     echo "removing emails from auth user $line because they have >$MAX_LIMIT_PER_AUTH_SENDER emails in que and is likely spam"
     echo "please follow up with abuse cases"
-    grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+    grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' | sed -e 's/-[DHj]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
   fi
 done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" | awk -F"_" {'print $2'} | awk -F"@" '{print $1 "@" $2}' \
   | sort | uniq -c | sort -n | awk '{if($1==$1+0 && $1>"$MAX_LIMIT_PER_AUTH_SENDER")print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d')
@@ -58,7 +58,7 @@ do
     if [[ $DEL>0 ]]
     then
       echo "Removing $line emails"
-      grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+      grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' | sed -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
     fi
   fi
 done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | awk '{if($1==$1+0 && $1>"$MIN_LIMIT")print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d' )
