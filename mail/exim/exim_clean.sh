@@ -15,6 +15,7 @@ function usage() {
 [[ $# -eq 0 ]] && usage
 MIN_LIMIT=$1
 EXIM_PATH=/var/spool/exim4/input/
+MAX_LIMIT_PER_AUTH_SENDER=50
 
 # mail older than 7 days
 find /var/spool/exim4/{input,msglog} -type f -mtime +7 -name 1\* | xargs rm -v
@@ -28,11 +29,12 @@ while read -r line
 do
   if [[ ! -z  $line ]]
   then
-    echo "removing emails from auth user $line because they have >=200 emails in que and is likely spam"
+    echo "removing emails from auth user $line because they have >$MAX_LIMIT_PER_AUTH_SENDER emails in que and is likely spam"
     echo "please follow up with abuse cases"
     grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
   fi
-done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" | awk -F"_" {'print $2'} | awk -F"@" '{print $1 "@" $2}' | sort | uniq -c | sort -n | awk '{if($1==$1+0 && $1>50)print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d')
+done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" | awk -F"_" {'print $2'} | awk -F"@" '{print $1 "@" $2}' \
+  | sort | uniq -c | sort -n | awk '{if($1==$1+0 && $1>"$MAX_LIMIT_PER_AUTH_SENDER")print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d')
 
 
 
