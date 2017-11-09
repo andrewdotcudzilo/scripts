@@ -15,7 +15,7 @@ function usage() {
 [[ $# -eq 0 ]] && usage
 MIN_LIMIT=$1
 EXIM_PATH=/var/spool/exim4/input/
-MAX_LIMIT_PER_AUTH_SENDER=50
+MAX_LIMIT_PER_AUTH_SENDER=75
 
 # mail older than 7 days
 find /var/spool/exim4/{input,msglog} -type f -mtime +7 -name 1\* | xargs rm -v
