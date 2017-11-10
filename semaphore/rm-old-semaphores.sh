@@ -19,6 +19,9 @@ if [ -z "$MAX" ] || [ -z "$COUNT" ] || [ "$MAX" -lt "1" ] || [ "$COUNT" -lt "1" 
 if [ -z "$CURDATETIME" ] || [ "$CURDATETIME" -lt "0" ]; then exit 1; fi
 if [ -z "$CUTOFF" ] || [ "$CUTOFF" -lt "0" ]; then exit 1; fi
 
+/etc/init.d/zabbix-agent stop
+"$OMSERVICES"/srvadmin-services.sh stop
+
 
 if [ ! -f "$LOGFILE" ]; then touch "$LOGFILE"; fi;
 echo "Start: Semaphore cleanup script execution $(date):" >> $LOGFILE
@@ -50,8 +53,5 @@ done < /proc/sysvipc/sem
 n=$((n-1))
 echo "End: System semaphores=$n, and $d semaphores were deleted because there was no /proc reference to the PID and last mod time was >= $((MINDIFF/60/60)) hours ago" >> $LOGFILE
 
-if [ "$d" -gt "0" ]
-then
-  /etc/init.d/zabbix-agent restart
-  "$OMSERVICES"/srvadmin-services.sh restart
-fi
+/etc/init.d/zabbix-agent start
+"$OMSERVICES"/srvadmin-services.sh start
