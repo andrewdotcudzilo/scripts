@@ -45,8 +45,8 @@ do
   if [ $checktime -le $CUTOFF ]
   then
     echo "semId=$SEMID PID=$PID - not found in /proc, last heard from at $(date -d @$checktime) will be removed." >> $LOGFILE
-    #ipcrm -s "$SEMID" #uncomment this line to actually remove semaphores
-    #d=$((d+1))
+    ipcrm -s "$SEMID" #uncomment this line to actually remove semaphores
+    d=$((d+1))
   fi
   n=$((n+1))
 done < /proc/sysvipc/sem
