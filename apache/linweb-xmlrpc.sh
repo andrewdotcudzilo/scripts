@@ -1,5 +1,7 @@
 #!/bin/bash
 
+### reports amount of recent xmlrpc requests, per vhost on node
+
 PATH=/usr/local/pem/vhosts
 LOGFILE=log/access_log
 LOGFILE2=log/access_log.processed
