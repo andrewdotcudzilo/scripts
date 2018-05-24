@@ -8,12 +8,12 @@
 while read -r line
 do
   /usr/local/script/qmqtool -d -f @"$line"
-done < <(/usr/bin/curl http://debian.linux.ops.softcom.biz/local_sender_domains_blacklist
+done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_domains_blacklist) 
 
-# while read -r line
-#do
-#  /usr/local/script/qmqtool -d -f @"$line"
-#done < <(/usr/bin/curl http://debian.linux.ops.softcom.biz/local_sender_blacklist)
+while read -r line
+do
+  /usr/local/script/qmqtool -d -f @"$line"
+done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_blacklist)
 
 while read -r line
 do
