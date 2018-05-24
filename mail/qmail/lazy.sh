@@ -6,7 +6,7 @@
 #/usr/local/script/qmqtool -d -f 'user@mywebsite.myhosting.com'
 #/usr/local/script/qmqtool -d -f 'bounce'
 
-for i in `/usr/local/script/qmqtool -l | awk '$2 == "Sender:" {print $3}' | sort | uniq -c | sort -n`
+while read -r line
 do
-  echo "$i"
-done
+  echo "$line"
+done < <(/usr/local/script/qmqtool -l | awk '$2 == "Sender:" {print $3}' | sort | uniq -c | sort -n)
