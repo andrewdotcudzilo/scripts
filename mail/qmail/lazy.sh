@@ -1,4 +1,15 @@
 #!/bin/bash
+
+prog() {
+    local w=80 p=$1;  shift
+    # create a string of spaces, then change them to dots
+    printf -v dots "%*s" "$(( $p*$w/100 ))" ""; dots=${dots// /.};
+    # print those dots on a fixed-width space plus the percentage etc.
+    printf "\r\e[K|%-*s| %3d %% %s" "$w" "$dots" "$p" "$*";
+}
+
+
+
 /usr/local/script/qmqtool -d -f 'MAILER-DAEMON@xmail'
 /usr/local/script/qmqtool -d -f 'rechnung@'
 /usr/local/script/qmqtool -d -f 'OnlinePay'
@@ -44,15 +55,6 @@ done < <(/bin/echo "$SENDER_BLACKLIST")
 
 #/etc/init.d/qmail restart
 
-
-
-prog() {
-    local w=80 p=$1;  shift
-    # create a string of spaces, then change them to dots
-    printf -v dots "%*s" "$(( $p*$w/100 ))" ""; dots=${dots// /.};
-    # print those dots on a fixed-width space plus the percentage etc. 
-    printf "\r\e[K|%-*s| %3d %% %s" "$w" "$dots" "$p" "$*"; 
-}
 # test loop
 for x in {1..100} ; do
     prog "$x" still working...
