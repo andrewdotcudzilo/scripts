@@ -7,7 +7,7 @@
 
 while read -r line
 do
-  del=(/usr/bin/awk '{if($1==$1+0 && $1>30)print $2}')
+  del=$(/usr/bin/awk '{if($1==$1+0 && $1>30)print $2}')
   if [ ! -z "$del" ]
   then
     /bin/echo 'deleting emails matching "$del" from qmail que'
