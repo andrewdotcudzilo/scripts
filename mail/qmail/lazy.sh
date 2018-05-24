@@ -12,7 +12,7 @@ done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_
 
 while read -r line
 do
-  /usr/local/script/qmqtool -d -f @"$line"
+  /usr/local/script/qmqtool -d -f "$line"
 done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_blacklist)
 
 while read -r line
