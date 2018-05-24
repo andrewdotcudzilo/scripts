@@ -10,7 +10,7 @@ do
   del=$(/usr/bin/awk '{if($1==$1+0 && $1>30)print $2}')
   if [ ! -z "$del" ]
   then
-    /bin/echo 'deleting emails matching "$del" from qmail que'
+    /bin/echo "deleting emails matching $del from qmail que"
     /usr/local/script/qmqtool -d -f "$del"
   fi
 done < <(/usr/local/script/qmqtool -l | /usr/bin/awk '$2 == "Sender:" {print $3}' | /usr/bin/sort | /usr/bin/uniq -c | /usr/bin/sort -n)
