@@ -14,3 +14,5 @@ do
     /usr/local/script/qmqtool -d -f "$del"
   fi
 done < <(/usr/local/script/qmqtool -l | /usr/bin/awk '$2 == "Sender:" {print $3}' | /usr/bin/sort | /usr/bin/uniq -c | /usr/bin/sort -n)
+
+/etc/init.d/qmail restart
