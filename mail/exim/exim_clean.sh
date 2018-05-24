@@ -59,6 +59,20 @@ do
 done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | \
   awk '{if($1==$1+0 && $1>"$FROM_MIN_LIMIT")print $2}' | sed 's/^.\(.*\).$/\1/' | sed '/^\s*$/d' )
 
+
+while read -r line
+do
+  grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_blacklist)
+
+
+while read -r line
+do
+  grep -rl @"$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_domain_blacklist)
+
+
+
 ### determined too agressivve
 # cannot be trusted at this point in time.
 #while read -r line1
