@@ -7,6 +7,16 @@
 
 while read -r line
 do
+  /usr/local/script/qmqtool -d -f @"$line"
+done < <(/usr/bin/curl http://debian.linux.ops.softcom.biz/local_sender_domains_blacklist
+
+# while read -r line
+#do
+#  /usr/local/script/qmqtool -d -f @"$line"
+#done < <(/usr/bin/curl http://debian.linux.ops.softcom.biz/local_sender_blacklist)
+
+while read -r line
+do
   del=$(/usr/bin/awk '{if($1==$1+0 && $1>100)print $2}')
   if [ ! -z "$del" ]
   then
