@@ -20,10 +20,10 @@ do
     echo "Removing emails from Authenticated User: $line because count > $MAX_LIM_AUTH_SENDER"
     echo "You should probably have already found/submitted abuse cases for these"
     echo "accounts/emails"
-    grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' | sed -e 's/-[DH]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+    grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' | sed -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
   fi
 
-done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" | awk -F"_" {'print $2'} | \
+done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" 2>&1 | awk -F"_" {'print $2'} | \
   awk -F"@" '{print $1 "@" $2}' | sort | uniq -c | sort -n | \
   awk '{if($1==$1+0 && $1>"$MAX_LIMIT_PER_AUTH_SENDER")print $2}' | sed '/^\s*$/d')
 
