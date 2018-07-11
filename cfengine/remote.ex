@@ -10,7 +10,7 @@ spawn ssh $name@$server
 expect "*?re" { send "yes\r" }
 expect "?assword:*" { send "$pass\r" }
 sleep 10
-expect "$prompt" { send "sudo ls -1 /usr/local/pem/vhosts | grep -v txt\r"}
+expect "$prompt" { send "curl -s -k https://raw.githubusercontent.com/andrewdotcudzilo/scripts/master/cfengine/check.sh | sudo bash\r" }
 expect "*andrewcu:*" { send "$pass\r" }
 expect "$prompt"
 puts $expect_out(buffer)

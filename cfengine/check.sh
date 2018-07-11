@@ -13,11 +13,11 @@ if [ ! -f "$PATH/update.conf" ]
 then
 	echo "$PATH/update.conf not found, getting"
 	export http_proxy="http://10.16.99.10"
-	wget -O "$PATH/update.conf" http://debian.linux.ops.softcom.biz/update.conf
+	/usr/bin/wget -O "$PATH/update.conf" http://debian.linux.ops.softcom.biz/update.conf
 	unset http_proxy
 fi
 
-cfagent --no-splay
+/usr/sbin/cfagent --no-splay
 
 
 
