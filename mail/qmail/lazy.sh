@@ -1,7 +1,5 @@
 #!/bin/bash
 /usr/local/script/qmqtool -d -f 'MAILER-DAEMON@xmail'
-/usr/local/script/qmqtool -d -f 'rechnung@'
-/usr/local/script/qmqtool -d -f 'OnlinePay'
 /usr/local/script/qmqtool -d -f 'user@mywebsite.myhosting.com'
 /usr/local/script/qmqtool -d -f 'bounce'
 
