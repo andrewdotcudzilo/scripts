@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+set -x
 DBSTR="linweb."$(date '+%Y-%m-%d-%H-%M-%S')".db"
 
 sqlite3 "$DBSTR" < tbl.sql

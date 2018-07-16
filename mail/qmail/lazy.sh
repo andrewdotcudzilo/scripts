@@ -1,5 +1,5 @@
 #!/bin/bash
-#/usr/local/script/qmqtool -d -f 'MAILER-DAEMON@xmail'
+/usr/local/script/qmqtool -d -f 'MAILER-DAEMON@xmail'
 /usr/local/script/qmqtool -d -f 'user@mywebsite.myhosting.com'
 /usr/local/script/qmqtool -d -f 'bounce'
 
