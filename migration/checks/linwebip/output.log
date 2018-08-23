@@ -1,0 +1,101 @@
+spawn ssh andrewcu@10.16.112.72
+spawn ssh andrewcu@10.16.112.95
+The authenticity of host '10.16.112.95 (10.16.112.95)' can't be established.
+RSA key fingerprint is SHA256:c4eb98mndsD2OV9huBHINEBD4QtvvMWkUeiiKyYiK9k.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.95' (RSA) to the list of known hosts.
+andrewcu@10.16.112.95's password: 
+Last login: Mon Jul  9 15:33:20 2018 from 10.10.2.158
+
+
+]0;andrewcu@linweb03:~\[andrewcu@linweb03 ~]$ spawn ssh andrewcu@10.16.112.92
+The authenticity of host '10.16.112.92 (10.16.112.92)' can't be established.
+RSA key fingerprint is SHA256:+b8wmzJ8yVIYbZJ6PtRe8zPRwHacdkO4K3sHGQEjOTE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.92' (RSA) to the list of known hosts.
+andrewcu@10.16.112.92's password: 
+Last login: Mon Jul  9 15:33:33 2018 from 10.10.2.158
+
+
+]0;andrewcu@linweb04:~\[andrewcu@linweb04 ~]$ spawn ssh andrewcu@10.16.112.93
+The authenticity of host '10.16.112.93 (10.16.112.93)' can't be established.
+RSA key fingerprint is SHA256:+q4e6K7yRHiL7bL1pU3aQHBu3Ds47Yd236jDoCC55t8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.93' (RSA) to the list of known hosts.
+andrewcu@10.16.112.93's password: 
+Last login: Mon Jul  9 15:33:46 2018 from 10.10.2.158
+
+
+]0;andrewcu@linweb05:~\[andrewcu@linweb05 ~]$ spawn ssh andrewcu@10.16.112.108
+The authenticity of host '10.16.112.108 (10.16.112.108)' can't be established.
+RSA key fingerprint is SHA256:/Gtz1LzxVz+qniKt8nc1osOWoiy1kn6/SQFRgkzMfSY.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.108' (RSA) to the list of known hosts.
+andrewcu@10.16.112.108's password: 
+Last login: Mon Jul  9 15:33:59 2018 from 10.10.2.158
+
+
+_andrewcu@linweb06:~\[andrewcu@linweb06 ~]$ spawn ssh andrewcu@10.16.112.113
+The authenticity of host '10.16.112.113 (10.16.112.113)' can't be established.
+RSA key fingerprint is SHA256:u++3PHCklrYqrEvHfX7nlnDkz1Ceg3s0Firroe6fpY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.113' (RSA) to the list of known hosts.
+andrewcu@10.16.112.113's password: 
+Last login: Mon Jul  9 15:34:11 2018 from 10.10.2.158
+
+
+_andrewcu@linweb08:~\[andrewcu@linweb08 ~]$ spawn ssh andrewcu@10.16.112.115
+The authenticity of host '10.16.112.115 (10.16.112.115)' can't be established.
+RSA key fingerprint is SHA256:2Nth1cl1QepIIF0YEFP6jJ5wn/XbwFl2OtFSMET7cFM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.115' (RSA) to the list of known hosts.
+andrewcu@10.16.112.115's password: 
+Last login: Mon Jul  9 15:34:26 2018 from 10.10.2.158
+
+
+_andrewcu@linweb09:~\[andrewcu@linweb09 ~]$ spawn ssh andrewcu@10.16.112.51
+The authenticity of host '10.16.112.51 (10.16.112.51)' can't be established.
+RSA key fingerprint is SHA256:HUAM3BicBDc6Zg1WpM3I2tjk324RjFtOvPjYEoePHT0.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.51' (RSA) to the list of known hosts.
+andrewcu@10.16.112.51's password: 
+Last login: Mon Jul  9 15:34:40 2018 from 10.10.2.158
+
+
+_andrewcu@linweb10:~\[andrewcu@linweb10 ~]$ spawn ssh andrewcu@10.16.112.109
+The authenticity of host '10.16.112.109 (10.16.112.109)' can't be established.
+RSA key fingerprint is SHA256:+IjZoRNkUVqJSqMn97JmjJbcy9D1jDDOrPIraZ4lGx0.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.109' (RSA) to the list of known hosts.
+andrewcu@10.16.112.109's password: 
+Last login: Fri Jul 13 16:30:55 2018 from 10.10.2.171
+
+
+]0;andrewcu@linweb07:~\[andrewcu@linweb07 ~]$ spawn ssh andrewcu@10.16.112.223
+The authenticity of host '10.16.112.223 (10.16.112.223)' can't be established.
+RSA key fingerprint is SHA256:ERbw7ivQ66OsVDT06RuggyNUdyd95eNriTl35+qm93Y.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.223' (RSA) to the list of known hosts.
+andrewcu@10.16.112.223's password: 
+Last login: Mon Jul  9 15:35:07 2018 from 10.10.2.158
+
+
+]0;andrewcu@linweb11:~\[andrewcu@linweb11 ~]$ spawn ssh andrewcu@10.16.112.227
+The authenticity of host '10.16.112.227 (10.16.112.227)' can't be established.
+RSA key fingerprint is SHA256:ERbw7ivQ66OsVDT06RuggyNUdyd95eNriTl35+qm93Y.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.227' (RSA) to the list of known hosts.
+andrewcu@10.16.112.227's password: 
+Last login: Mon Jul  9 15:35:19 2018 from 10.10.2.158
+
+
+]0;andrewcu@linweb02:~\[andrewcu@linweb02 ~]$ spawn ssh andrewcu@10.16.112.226
+The authenticity of host '10.16.112.226 (10.16.112.226)' can't be established.
+RSA key fingerprint is SHA256:ERbw7ivQ66OsVDT06RuggyNUdyd95eNriTl35+qm93Y.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.16.112.226' (RSA) to the list of known hosts.
+andrewcu@10.16.112.226's password: 
+Last login: Mon Jul  9 15:35:30 2018 from 10.10.2.158
+
+
+]0;andrewcu@linweb12:~\[andrewcu@linweb12 ~]$ 
