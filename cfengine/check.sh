@@ -17,8 +17,8 @@ then
 	unset http_proxy
 fi
 
-sudo /etc/init.d/cfexecd restart
-sudo /usr/sbin/cfagent --no-splay
+/etc/init.d/cfexecd restart
+cfagent --no-splay
 
 
 
