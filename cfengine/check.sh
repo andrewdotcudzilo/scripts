@@ -9,6 +9,8 @@ elif [ -d "$RH_PATH" ]; then PATH=$RH_PATH;
 else exit 1;
 fi;
 
+#rm -f "$PATH/update.conf"
+
 if [ ! -f "$PATH/update.conf" ]
 then
 	echo "$PATH/update.conf not found, getting"
@@ -17,6 +19,8 @@ then
 	unset http_proxy
 fi
 
+
+/usr/bin/killall -9 cfagent
 /etc/init.d/cfexecd restart
 /usr/sbin/cfagent --no-splay
 
