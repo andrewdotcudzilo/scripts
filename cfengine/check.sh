@@ -18,7 +18,7 @@ then
 fi
 
 /etc/init.d/cfexecd restart
-cfagent --no-splay
+/usr/sbin/cfagent --no-splay
 
 
 
