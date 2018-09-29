@@ -24,11 +24,11 @@ if [ "$CFRUNNING" -eq "0" ]
 then
 	/usr/bin/killall -9 cfagent
 	/etc/init.d/cfexecd start
-	echo "cfexecd appears to be not running, killed existing agents and started"
+	/bin/echo "cfexecd appears to be not running, killed existing agents and started"
 fi
 
 /etc/init.d/cfexecd restart
-sleep 5
+/bin/sleep 5
 /usr/sbin/cfagent --no-splay
 
 
