@@ -19,9 +19,15 @@ then
 	unset http_proxy
 fi
 
+CFRUNNING=$(ps aux|grep "/usr/sbin/cfexecd"|grep -v grep|wc -l)
+if [ "$CFRUNNING" -eq "0" ]
+then
+	/usr/bin/killall -9 cfagent
+	/etc/init.d/cfexecd start
+fi
 
-/usr/bin/killall -9 cfagent
 /etc/init.d/cfexecd restart
+sleep 5
 /usr/sbin/cfagent --no-splay
 
 
