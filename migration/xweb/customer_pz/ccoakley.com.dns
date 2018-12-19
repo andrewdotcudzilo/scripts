@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.95
+mail 			IN 	A 	168.144.68.95
+@ 			IN 	A 	205.147.88.159
+old 			IN 	A 	168.144.143.150
+@ 			IN 	MX 	10 ccoakley-com.p10.spamhero.com.
+@ 			IN 	MX 	20 ccoakley-com.p20.spamhero.net.
+@ 			IN 	MX 	30 ccoakley-com.p30.spamhero.net.
+@ 			IN 	MX 	40 ccoakley-com.p40.spamhero.net.
+www 			IN 	CNAME 	live.websites.hibu.com.

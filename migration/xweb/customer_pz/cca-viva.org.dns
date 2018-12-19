@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	63.207.64.221
+smtp 			IN 	A 	63.207.64.221
+mail 			IN 	A 	63.207.64.221
+@ 			IN 	A 	168.144.169.167
+autodiscover		IN	A	63.207.64.221
+63.207.64.221.in-addr.arpa.	IN	PTR	cca-viva.org
+@			IN	TXT	"v=spf1 mx mx:mail.cca-viva.org -all"

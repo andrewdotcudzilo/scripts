@@ -1,0 +1,74 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	10 filter.exchange
+exchange 			IN 	A 	168.144.1.247
+filter.exchange 			IN 	A 	168.144.1.236
+smtp.exchange 			IN 	A 	168.144.1.252
+mobile.exchange 			IN 	A 	168.144.1.246
+syncml.exchange 			IN 	A 	168.144.1.251
+@ 			IN 	A 	83.170.69.89
+www 			IN 	CNAME 	@
+
+ara-exchange 			IN 	A 	168.144.1.247
+bas-exchange 			IN 	A 	168.144.1.247
+brz-exchange 			IN 	A 	168.144.1.247
+cat-exchange 			IN 	A 	168.144.1.247
+chs-exchange 			IN 	A 	168.144.1.247
+cht-exchange 			IN 	A 	168.144.1.247
+cze-exchange 			IN 	A 	168.144.1.247
+dan-exchange 			IN 	A 	168.144.1.247
+dut-exchange 			IN 	A 	168.144.1.247
+eng-exchange 			IN 	A 	168.144.1.247
+fin-exchange 			IN 	A 	168.144.1.247
+frn-exchange 			IN 	A 	168.144.1.247
+ger-exchange 			IN 	A 	168.144.1.247
+grk-exchange 			IN 	A 	168.144.1.247
+heb-exchange 			IN 	A 	168.144.1.247
+hun-exchange 			IN 	A 	168.144.1.247
+itn-exchange 			IN 	A 	168.144.1.247
+jpn-exchange 			IN 	A 	168.144.1.247
+kor-exchange 			IN 	A 	168.144.1.247
+nor-exchange 			IN 	A 	168.144.1.247
+pol-exchange 			IN 	A 	168.144.1.247
+por-exchange 			IN 	A 	168.144.1.247
+rus-exchange 			IN 	A 	168.144.1.247
+spa-exchange 			IN 	A 	168.144.1.247
+swe-exchange 			IN 	A 	168.144.1.247
+trk-exchange 			IN 	A 	168.144.1.247
+owa 			IN 	A 	168.144.1.142
+ara-basic-exchange 			IN 	A 	168.144.1.247
+bas-basic-exchange 			IN 	A 	168.144.1.247
+brz-basic-exchange 			IN 	A 	168.144.1.247
+cat-basic-exchange 			IN 	A 	168.144.1.247
+chs-basic-exchange 			IN 	A 	168.144.1.247
+cht-basic-exchange 			IN 	A 	168.144.1.247
+cze-basic-exchange 			IN 	A 	168.144.1.247
+dan-basic-exchange 			IN 	A 	168.144.1.247
+dut-basic-exchange 			IN 	A 	168.144.1.247
+eng-basic-exchange 			IN 	A 	168.144.1.247
+fin-basic-exchange 			IN 	A 	168.144.1.247
+frn-basic-exchange 			IN 	A 	168.144.1.247
+ger-basic-exchange 			IN 	A 	168.144.1.247
+grk-basic-exchange 			IN 	A 	168.144.1.247
+heb-basic-exchange 			IN 	A 	168.144.1.247
+hun-basic-exchange 			IN 	A 	168.144.1.247
+itn-basic-exchange 			IN 	A 	168.144.1.247
+jpn-basic-exchange 			IN 	A 	168.144.1.247
+kor-basic-exchange 			IN 	A 	168.144.1.247
+nor-basic-exchange 			IN 	A 	168.144.1.247
+pol-basic-exchange 			IN 	A 	168.144.1.247
+por-basic-exchange 			IN 	A 	168.144.1.247
+rus-basic-exchange 			IN 	A 	168.144.1.247
+spa-basic-exchange 			IN 	A 	168.144.1.247
+swe-basic-exchange 			IN 	A 	168.144.1.247
+trk-basic-exchange 			IN 	A 	168.144.1.247
+@                       IN  MX  10  ex7
+ex7                     IN  A   168.144.1.185
+AutoDiscover            IN  A   168.144.1.186

@@ -1,0 +1,22 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.121
+mail 			IN 	A 	168.144.68.121
+@ 			IN 	A 	74.50.52.129
+app 			IN 	A 	216.223.121.107
+scanmail 			IN 	A 	216.223.121.107
+app 			IN 	MX 	1 scanmail.caelumone.com.
+ecm 			IN 	A 	216.223.90.250
+demo1 			IN 	A 	216.223.121.107
+www.app 			IN 	A 	216.223.121.107
+@ 			IN 	MX 	1 caelumone-com.mail.protection.outlook.com.

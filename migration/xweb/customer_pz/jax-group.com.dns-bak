@@ -1,0 +1,17 @@
+@ 			IN 	SOA 	ns5.softcomca.com. 	postmaster.softcomca.com. (
+			2018072401 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	ns5.softcomca.com.
+@ 			IN 	NS 	ns6.softcomca.com.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.67
+mail 			IN 	A 	168.144.68.67
+@ 			IN 	A 	168.144.6.49
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+lyncdiscover 			IN 	CNAME 	webdir.online.lync.com.
+sip 			IN 	CNAME 	sipdir.online.lync.com.
+@ 			IN 	MX 	1 jaxgroup-com0i.mail.protection.outlook.com.

@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	71.171.102.154
+smtp 			IN 	A 	71.171.102.154
+mail 			IN 	A 	71.171.102.154
+@ 			IN 	A 	168.144.34.27
+@ 			IN 	MX 	10 h2land.com.mx1.fusemail.net.
+@ 			IN 	MX 	20 h2land.com.mx2.fusemail.net.
+@ 			IN 	TXT 	"vspf1 includemailanyone.net includefusemail.net includeelectric.net all"
+@ 			IN 	MX 	30 h2land.com.mx3.fusemail.net.
+autodiscover 			IN 	A 	71.171.102.154

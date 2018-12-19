@@ -1,0 +1,16 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ex7 			IN 	A 	168.144.1.185
+autodiscover 			IN 	A 	168.144.1.186
+bct6kb2p6lth 			IN 	CNAME 	gv-m4qi7pebhdlknn.dv.googlehosted.com.
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	10 aspmx2.googlemail.com.
+@ 			IN 	MX 	5 ALT2.ASPMX.L.GOOGLE.COM.

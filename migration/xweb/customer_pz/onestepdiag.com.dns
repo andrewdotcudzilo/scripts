@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.69
+mail 			IN 	A 	168.144.68.69
+@ 			IN 	A 	168.144.14.150
+remote 			IN 	A 	208.75.212.104
+ftp 			IN 	A 	208.75.212.126
+dc 			IN 	A 	208.75.212.226
+novaris 			IN 	A 	204.61.220.138
+beta 			IN 	CNAME 	www.onestepdiagnostic.com.

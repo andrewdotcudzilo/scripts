@@ -1,0 +1,26 @@
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@                       IN	NS	nscl5.myhosting.com.
+@                       IN	NS	nscl6.myhosting.com.
+@                       IN	MX	1	mail
+ftp                     IN	CNAME	@
+www                     IN	CNAME	@
+emailadmin				IN	A 	168.144.1.21
+smtp                    IN  A   168.144.68.115
+mail                    IN  A   168.144.68.115
+@                       IN  A   168.144.247.197
+@			IN	TXT	( "MIICXAIBAAKBgQCdm3SvWLnS8CevWvyoEEBi8qn2f673dQzKSwqTxVbwnNZqPF5iFtlllhaUK9s8Jjxxg5C5/LSxkZ0C96OHEZCIbdt7DY00tXy3"
+"V83sCkEiQc7uFvUOtBOCArHw84Og2Vwif9Ino+N2AKy9+SeEHYauxhlqg26DfskIl8XpMovh2wIDAQABAoGAKMUC7Sz9fMRk76aQvwTdMvtk3f/v"
+"idG8ikPZK5qbv8hCat7M54DTocSueIvTvX6CmjaXZJUrRNfPDupyYck4YrpYv+sh4hgCVnfpEqFieeTDHhMghbr21Xv4AG1SUjJhnN8jNz2/jrip"
+"Mw7BLrGEYh6mIzjeyjYQ/75I7jQp39kCQQDO6iwc6Ui4W/vit71cZhFdRuhJiURC1N88m1YHeBzzWnCjGOzi10SlUl/PZcKlrkS+LZPFsK3PcCXZ"
+"thZxm0WvAkEAwv7dWvOLMhv35rXVIDXzvrgmkSVJ0s0K5SxMeD4UR48nMontxZxtJt1W3sdlhnoGp1Gp98XaFNXBVe7liZCdlQJBAKHYbVTX7He4"
+"C1gVHFrvw1lQo1URt4EG/O5tGmeRPiPjdAM+9duhQiKGQkb5c70giMiw4ctaHToKoLCgSwHl0CUCQG1dbp81W0umfhqqvzdKq0O7mv3rUQVnNQYm"
+"G1mRT+R2uMBStcYQnvOeTruyUBHlXNf5KIAsOs1WuhHNZHYMYyUCQCzy+6We0+MNbqQJ3NdkRG7iibDuHRaO1FDcUONOQ/EClLZiq1Y62oBo+y1J"
+"oFZ5kp68uAF1OMFhmhCxRiAGeIA=" )
+@			IN	TXT	"v=spf1 ip4:168.144.250.0/24 include:mail2web.com ~all"
+

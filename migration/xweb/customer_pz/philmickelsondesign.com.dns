@@ -1,0 +1,30 @@
+;
+;
+
+@                       IN	SOA	nscl1.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1h]
+
+
+;
+;  Zone NS records
+;
+
+@                       IN	NS	nscl1.myhosting.com.
+@                       IN	NS	nscl2.myhosting.com.
+
+;
+;  Zone records
+
+
+
+
+
+@                       IN     A         168.144.35.102
+@                       IN     MX    1   mail.linksmen.com.
+mail                    IN     A         168.144.68.73
+ftp                     IN     CNAME     @
+www                     IN     CNAME     @

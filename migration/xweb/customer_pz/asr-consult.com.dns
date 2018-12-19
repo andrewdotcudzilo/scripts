@@ -1,0 +1,26 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.114
+mail 			IN 	A 	168.144.68.114
+@ 			IN 	A 	168.144.247.230
+mx1 			IN 	A 	88.84.116.250
+@ 			IN 	MX 	30 mx1
+webmail 			IN 	A 	88.84.116.250
+@ 			IN 	MX 	40 ms22399045.msv1.invalid.
+@ 			IN 	MX 	10 asrconsult-com0i.mail.eo.outlook.com.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+sip.asr-consult.com 			IN 	CNAME 	sip.online.lync.com.
+lyncdiscover.asr-consult.com 			IN 	CNAME 	webdir.online.com.
+billing.asr-consult.com 			IN 	CNAME 	asr.hiveage.com.
+billing 			IN 	CNAME 	asr.hiveage.com.
+@                       IN      TXT     "v=spf1 include:spf.protection.outlook.com -all"

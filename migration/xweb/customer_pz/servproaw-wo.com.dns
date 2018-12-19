@@ -1,0 +1,26 @@
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 servproawwo-com02c.mail.protection.outlook.com.
+autodiscover		IN	CNAME	autodiscover.outlook.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+sip			IN 	CNAME	sipdir.online.lync.com.
+lyncdiscover		IN 	CNAME	webdir.online.lync.com.
+msoid			IN 	CNAME	clientconfig.microsoftonline-p.net.
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.95
+mail 			IN 	A 	168.144.68.95
+@ 			IN 	A 	168.144.143.144
+@			IN	TXT	"MS=ms33213490"
+@			IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls.servproaw-wo.com.	IN      SRV   1 100 443   sipdir.online.lync.com.
+_sipfederationtls._tcp.servproaw-wo.com.  IN      SRV   1 100 5061  sipfed.online.lync.com.
+vpn			IN	A	71.41.117.134
+

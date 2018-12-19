@@ -1,0 +1,28 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	76.16.142.3.
+guest 			IN 	A 	209.85.223.49
+@ 			IN 	A 	76.16.142.3
+mail 			IN 	A 	76.16.142.3
+old 			IN 	A 	168.144.1.36
+@ 			IN 	MX 	10 aspmx.l.google.com.
+email 			IN 	CNAME 	ghs.google.com.
+documents 			IN 	CNAME 	ghs.google.com.
+@ 			IN 	MX 	20 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	20 alt2.aspmx.l.google.com.
+guest 			IN 	MX 	10 aspmx.l.google.com.
+guest 			IN 	MX 	20 alt1.aspmx.l.google.com.
+guest 			IN 	MX 	20 alt2.aspmx.l.google.com.
+remote 			IN 	CNAME 	76.16.142.3.
+webserver 			IN 	A 	76.16.143.220
+silver2008 			IN 	A 	76.16.143.220
+vxr 			IN 	A 	67.162.36.64
+minecraft 			IN 	A 	24.13.147.15

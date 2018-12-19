@@ -1,0 +1,30 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+@ 			IN 	MX 	15 datamaticsoutsourcing-com.mail.protection.outlook.com.
+@  			IN	MX 	1 ASPMX.L.GOOGLE.COM.
+@ 			IN	MX 	5 ALT1.ASPMX.L.GOOGLE.COM.
+@ 			IN	MX 	5 ALT2.ASPMX.L.GOOGLE.COM.
+@ 			IN	MX 	10 ALT3.ASPMX.L.GOOGLE.COM.
+@ 			IN	MX 	10 ALT4.ASPMX.L.GOOGLE.COM. 
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+msoid 			IN 	CNAME 	clientconfig.microsoftonline-p.net.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.1.35
+mail 			IN 	A 	168.144.1.35
+@ 			IN 	A 	168.144.1.35
+@ 			IN 	TXT 	"MSms99941746"
+@ 			IN 	TXT 	"vspf1 includespf.protection.outlook.com"
+@ 			IN 	TXT 	"vspf1 ip4123.108.34.18529 ip4180.179.100.19227 ip4180.179.158.028 ip4180.179.114.126 ip4180.179.143.22428 ip4123.108.34.21629 includesmtp.elasticemail.com includeservers.mcsv.net includeemail-od.com all"
+dkim.domaindatamatics.domainkey.datamaticsoutsourcing.com. 			IN 	TXT 	"pMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsgKcUeShWVtzjNUAGadAx7P4p6w7e9xENPHx4mKFO4IczMJZLUQJxjrqfkObikokYqnhEmrAVroX8bQGhjWgetwlOzDK4EY9e7VoOVADiy8sZpWtimNaiMjxkg0MLsebP5En88T9BELol3fhsuLDkocs21gQVNiW2YNwIDAQAB"
+authdkim.domainkey.auth.datamaticsoutsourcing.com. 			IN 	TXT 	"pMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6zZbfcXLh9PzhfHix88lkTSGsAAQUS3kDVYzUK5zw8q3YG003aPbkPZv5c0sHeBVjIouEoP1LwbpU9TautngBOmWsYpb5iKqE4NOW8JFhMCyVxEa1mcDboDAJCv8KK1tVXsa2iE20BzpXjN4iW81EiAqWgYWfDA9pemwIDAQAB"
+auth.datamaticsoutsourcing.com. 			IN 	TXT 	"vspf1 a mx includewebsitewelcome.com ip4180.179.157.12828 ip4180.179.110.22428 ip4123.108.34.18529 ip4180.179.100.19227 ip4180.179.158.028 ip4180.179.114.126 ip4180.179.143.22428 ip4123.108.34.21629 all"
+@ 			IN 	TXT 	"google-site-verificationQGLcPjYwmrBeDL1Z5LekerSLrNDKWYJtpxGo2sjibFs"

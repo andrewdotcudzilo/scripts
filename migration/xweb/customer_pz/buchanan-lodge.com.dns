@@ -1,0 +1,17 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+mail 			IN 	A 	206.116.153.194
+@ 			IN 	A 	209.197.176.199
+webmail 			IN 	A 	206.116.153.194
+fw 			IN 	A 	206.116.153.194
+@ 			IN 	TXT 	"vspf1 a mx ptr ip4206.116.153.194 mx mail.buchanan-lodge.com all"

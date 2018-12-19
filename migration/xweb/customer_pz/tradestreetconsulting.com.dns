@@ -1,0 +1,23 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 tradestreetconsulting-com.mail.protection.outlook.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.84
+mail 			IN 	A 	168.144.68.84
+@ 			IN 	A 	168.144.83.103
+owa 			IN 	A 	208.104.20.207
+@ 			IN 	TXT 	MSms82168201
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+msoid 			IN 	CNAME 	clientconfig.microsoftonline-p.net.
+sip 			IN 	CNAME 	sipdir.online.lync.com.
+lyncdiscover 			IN 	CNAME 	webdir.online.lync.com.
+@ 			IN 	TXT 	"vspf1 includespf.protection.outlook.com all"
+www 			IN 	CNAME 	career-sites.recruiting.com.

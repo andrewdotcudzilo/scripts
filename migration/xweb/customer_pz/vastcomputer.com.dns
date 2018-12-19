@@ -1,0 +1,24 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 vastcomputer-com.mail.protection.outlook.com.
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.107
+mail 			IN 	A 	168.144.68.107
+@ 			IN 	A 	168.144.189.190
+rakeback 			IN 	CNAME 	host.dns-poker.com.
+util 			IN 	A 	208.115.150.253
+bkup 			IN 	A 	97.117.185.119
+remote 			IN 	A 	216.119.112.11
+ftp 			IN 	A 	216.119.112.11
+@ 			IN 	TXT 	"vspf1 includespf.protection.outlook.com all"
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+support 			IN 	A 	70.186.132.124
+ex 			IN 	A 	70.186.132.125

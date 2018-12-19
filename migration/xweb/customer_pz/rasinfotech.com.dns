@@ -1,0 +1,17 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	www
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.120
+mail 			IN 	A 	168.144.68.120
+@ 			IN 	A 	103.12.1.54
+www 			IN 	A 	103.12.1.54 
+@ 			IN 	MX 	1 mail
+_dmarc			IN	TXT	"v=DMARC1; p=none; pct=100; fo=1; ri=3600; rua=mailto:810b242a@inbox.ondmarc.com; ruf=mailto:810b242a@inbox.ondmarc.com;"

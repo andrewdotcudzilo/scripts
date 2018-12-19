@@ -1,0 +1,27 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	oldwww.expertgps.com.
+www 			IN 	CNAME 	expertgps.azurewebsites.net.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.112
+mail 			IN 	A 	168.144.68.112
+@ 			IN 	A 	191.237.128.238
+img 			IN 	CNAME 	d26d74ht2k6aj1.cloudfront.net.
+download 			IN 	CNAME 	download.expertgps.com.s3.amazonaws.com.
+forums 			IN 	CNAME 	topografix.invisionzone.com.
+data 			IN 	CNAME 	data.expertgps.com.s3.amazonaws.com.
+awverify.www 			IN 	CNAME 	awverify.expertgps.azurewebsites.net.
+awverify 			IN 	CNAME 	awverify.expertgps.azurewebsites.net.
+oldwww 			IN 	A 	168.144.212.90
+azure 			IN 	A 	104.209.197.87
+em2573.expertgps.com 			IN 	CNAME 	u3629239.wl240.sendgrid.net.
+s1.domainkey.expertgps.com 			IN 	CNAME 	s1.domainkey.u3629239.wl240.sendgrid.net.
+s2.domainkey.expertgps.com 			IN 	CNAME 	s2.domainkey.u3629239.wl240.sendgrid.net.

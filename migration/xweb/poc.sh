@@ -75,13 +75,17 @@ echo " Building list of zone files to update ... ";
 files=($(ls -1 $ZONE_PATH| grep "$DNS_FILE_EXT"));
 file_count=${#files[@]};
 file_i=1;
+for file in ${files[@]}; do
+	echo $file >> my.log;
+done;
+
 echo " Currently $file_count files will be checked ... ";
 
 # handle dns exclusion file as list of domain names.
 if [ $EXCLUDE -gt 0 ]; then
   echo "";
   echo " Exclusion file provided, checking domains for exclusion ";
-  readarray delete < $EXCLUDE_FILE;
+  readarray -t delete < $EXCLUDE_FILE;
   delete_count=${#delete[@]};
   delete_i=1;
   if [ $VERBOSE ]; then 
@@ -90,19 +94,23 @@ if [ $EXCLUDE -gt 0 ]; then
   fi;
 
   for i in ${!files[@]}; do
-    filebasename=$(basename ${files[$i]} .dns);
+    filedomain=`basename ${files[$i]} .dns`;
     filename=${files[$i]};
-    if [ $VERBOSE ]; then echo -ne " checking $filebasename for exclusion ... $file_i / $file_count \r"; fi;
+    if [ $VERBOSE ]; then echo -ne " checking $filedomain for exclusion ... $file_i / $file_count \r"; fi;
     for j in ${!delete[@]}; do
-      deldomain=$(echo "${delete[$j]%?}");
-      if [ "$filebasename" = "$deldomain" ]; then
-        if [ $VERBOSE ]; then echo "Removing $filebasename from dns updates"; fi;
+      deldomain=${delete[$j]};
+      if [ "$filedomain" = "$deldomain" ]; then
+        if [ $VERBOSE ]; then echo "Removing $filedomain from dns updates"; echo ""; fi;
         files=("${files[@]/$filename}");
       fi;
     done;
     file_i=$((file_i+1));
   done;
 fi
+
+for file in ${files[@]}; do
+	echo $file >> out.log;
+done;
 
 # stop for now
 exit 0;
@@ -115,4 +123,4 @@ for file in ${files[@]}; do
   if [ $VERBOSE ]; then echo "Updating $ZONE_PATH/$file ... $file_i / $file_count "; fi;
   file=$((file_i+1));
   eval "$SED_CMD $ZONE_PATH/$file";
-done;
+done

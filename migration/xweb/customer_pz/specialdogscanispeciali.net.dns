@@ -1,0 +1,17 @@
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@                       IN	NS	nscl5.myhosting.com.
+@                       IN	NS	nscl6.myhosting.com.
+specialdogscanispeciali.net.                    IN	MX	10 mail.d1037559-1.site.myhosting.com.
+ftp.specialdogscanispeciali.net.		IN	A	168.144.109.13
+www.specialdogscanispeciali.net.		IN	A	168.144.109.13
+specialdogscanispeciali.net.			IN	A	168.144.109.13
+
+specialdogscanispeciali.net.			IN	TXT	v=spf1 redirect=manage.myhosting.com
+
+autodiscover.specialdogscanispeciali.net.	IN	CNAME	autodiscover-redirect.myhosting.com.

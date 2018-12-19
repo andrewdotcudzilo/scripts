@@ -1,0 +1,47 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.82
+@ 			IN 	A 	216.224.172.115
+x 			IN 	A 	168.144.248.70
+remote 			IN 	A 	122.255.55.11
+attunesap 			IN 	A 	122.255.55.5
+mail 			IN 	CNAME 	ghs.google.com.
+calendar 			IN 	CNAME 	ghs.google.com.
+sa 			IN 	CNAME 	ghs.google.com.
+helpdesk 			IN 	CNAME 	attune-helpdesk.atlassian.net.
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	5 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	10 aspmx2.googlemail.com.
+@ 			IN 	MX 	10 aspmx3.googlemail.com.
+@ 			IN 	MX 	10 aspmx4.googlemail.com.
+@ 			IN 	MX 	10 aspmx5.googlemail.com.
+cms 			IN 	A 	216.224.172.115
+mivi202 			IN 	A 	91.90.147.173
+servicedesk 			IN 	CNAME 	mivi202
+insights 			IN 	CNAME 	378471g21.secure0096.hubspot.net.
+service 			IN 	A 	54.76.209.133
+it 			IN 	CNAME 	x
+learn 			IN 	A 	54.76.249.167
+blog 			IN 	CNAME 	378471g21.secure0096.hubspot.net.
+demo 			IN 	A 	54.72.167.87
+clienteling 			IN 	A 	52.16.207.246
+devclienteling 			IN 	A 	54.171.249.13
+@ 			IN 	TXT 	"vspf1 include spf.google.com includednsexit.com all"
+solutions 			IN 	CNAME 	378471g21.secure0096.hubspot.net.
+de 			IN 	CNAME 	378471g21.secure0096.hubspot.net.
+attunesl 			IN 	A 	122.255.55.5
+attuneeu 			IN 	A 	46.245.182.50
+@ 			IN 	TXT 	"MSE4D305FA375225ABE35754319673C200E15C1790"
+sip 			IN 	CNAME 	sipdir.online.lync.com.
+lyncdiscover 			IN 	CNAME 	webdir.online.lync.com.

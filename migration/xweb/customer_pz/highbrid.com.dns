@@ -1,0 +1,28 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	ext-cust.squarespace.com.
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.97
+mail 			IN 	A 	168.144.68.97
+@ 			IN 	A 	198.185.159.144
+@ 			IN 	A 	198.185.159.145
+@ 			IN 	A 	198.49.23.144
+@ 			IN 	A 	198.49.23.145
+sms 			IN 	A 	209.160.78.91
+client 			IN 	A 	209.160.77.223
+trx8823ybble2awfmxfp 	IN 	CNAME 	verify.squarespace.com.
+content 		IN 	CNAME 	1812916.group16.sites.hubspot.net.
+blog 			IN 	CNAME 	1812916.group16.sites.hubspot.net.
+hs1._domainkey 		IN 	CNAME  	highbrid-com.hs01a.dkim.hubspotemail.net.
+hs2._domainkey 		IN 	CNAME   highbrid-com.hs01b.dkim.hubspotemail.net.	
+smtpapi._domainkey.mail	IN	TXT	"k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB"
+smtpapi._domainkey	IN	TXT	"k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB"

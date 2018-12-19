@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+mail 			IN 	A 	12.184.199.250
+@ 			IN 	A 	168.144.184.117
+@ 			IN 	MX 	10 cluster1.us.messagelabs.com.
+@ 			IN 	MX 	20 cluster1a.us.messagelabs.com.
+smtp 			IN 	CNAME 	mail
+autodiscover 			IN 	A 	12.184.199.250
+@ 			IN 	TXT 	"vspf1 ip438.108.3.22 includespf.messagelabs.com all"
+remote 			IN 	A 	12.184.199.250

@@ -1,0 +1,21 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.87
+mail 			IN 	A 	168.144.68.87
+@ 			IN 	A 	168.144.100.85
+support 			IN 	A 	168.144.247.245
+dkim._domainkey		IN 	TXT 	"v=DKIM1; t=s; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbvdmAnzLtb2MizU/ThNvKkGHEdWsjKPZYM0pVhvZnS70KsQKkiG9Xsdbs1YqjUNpg5JlQ0BB/kqY1qwbho3W6ykp4Nrfav3WhNoxMAL5n/KoZ61PeHe0t+a2a3sJZcU5pXie+t0QTuw3ptaZ03RUy42nIr8jU/8dSy2GT62wT6wIDAQAB"
+@ 			IN 	TXT 	"vspf1 ip466.110.220.69 all"
+calhounvpn 			IN 	A 	66.110.220.69
+@                       IN      TXT     google-site-verification=COI6I494j78PKN1moP9wNuB5_Kw9a4BlmQof03CgLtc

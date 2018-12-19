@@ -1,0 +1,14 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+@ 			IN 	A 	107.180.0.111
+@ 			IN 	MX 	1 mail.cmcolumbus.org.
+mail 			IN 	A 	168.144.68.105
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@

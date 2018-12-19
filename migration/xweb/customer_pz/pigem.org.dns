@@ -1,0 +1,30 @@
+;
+;
+
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1h]
+
+
+;
+;  Zone NS records
+;
+
+@                       IN	NS	nscl5.myhosting.com.
+@                       IN	NS	nscl6.myhosting.com.
+
+;
+;  Zone records
+
+
+
+
+
+@                       IN     A         168.144.206.211
+@                       IN     MX    1   mail.pigem.net.
+mail                    IN     A         168.144.68.110
+ftp                     IN     CNAME     @
+www                     IN     CNAME     @

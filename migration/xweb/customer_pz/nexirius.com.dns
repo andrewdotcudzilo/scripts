@@ -1,0 +1,35 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	A 	46.140.85.187
+remote 			IN 	CNAME 	nexirius.no-ip.org.
+ftp 			IN 	CNAME 	nexirius.no-ip.org.
+google21d46610288edab7 			IN 	CNAME 	google.com.
+www 			IN 	A 	46.140.85.187
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	5 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	10 aspmx2.googlemail.com.
+@ 			IN 	MX 	10 aspmx3.googlemail.com.
+vpn 			IN 	A 	46.140.85.186
+profcloud 			IN 	A 	88.198.41.19
+libs 			IN 	A 	46.140.85.186
+push 			IN 	A 	46.140.85.186
+ip1 			IN 	A 	46.140.85.186
+ip2 			IN 	A 	46.140.85.187
+ip3 			IN 	A 	46.140.85.188
+ip4 			IN 	A 	46.140.85.189
+ip5 			IN 	A 	46.140.85.190
+springbank 			IN 	A 	46.140.85.187
+longrow 			IN 	A 	46.140.85.186
+nas 			IN 	A 	46.140.85.188
+nuc1 			IN 	CNAME 	ip4.nexirius.com.
+beta 			IN 	CNAME 	s16.andreas.ae.
+svn 			IN 	CNAME 	nuc1
+git 			IN 	CNAME 	ip3.nexirius.com.

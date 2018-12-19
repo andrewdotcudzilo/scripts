@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.73
+mail 			IN 	A 	219.89.83.157
+remote 			IN 	A 	219.89.83.157
+@ 			IN 	A 	168.144.36.48
+@ 			IN 	MX 	10 mx1.nz.smxemail.com.
+@ 			IN 	MX 	20 mx2.nz.smxemail.com.
+@ 			IN 	TXT 	"vspf1 mx includespf.nz.smxemail.com -all"

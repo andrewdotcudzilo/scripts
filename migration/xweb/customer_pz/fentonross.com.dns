@@ -1,0 +1,15 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018112801 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+www 			IN 	CNAME 	@
+@ 			IN 	A 	45.79.74.100
+@ 			IN 	MX 	0   fentonross-com.mail.protection.outlook.com. 
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+@ 			IN 	TXT 	"v=spf1 include:spf.protection.outlook.com -all"
+webmail			IN	CNAME	mail.office365.com.

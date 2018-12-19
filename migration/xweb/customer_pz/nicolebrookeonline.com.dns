@@ -1,0 +1,19 @@
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@                       	IN	NS	NS5.SOFTCOMCA.COM.
+@                       	IN	NS	NS6.SOFTCOMCA.COM.
+@ 				IN 	MX 	10 nicolebrookeonline.com.s9a1.psmtp.com.
+@ 				IN 	MX 	20 nicolebrookeonline.com.s9a2.psmtp.com.
+@ 				IN 	MX 	30 nicolebrookeonline.com.s9b1.psmtp.com.
+@ 				IN 	MX 	40 nicolebrookeonline.com.s9b2.psmtp.com.
+ftp 				IN 	A 	168.144.229.65
+www 				IN 	A 	168.144.229.65
+@ 				IN 	A 	168.144.229.65
+autodiscover 			IN 	CNAME 	autodiscover-redirect.myhosting.com.
+nicolebrookeonline.com.		IN	TXT	v=spf1 redirect=manage.myhosting.com
+ex.nicolebrookeonline.com.	IN	CNAME	ex.myhosting.com.

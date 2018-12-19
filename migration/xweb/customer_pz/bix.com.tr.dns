@@ -1,0 +1,16 @@
+; Zone transfer received at 9/9/2003 5:21:27 PM
+; PrimaryIP 168.144.1.33
+@		IN SOA	nscl3.myhosting.com. postmaster.myhosting.com. (
+				 2003081212    ; Serial number
+				 21600         ; Refresh
+				 3600          ; Retry
+				 691200        ; Expire
+				 3600       ) ; Minimum TTL
+		NS	nscl3.myhosting.com.
+		NS	nscl4.myhosting.com.
+		MX	1 mail
+		A	168.144.1.36
+ftp		CNAME	@
+mail		A	168.144.1.36
+smtp		A	168.144.68.180
+www		CNAME	@

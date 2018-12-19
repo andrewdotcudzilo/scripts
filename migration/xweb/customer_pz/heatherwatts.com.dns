@@ -1,0 +1,24 @@
+@                       IN	SOA	nscl3.myhosting.com.	postmaster.myhosting.com.	(
+			2018120600 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@                       IN	NS	nscl3.myhosting.com.
+@                       IN	NS	nscl4.myhosting.com.
+@                       IN	MX	1	ASPMX.L.GOOGLE.COM.
+@                       IN      MX      5       ALT1.ASPMX.L.GOOGLE.COM.
+@                       IN      MX      5       ALT2.ASPMX.L.GOOGLE.COM.
+@                       IN      MX      10      ALT3.ASPMX.L.GOOGLE.COM.
+@                       IN      MX      10      ALT4.ASPMX.L.GOOGLE.COM. 
+ftp                     IN	CNAME	@
+www                     IN      A       142.93.86.61	
+emailadmin				IN	A 	168.144.1.21
+smtp                    IN  A   168.144.1.35
+mail                    IN  A   168.144.1.35
+@                       IN  A   142.93.86.61 
+tracking                IN      CNAME   api.elasticemail.com.
+@                       IN      TXT     "v=spf1 a mx include:_spf.elasticemail.com ~all"
+api._domainkey          IN      TXT     "k=rsa;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbmGbQMzYeMvxwtNQoXN0waGYaciuKx8mtMh5czguT4EZlJXuCt6V+l56mmt3t68FEX5JJ0q4ijG71BGoFRkl87uJi7LrQt1ZZmZCvrEII0YO4mp8sDLXC8g1aUAoi8TJgxq2MJqCaMyj5kAm3Fdy2tzftPCV/lbdiJqmBnWKjtwIDAQAB"
+nj2wwnxcaoun            IN      CNAME    gv-vh3xlbovraj33k.dv.googlehosted.com.   

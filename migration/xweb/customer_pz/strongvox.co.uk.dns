@@ -1,0 +1,21 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			1800) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@                       IN  	MX  	10  ex7
+ftp 			IN 	CNAME 	@
+www 			IN 	A 	83.138.160.178
+mail 			IN 	A 	168.144.68.107
+smtp 			IN 	A 	168.144.68.107
+emailadmin 			IN 	A 	168.144.1.21
+@ 			IN 	A 	83.138.160.178
+welcometo 			IN 	A 	168.144.248.49
+owa 			IN 	A 	168.144.1.142
+ex7                     IN  A   168.144.1.185
+AutoDiscover            IN  A   168.144.1.186
+@			IN	TXT	"v=spf1 ip4:168.144.250.0/24 ip4:172.24.200.41/24 include:mail2web.com ~all"

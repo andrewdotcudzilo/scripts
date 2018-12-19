@@ -1,0 +1,32 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	oca1.wpengine.com.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	70.28.60.103
+mail 			IN 	A 	70.28.60.103
+@ 			IN 	A 	104.196.153.183
+remote 			IN 	A 	192.40.233.10
+members 			IN 	A 	64.40.117.177
+forums 			IN 	A 	64.40.117.22
+sslvpn 			IN 	A 	192.40.233.12
+files 			IN 	CNAME 	d2oovpv43hgkeu.cloudfront.net.
+citrix 			IN 	A 	192.40.233.11
+@ 			IN 	TXT 	"MSms79690865"
+test 			IN 	A 	191.237.128.83
+agilitycms 			IN 	A 	184.106.164.48
+stage 			IN 	CNAME 	02b67e3454da41c3af3505ec13f98469.cloudapp.net.
+avaya 			IN 	A 	192.40.233.13
+beta 			IN 	A 	172.99.116.124
+mandrill 			IN 	TXT 	"vDKIM1"
+@ 			IN 	TXT 	"vspf1 includespf.mandrillapp.com ?all"
+@ 			IN 	TXT 	"MSms79690865"
+@ 			IN 	TXT 	"MSms46987169"
+@			IN	MX	10	in.hes.trendmicro.com.

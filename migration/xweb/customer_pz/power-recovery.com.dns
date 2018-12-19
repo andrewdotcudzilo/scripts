@@ -1,0 +1,39 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			1800) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+smtp 			IN 	A 	75.151.236.17
+mail 			IN 	A 	75.151.236.17
+email 			IN 	A 	75.151.236.17
+pwrmail 			IN 	A 	75.151.236.17
+@ 			IN 	A 	168.144.182.172
+test1 			IN 	A 	75.151.236.17
+vpn 			IN 	A 	75.151.236.17
+@ 			IN 	MX 	1 server508.appriver.com.
+@ 			IN 	MX 	2 server509.appriver.com.
+@ 			IN 	MX 	32767 ms51486263.msv1.invalid.
+autodiscover 			IN 	CNAME 	smtp
+autodiscover		IN	CNAME	autodiscover.outlook.com.
+sip			IN	CNAME	sipdir.online.lync.com.
+lyncdiscover		IN	CNAME	webdir.online.lync.com.
+msoid			IN	CNAME	clientconfig.microsoftonline-p.net.
+enterpriseregistration	IN	CNAME	enterpriseregistration.windows.net.
+enterpriseenrollment	IN	CNAME	enterpriseenrollment.manage.microsoft.com.
+@                       IN      MX      0 powerrecovery-com01c.mail.protection.outlook.com.
+@			IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls.power-recovery.com.	3600	IN	SRV	100	1	443	sipdir.online.lync.com.
+_sipfederationtls._tcp.power-recovery.com.	3600	IN	SRV	100	1	5061	sipfed.online.lync.com.
+
+
+
+
+
+
+

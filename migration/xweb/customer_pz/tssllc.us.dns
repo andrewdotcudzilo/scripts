@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+smtp 			IN 	A 	168.144.68.180
+smtpin 			IN 	A 	168.144.1.78
+mail 			IN 	A 	63.135.171.77
+@ 			IN 	A 	54.247.91.90
+@ 			IN 	MX 	10 mail
+sip 			IN 	A 	63.135.171.76
+vpn 			IN 	A 	74.95.30.161
+autodiscover 			IN 	A 	63.135.171.77
+www 			IN 	CNAME 	truckingstartupservices.client.bypronto.com.

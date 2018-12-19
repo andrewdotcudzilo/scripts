@@ -1,0 +1,16 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+exchange 			IN 	A 	213.171.192.50
+vpn 			IN 	A 	82.70.63.198
+@ 			IN 	MX 	1 fleetsolve-com.mail.protection.outlook.com.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+remote 			IN 	A 	82.70.63.198
+www 			IN 	A 	159.253.213.217.
