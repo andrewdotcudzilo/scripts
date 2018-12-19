@@ -1,8 +1,8 @@
 #!/bin/bash
-
 #constants
 ZONE_PATH=./customer_pz
 BACKUP_FILE=$HOME/customer_pz_$(date '+%Y%m%d%H%M%S').tar.gz
+DO_BACKUP=0
 SERIALDATE=$(date '+%Y%m%d'"01");
 VERBOSE=0
 EXCLUDE=0
@@ -22,12 +22,13 @@ usage() {
  echo "-x <file> - path to exclusion file"
  echo "-z <path> - path to zone files"
 }
+if [ -z $1 ]; then usage; exit 0; fi;
 
 # handle parameters/ops
-while getopts "z:b:x:d:vh" opt; do
+while getopts "m:z:b:x:d:vh" opt; do
  case $opt in
  h) usage; exit 0 ;;
- b) BACKUP_FILE=$OPTARG ;;
+ b) BACKUP_FILE=$OPTARG; DO_BACKUP=1 ;;
  d) SERIALDATE=$OPTARG ;;
  m) MAP_FILE=$OPTARG ;;
  x) EXCLUDE=1; EXCLUDE_FILE=$OPTARG ;;
@@ -36,7 +37,6 @@ while getopts "z:b:x:d:vh" opt; do
  \?) echo "invalid option triggered" >&2 ;;
  esac
 done
-exit 0;
 
 # sanity checks
 if [ ! -f $MAP_FILE ]; then echo "invalid ip mapping file: $MAP_FILE "; BAIL=1; fi;
@@ -51,21 +51,24 @@ if [ $BAIL -gt 0 ]; then exit 1; fi;
 readarray maps < $MAP_FILE
 map_count="${#maps[@]}";
 map_i=1;
-echo " Building ip mapping list for zone file updates ... "
+echo -ne " Building ip mapping list for zone file updates ... \r"
 SED_CMD="sed -i"
 for i in ${maps[@]}; do
-  IFS',' read -ra DATA <<< ${i[@]};
+  IFS=',' read -ra DATA <<< ${i[@]};
   SED_CMD=" $SED_CMD -e s/${DATA[0]}/${DATA[1]}/g";
   if [ $VERBOSE ]; then echo -ne " Building ip mapping list for zone file updates ... $map_i / $map_count \r"; fi;
   map_i=$((map_i+1));
 done;
 SED_CMD=" $SED_CMD -e  \"s/.*serial number/\t\t\t$SERIALDATE ; serial number/g\"";
+echo "";
 
 # backup the source dns zone directory/files
-echo "";
-echo " Backing up $ZONE_PATH "
-tar -czf $BACKUP_FILE $ZONE_PATH;
-if [ ! $? -eq 0 ]; then echo "error with backup file $BACKUP_FILE...exiting"; exit 1; fi;
+DO_BACKUP=0;
+if [ $DO_BACKUP ]; then
+  echo " Backing up $ZONE_PATH "
+  tar -czf $BACKUP_FILE $ZONE_PATH;
+  if [ ! $? -eq 0 ]; then echo "error with backup file $BACKUP_FILE...exiting"; exit 1; fi;
+fi;
 
 # get the source list of files to update
 echo " Building list of zone files to update ... ";
@@ -86,16 +89,18 @@ if [ $EXCLUDE -gt 0 ]; then
     echo " this will take a while ...";
   fi;
 
-  for i in ${!files[@]}: do
+  for i in ${!files[@]}; do
     filebasename=$(basename ${files[$i]} .dns);
     filename=${files[$i]};
-#    if [ $VERBOSE ]; then echo " checking $filebasename for exclusion"; fi;
+    if [ $VERBOSE ]; then echo -ne " checking $filebasename for exclusion ... $file_i / $file_count \r"; fi;
     for j in ${!delete[@]}; do
-      if [ "$filebasename" = ${delete[$j]} ]; then
+      deldomain=$(echo "${delete[$j]%?}");
+      if [ "$filebasename" = "$deldomain" ]; then
         if [ $VERBOSE ]; then echo "Removing $filebasename from dns updates"; fi;
         files=("${files[@]/$filename}");
       fi;
     done;
+    file_i=$((file_i+1));
   done;
 fi
 
