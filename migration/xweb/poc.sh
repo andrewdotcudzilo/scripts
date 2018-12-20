@@ -11,6 +11,10 @@ MAP_FILE='';
 BAIL=0;
 DNS_FILE_EXT=.dns
 
+myprint(){
+  printf "\r%*s\r%s\n" $(tput cols) "$2" "$1";
+}
+
 usage() {
  echo "-------------------------------------"
  echo `basename $0`;
@@ -56,7 +60,7 @@ SED_CMD="sed -i"
 for i in ${maps[@]}; do
   IFS=',' read -ra DATA <<< ${i[@]};
   SED_CMD=" $SED_CMD -e s/${DATA[0]}/${DATA[1]}/g";
-  if [ $VERBOSE ]; then echo -ne " Building ip mapping list for zone file updates ... $map_i / $map_count \r"; fi;
+  if [ $VERBOSE ]; then myprint "Building ip mapping list for zone file updates" "$map_i / $map_count"; fi;
   map_i=$((map_i+1));
 done;
 SED_CMD=" $SED_CMD -e  \"s/.*serial number/\t\t\t$SERIALDATE ; serial number/g\"";
@@ -75,10 +79,6 @@ echo " Building list of zone files to update ... ";
 files=($(ls -1 $ZONE_PATH| grep "$DNS_FILE_EXT"));
 file_count=${#files[@]};
 file_i=1;
-for file in ${files[@]}; do
-	echo $file >> my.log;
-done;
-
 echo " Currently $file_count files will be checked ... ";
 
 # handle dns exclusion file as list of domain names.
@@ -88,19 +88,16 @@ if [ $EXCLUDE -gt 0 ]; then
   readarray -t delete < $EXCLUDE_FILE;
   delete_count=${#delete[@]};
   delete_i=1;
-  if [ $VERBOSE ]; then 
-    echo " $delete_count exclusions loaded from file ";
-    echo " this will take a while ...";
-  fi;
+  if [ $VERBOSE ]; then myprint "$delete_count exclusions loaded from file " "...this will take a moment";fi;
 
   for i in ${!files[@]}; do
     filedomain=`basename ${files[$i]} .dns`;
     filename=${files[$i]};
-    if [ $VERBOSE ]; then echo -ne " checking $filedomain for exclusion ... $file_i / $file_count \r"; fi;
+    if [ $VERBOSE ]; then myprint "checking $filedomani for exclusion..." "$file_i / $file_count"; fi;
     for j in ${!delete[@]}; do
       deldomain=${delete[$j]};
       if [ "$filedomain" = "$deldomain" ]; then
-        if [ $VERBOSE ]; then echo "Removing $filedomain from dns updates"; echo ""; fi;
+	if [ $VERBOSE ]; then myprint "Removing $filedomain from potential dns updates"; fi;
         files=("${files[@]/$filename}");
       fi;
     done;
@@ -108,19 +105,11 @@ if [ $EXCLUDE -gt 0 ]; then
   done;
 fi
 
-for file in ${files[@]}; do
-	echo $file >> out.log;
-done;
-
-# stop for now
-exit 0;
-
-file_count=${#files[@]};
 file_i=1;
 # finally do the updates
 for file in ${files[@]}; do
   if [ ! -f $ZONE_PATH/$file ]; then echo "$ZONE_FILE/$file no longer exists, skip for now but you should check this."; continue; fi;
   if [ $VERBOSE ]; then echo "Updating $ZONE_PATH/$file ... $file_i / $file_count "; fi;
-  file=$((file_i+1));
+  file_i=$((file_i+1));
   eval "$SED_CMD $ZONE_PATH/$file";
 done
