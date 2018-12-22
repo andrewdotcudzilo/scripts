@@ -1,0 +1,11 @@
+@		IN SOA	nscl7.myhosting.com. postmaster.myhosting.com. (
+				 2008070201    ; Serial number
+				 3600          ; Refresh
+				 3600          ; Retry
+				 86400         ; Expire
+				 3600        ) ; Minimum TTL
+		NS	nscl7.myhosting.com.
+		NS	nscl8.myhosting.com.
+		MX	1 mail.softcomca.com.
+		A	168.144.1.28
+*		A	168.144.1.28

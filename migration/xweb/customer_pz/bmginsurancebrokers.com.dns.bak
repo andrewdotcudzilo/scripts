@@ -1,0 +1,17 @@
+@ 			IN 	SOA 	ns5.softcomca.com. 	postmaster.softcomca.com. (
+			2007053112 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	ns5.softcomca.com.
+@ 			IN 	NS 	ns6.softcomca.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 		IN	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.107
+@ 			IN 	MX 	10      mail
+mail 			IN 	A 	global.frontbridge.com
+@ 			IN 	A 	168.144.189.126
+

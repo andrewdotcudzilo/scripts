@@ -1,0 +1,22 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+reputationmanagement 			IN 	CNAME 	dashboard.reviewpush.com.
+mail 			IN 	A 	208.75.245.114
+@ 			IN 	A 	198.185.159.144
+@ 			IN 	MX 	10 d34782a.ess.barracudanetworks.com.
+@ 			IN 	MX 	20 d34782b.ess.barracudanetworks.com.
+@ 			IN 	MX 	30 d34782.o.ess.barracudanetworks.com.
+www 			IN 	CNAME 	ext-cust.squarespace.com.
+idevaffiliate 			IN 	A 	64.191.8.87
+sypl4bc6w7x6drakl9ea 			IN 	CNAME 	verify.squarespace.com.
+www7 			IN 	CNAME 	logvr0pv8crpou.ihance.net.
+ismtp 			IN 	CNAME 	sendvr0pv8crpou.ihance.net.
+@			IN	TXT	"v=spf1 include:spf.ihance.net ip4:12.24.39.130/28 -all"
+

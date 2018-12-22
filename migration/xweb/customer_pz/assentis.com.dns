@@ -1,0 +1,34 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.89
+mail 			IN 	A 	168.144.68.89
+@ 			IN 	A 	80.86.201.194
+web 			IN 	A 	80.86.201.194
+autodiscover 			IN 	A 	212.94.34.204
+webnew 			IN 	A 	80.86.201.194
+webtest 			IN 	A 	80.86.201.194
+wwwtest 			IN 	A 	80.86.201.194
+wwwold 			IN 	A 	168.144.111.206
+www 			IN 	A 	80.86.201.194
+ftp 			IN 	A 	80.86.201.194
+download 			IN 	A 	80.86.201.194
+sftp 			IN 	A 	80.86.201.194
+exchange 			IN 	A 	212.94.34.200
+mx01 			IN 	A 	212.94.34.204
+mx01a 			IN 	A 	212.94.34.204
+mx01b 			IN 	A 	212.4.72.188
+mx01z 			IN 	A 	212.94.34.196
+training 			IN 	CNAME 	assentis-test.docebosaas.com.
+mailer01 			IN 	A 	212.94.34.204
+mailer02 			IN 	A 	148.251.160.113
+@ 			IN 	TXT 	"vspf1 ip4212.94.34.19228 ip4212.41.221.16029 ip4148.251.160.11229 all"
+@ 			IN 	MX 	10 mailer01
+@ 			IN 	MX 	10 mailer02

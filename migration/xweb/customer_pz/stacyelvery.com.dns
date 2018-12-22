@@ -1,0 +1,14 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	10 ex7
+ex7 			IN 	A 	168.144.1.185
+autodiscover 		IN 	A 	168.144.1.186
+marketing 		IN 	NS 	nscl5.myhosting.com
+marketing 		IN 	NS 	nscl6.myhosting.com

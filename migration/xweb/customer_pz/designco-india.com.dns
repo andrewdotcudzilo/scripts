@@ -1,0 +1,24 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+qnojrsz5eboo.designco-india.com. 			IN 	CNAME 	gv-b6gefy5jb4j7bn.dv.googlehosted.com.
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	5 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	10 alt3.aspmx.l.google.com.
+@ 			IN 	A 	168.144.126.7
+je6bst3u6o6y.bkup.designco-india.com. 			IN 	CNAME 	gv-stdbnlkfzdg2fy.dv.googlehosted.com.
+gzb2o4dd2mjf.bkup.designco-india.com. 			IN 	CNAME 	gv-r63obrs3qrclja.dv.googlehosted.com.
+bkup 			IN 	MX 	1 aspmx.l.google.com.
+bkup 			IN 	MX 	5 alt1.aspmx.l.google.com.
+bkup 			IN 	MX 	5 alt2.aspmx.l.google.com.
+bkup 			IN 	MX 	10 alt3.aspmx.l.google.com.

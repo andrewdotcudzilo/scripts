@@ -1,0 +1,46 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.66
+mail 			IN 	A 	168.144.68.66
+@ 			IN 	A 	62.255.175.155
+www 			IN 	A 	62.255.175.155
+fr 			IN 	A 	62.255.175.155
+de 			IN 	A 	62.255.175.155
+it 			IN 	A 	62.255.175.155
+es 			IN 	A 	62.255.175.155
+nb 			IN 	A 	62.255.175.155
+static 			IN 	A 	62.255.175.107
+pt 			IN 	A 	62.255.175.155
+api 			IN 	A 	62.255.175.126
+avatars 			IN 	CNAME 	duf00yazwe0ss.cloudfront.net.
+files 			IN 	CNAME 	d2eonehmv91mjd.cloudfront.net.
+properties 			IN 	CNAME 	d1wu0nojc0f1yw.cloudfront.net.
+messages 			IN 	CNAME 	db18c1vwb18qw.cloudfront.net.
+dev 			IN 	A 	62.255.175.130
+dev.api 			IN 	A 	62.255.175.131
+beta 			IN 	A 	62.255.175.127
+beta.api 			IN 	A 	62.255.175.128
+beta-files 			IN 	CNAME 	df87qy6433898.cloudfront.net.
+beta-properties 			IN 	CNAME 	d3l8vyu33f8h22.cloudfront.net.
+beta-messages 			IN 	CNAME 	d11pdnt9ziucj5.cloudfront.net.
+beta-avatars 			IN 	CNAME 	d2go09i7o051rv.cloudfront.net.
+web1 			IN 	A 	62.255.175.155
+db1 			IN 	A 	62.255.175.154
+import 			IN 	A 	62.255.175.107
+beta.import 			IN 	A 	62.255.175.155
+dev.import 			IN 	A 	62.255.175.107
+@			IN	TXT	"google-site-verification=l1kig3US7jbLe3ox65MshotxEnBdYJH9s6quR0lO6I4"
+@			IN	MX	1	ASPMX.L.GOOGLE.COM.
+@			IN	MX	5	ALT1.ASPMX.L.GOOGLE.COM.
+@			IN	MX	5	ALT2.ASPMX.L.GOOGLE.COM.
+@			IN	MX	10	ASPMX2.GOOGLEMAIL.COM.
+@			IN	MX	10	ASPMX3.GOOGLEMAIL.COM.

@@ -1,0 +1,15 @@
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@                       IN	NS	ns1.myhosting.com.
+@                       IN	NS	ns2.myhosting.com.
+@                       IN	MX	10	mail.d1005828-1.site.myhosting.com.
+ftp                     IN	CNAME	@
+www                     IN	CNAME	@
+autodiscover.bayviewtower.ca.	IN	CNAME		autodiscover-redirect.myhosting.com.
+bayviewtower.ca.	IN	TXT	"v=spf1 redirect=manage.myhosting.com"
+@                       IN  A   168.144.109.12

@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	ns5.softcomca.com. 	postmaster.softcomca.com. (
+			2018091702 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	ns5.softcomca.com.
+@ 			IN 	NS 	ns6.softcomca.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.95
+mail 			IN 	A 	168.144.68.95
+@ 			IN 	A 	45.79.74.100
+remote 			IN 	A 	69.63.81.230
+ms45346622 			IN 	CNAME 	red001.mail.microsoftonline.com.
+@ 			IN 	MX 	0 fentonross-com.mail.eo.outlook.com.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+@ 			IN 	TXT 	"vspf1 includeoutlook.com all"

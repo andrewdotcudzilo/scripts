@@ -1,0 +1,54 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.111
+mail 			IN 	A 	168.144.68.111
+@ 			IN 	A 	168.144.248.46
+cs 			IN 	A 	168.144.248.3
+www.ca 			IN 	A 	168.144.248.3
+behar 			IN 	A 	168.144.248.10
+www.behar 			IN 	A 	168.144.248.10
+abtypeface 			IN 	A 	168.144.248.11
+www.abtypeface 			IN 	A 	168.144.248.11
+bluewave 			IN 	A 	168.144.248.12
+www.bluewave 			IN 	A 	168.144.248.12
+business 			IN 	A 	168.144.248.13
+www.business 			IN 	A 	168.144.248.13
+hosting 			IN 	A 	168.144.248.13
+www.hosting 			IN 	A 	168.144.248.13
+incendium 			IN 	A 	168.144.248.14
+www.incendium 			IN 	A 	168.144.248.14
+permarinus 			IN 	A 	168.144.248.14
+www.permarinus 			IN 	A 	168.144.248.14
+terranus 			IN 	A 	168.144.248.14
+www.terranus 			IN 	A 	168.144.248.14
+thinkingreen 			IN 	A 	168.144.248.15
+www.thinkingreen 			IN 	A 	168.144.248.15
+mvblog 			IN 	A 	168.144.248.15
+www.mvblog 			IN 	A 	168.144.248.15
+solarflare 			IN 	A 	168.144.248.15
+www.solarflare 			IN 	A 	168.144.248.15
+tstyle01 			IN 	A 	168.144.248.15
+www.tstyle01 			IN 	A 	168.144.248.15
+topeye 			IN 	A 	168.144.248.15
+www.topeye 			IN 	A 	168.144.248.15
+community 			IN 	A 	168.144.248.15
+www.community 			IN 	A 	168.144.248.15
+sunsetbirds 			IN 	A 	168.144.248.16
+www.sunsetbirds 			IN 	A 	168.144.248.16
+telenordirekte 			IN 	A 	168.144.248.17
+www.telenordirekte 			IN 	A 	168.144.248.17
+aqua 			IN 	A 	168.144.248.18
+www.aqua 			IN 	A 	168.144.248.18
+vivacious14 			IN 	A 	168.144.248.19
+www.vivacious14 			IN 	A 	168.144.248.19

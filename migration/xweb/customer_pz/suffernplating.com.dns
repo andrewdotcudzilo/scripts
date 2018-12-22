@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.79
+@ 			IN 	A 	168.144.60.97
+@ 			IN 	MX 	10 suffernplating.com.1.0001.arsmtp.com.
+@ 			IN 	MX 	20 suffernplating.com.2.0001.arsmtp.com.
+autodiscover 			IN 	CNAME	adr.exghost.com.
+webmail 			IN 	CNAME 	suffernplating.com.appriverems.com.
+mail 			IN 	CNAME 	exg5.exghost.com.
+@                       IN      TXT     v=spf1 ptr:exghost.com ptr:appriver.com ~all

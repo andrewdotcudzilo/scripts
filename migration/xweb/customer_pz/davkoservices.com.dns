@@ -1,0 +1,15 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.71
+mail 			IN 	A 	168.144.68.71
+@ 			IN 	A 	108.167.135.125
+www 			IN 	CNAME 	websites090.homestead.com.

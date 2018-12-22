@@ -1,0 +1,17 @@
+@                       IN	SOA	ns3.softcomca.com.	postmaster.softcomca.com.	(
+                        2015021215     ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+                        3600)     ; minimum TTL [1h]
+;
+@                       IN	NS	ns3.softcomca.com.
+@                       IN	NS	ns4.softcomca.com.
+@                       IN	MX	1	mail
+ftp                     IN	CNAME	@
+www                     IN	CNAME	@
+emailadmin		IN	A 	168.144.1.21
+smtp                    IN  	A   	168.144.68.71
+mail                    IN  	A   	168.144.68.71
+@                       IN  	A   	168.144.24.95
+l     			IN    	A       168.144.247.217

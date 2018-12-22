@@ -1,0 +1,23 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	10 in.sjc.mx.trendmicro.com.
+ftp 			IN 	CNAME 	@
+smtp 			IN 	A 	216.171.103.30
+mail 			IN 	A 	216.171.103.30
+@ 			IN 	A 	199.79.48.61
+pop 			IN 	A 	216.171.103.30
+webmail 			IN 	A 	216.171.103.30
+gatekeeper 			IN 	A 	216.171.103.30
+www4 			IN 	A 	69.156.199.98
+crm 			IN 	A 	216.171.106.81
+remote 			IN 	A 	216.171.103.30
+sslvpn 			IN 	A 	216.171.106.86
+www 			IN 	CNAME 	@
+silicone-sealants 			IN 	CNAME 	@

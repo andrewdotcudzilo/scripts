@@ -1,0 +1,36 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+@ 			IN 	A 	77.245.144.106
+@			IN	MX	5  merinos-com-tr.mail.protection.outlook.com.
+awstats 		IN 	A 	77.245.144.106
+bayi 			IN 	A 	77.245.146.79
+calendar 		IN 	A 	74.125.93.121
+dene 			IN 	A 	77.245.144.106
+docs 			IN 	A 	74.125.93.121
+gmail 			IN 	A 	74.125.93.121
+sites 			IN 	A 	74.125.93.121
+ftp 			IN 	CNAME 	merinos.com.tr.
+www 			IN 	A 	77.245.144.106
+hali 			IN 	A 	94.73.150.200
+www.hali 		IN 	A 	94.73.150.200
+@			IN	TXT	"MS=ms91542409"
+autodiscover		IN	CNAME	autodiscover.outlook.com.
+msoid			IN	CNAME	clientconfig.microsoftonline-p.net.
+enterpriseenrollment	IN	CNAME	enterpriseenrollment.manage.microsoft.com.
+enterpriseregistration	IN	CNAME	enterpriseregistration.windows.net.
+sip			IN	CNAME	sipdir.online.lync.com.
+lyncdiscover		IN	CNAME	webdir.online.lync.com.
+@			IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls.merinos.com.tr.	IN	SRV	1 100 443 sipdir.online.lync.com.
+_sipfederationtls._tcp.merinos.com.tr	IN	SRV	1 100 5061	sipfed.online.lync.com.
+
+
+
+

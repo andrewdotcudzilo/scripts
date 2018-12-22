@@ -1,0 +1,26 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+mail 			IN 	A 	37.77.82.179
+www 			IN 	A 	37.77.82.80
+@ 			IN 	MX 	10 mail
+@ 			IN 	MX 	20 mail
+mx 			IN 	CNAME 	kalross.dyndns.org.
+@ 			IN 	MX 	30 mx.clairelees.net.
+@ 			IN 	MX 	5 mx01.clairelees.net.
+@ 			IN 	MX 	40 mx04.clairelees.net.
+push 			IN 	A 	37.77.82.81
+owncloud 			IN 	CNAME 	www.clairelees.net.
+smtp 			IN 	CNAME 	mail.clairelees.net.
+imap 			IN 	CNAME 	mail.clairelees.net.
+webmail 			IN 	CNAME 	mail.clairelees.net.
+sync 			IN 	CNAME 	push.clairelees.net.
+cloud 			IN 	CNAME 	www.clairelees.net.
+project 			IN 	CNAME 	www.clairelees.net.
+ftp 			IN 	CNAME 	www.clairelees.net.

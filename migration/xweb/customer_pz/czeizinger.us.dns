@@ -1,0 +1,22 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.104
+@ 			IN 	A 	168.144.178.161
+@			IN	MX	1 ms51555251.msv1.invalid.outlook.com.
+@			IN	MX	0 czeizinger-us.mail.protection.outlook.com.
+autodiscover		IN	CNAME	autodiscover.outlook.com.
+@			IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls.czeizinger.us	IN	SRV	1 100 443 sipdir.online.lync.com.
+_sipfederationtls._tcp.czeizinger.us IN SRV 1 100 5061 sipfed.online.lync.com.
+sip			IN	CNAME	sipdir.online.lync.com.
+lyncdiscover 		IN	CNAME	webdir.online.lync.com.

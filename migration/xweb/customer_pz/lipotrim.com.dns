@@ -1,0 +1,24 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.1.35
+mail 			IN 	A 	168.144.1.35
+@ 			IN 	A 	168.144.1.35
+ireland 			IN 	A 	217.146.99.59
+www.ireland 			IN 	CNAME 	ireland.lipotrim.com.
+2vg26icxmf5e 			IN 	CNAME 	gv-5mtrmuqdz3ucdb.dv.googlehosted.com.
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	5 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	10 aspmx2.googlemail.com.
+@ 			IN 	MX 	10 aspmx3.googlemail.com.
+0ea829a4bce3a35cd2fef58cd1a3eac5 			IN 	CNAME 	c643589b2731e42657cbbd8a09f7e706.c9a5c266e24fffe8611f14a8559e895e.59d4bcce5b3fc.comodoca.com.

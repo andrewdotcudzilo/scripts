@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.78
+mail 			IN 	A 	168.144.68.78
+@ 			IN 	A 	185.123.97.227
+e77ucugbjjpa 			IN 	CNAME 	gv-n2gpr3lyt2tuly.dv.googlehosted.com.
+booksys 			IN 	CNAME 	futurebabiesbooksys.eu-west-1.elasticbeanstalk.com.
+testsys 			IN 	CNAME 	fbbook01-dev.iuyafjmrm3.eu-west-1.elasticbeanstalk.com.

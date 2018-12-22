@@ -1,0 +1,25 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	www.squarespace6.com.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.104
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+@ 			IN 	A 	65.39.205.57
+@ 			IN 	TXT 	"MSms95894169"
+msoid 			IN 	CNAME 	clientconfig.microsoftonline-p.net.
+@ 			IN 	MX 	10 imcipls-com.mail.protection.outlook.com.
+@ 			IN 	TXT 	"vspf1 includespf.protection.outlook.com -all"
+o2609.resources.imcipls.com 			IN 	A 	167.89.24.212
+resource.imcipls.com 			IN 	CNAME 	u6444431.wl182.sendgrid.net.
+s1.domainkey.imcipls.com 			IN 	CNAME 	s1.domainkey.u6444431.wl182.sendgrid.net.
+s2.domainkey.imcipls.com 			IN 	CNAME 	s2.domainkey.u6444431.wl182.sendgrid.net.
+resources.imcipls.com 			IN 	CNAME 	sendgrid.net.
+6444431.imcipls.com 			IN 	CNAME 	sendgrid.net.

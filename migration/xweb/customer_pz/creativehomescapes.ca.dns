@@ -1,0 +1,15 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+emailadmin 			IN 	A 	168.144.1.21
+mail 			IN 	A 	209.216.137.200
+@ 			IN 	A 	209.216.137.248
+@ 			IN 	MX 	10 mail.sellwindsor.com.
+www 			IN 	A 	209.216.137.248
+ftp 			IN 	A 	209.216.137.205

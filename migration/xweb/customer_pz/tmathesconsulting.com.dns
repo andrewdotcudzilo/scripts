@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018120114 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ex7 			IN 	A 	168.144.1.185
+autodiscover 			IN 	A 	168.144.1.186
+@			IN	TXT	"MS=ms40649421"
+@			IN	MX	32767	s40649421.msv1.invalid.
+lyncdiscover		IN	CNAME	webdir.online.lync.com
+sip			IN	CNAME	sipdir.online.lync.com
+enterpriseregistration	IN	CNAME	enterpriseregistration.windows.net
+enterpriseenrollment	IN	CNAME	enterpriseenrollment.manage.microsoft.com
+@			IN	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls               IN      SRV     100 1 443 sipdir.online.lync.com.
+_sipfederationtls._tcp  IN      SRV     100 1 5061 sipfed.online.lync.com.

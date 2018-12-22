@@ -1,0 +1,25 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	mail
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.95
+mail 			IN 	A 	168.144.68.95
+@ 			IN 	A 	66.96.134.54
+@ 			IN 	MX 	10 inferno10
+old 			IN 	A 	168.144.182.187
+inferno10 			IN 	A 	199.244.54.155
+inferno20 			IN 	A 	199.244.54.156
+inferno30 			IN 	A 	199.244.54.157
+inferno40 			IN 	A 	104.131.235.150
+@ 			IN 	MX 	20 inferno20
+@ 			IN 	MX 	30 inferno30
+@			IN	MX	5	castleridgemortuary.com.us.emailservice.io.
+

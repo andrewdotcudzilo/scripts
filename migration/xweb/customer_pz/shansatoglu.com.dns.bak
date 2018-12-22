@@ -1,0 +1,24 @@
+@ 			IN 	SOA 	ns5.softcomca.com. 	postmaster.softcomca.com. (
+			2006111918 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	ns5.softcomca.com.
+@ 			IN 	NS 	ns6.softcomca.com.
+ftp 			IN 	CNAME 	@
+smtp 			IN 	A 	168.144.68.180
+smtpin 			IN 	A 	168.144.1.79
+mail 			IN 	A 	168.144.1.36
+@ 			IN 	A 	168.144.1.36
+www 			IN 	CNAME 	@
+www 			IN 	CNAME 	ghs.google.com.
+googleffffffffa418b365 			IN 	CNAME 	google.com.
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	5 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	10 aspmx2.googlemail.com.
+@ 			IN 	MX 	10 aspmx3.googlemail.com.
+@ 			IN 	MX 	10 aspmx4.googlemail.com.
+@ 			IN 	MX 	10 ASPMX5.GOOGLEMAIL.COM.

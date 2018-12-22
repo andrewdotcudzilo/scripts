@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.95
+mail 			IN 	A 	168.144.68.95
+@ 			IN 	A 	65.52.245.115
+@ 			IN 	MX 	100 cabletieexpress.com.s8a1.psmtp.com.
+@ 			IN 	MX 	200 cabletieexpress.com.s8a2.psmtp.com.
+@ 			IN 	MX 	300 cabletieexpress.com.s8b1.psmtp.com.
+@ 			IN 	MX 	400 cabletieexpress.com.s8b2.psmtp.com.
+www 			IN 	CNAME 	live.marketpath.com.

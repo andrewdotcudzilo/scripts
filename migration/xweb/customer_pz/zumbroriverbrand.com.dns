@@ -1,0 +1,21 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.110
+mail 			IN 	A 	24.159.214.106
+@ 			IN 	A 	168.144.205.109
+@ 			IN 	MX 	10 zumbroriverbrand.com.1.0001.arsmtp.com.
+@ 			IN 	MX 	20 zumbroriverbrand.com.2.0001.arsmtp.com.
+remote 			IN 	A 	24.159.214.106
+autodiscover 			IN 	A 	24.159.214.106
+DZC			IN	TXT	"2uCnz6qm"
+

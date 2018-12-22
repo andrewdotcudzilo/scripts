@@ -1,0 +1,29 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	47.51.72.110
+mail 			IN 	A 	47.51.72.110
+@ 			IN 	A 	52.3.129.35
+www2 			IN 	A 	168.144.248.4
+www 			IN 	CNAME 	@
+shopping 			IN 	A 	72.18.141.131
+admin 			IN 	A 	72.18.141.131
+mysql1 			IN 	A 	72.18.156.74
+mail2 			IN 	A 	168.144.68.88
+@ 			IN 	MX 	1 mail
+webmail 			IN 	A 	67.15.47.18
+comcastshop 			IN 	A 	209.62.85.168
+mysql2 			IN 	A 	209.62.85.107
+mx.comcastshop 			IN 	A 	67.15.238.68
+comcastshop 			IN 	MX 	2 mx.comcastshop
+autodiscover 			IN 	A 	47.51.72.110
+bolducs-ex1 			IN 	A 	47.51.72.110
+barracuda 			IN 	A 	47.51.72.110

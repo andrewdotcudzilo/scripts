@@ -1,0 +1,11 @@
+@                       IN	SOA	ns5.softcomca.com.	postmaster.softcomca.com.	(
+                        2007090602     ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1d]
+;
+@                       IN	NS	ns5.softcomca.com.
+@                       IN	NS	ns6.softcomca.com.
+
+

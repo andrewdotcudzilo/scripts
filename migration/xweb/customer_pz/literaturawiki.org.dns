@@ -1,0 +1,16 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	web.ouvaton.coop.
+emailadmin 			IN 	A 	213.152.29.60
+smtp 			IN 	A 	213.152.29.60
+mail 			IN 	A 	213.152.29.60
+@ 			IN 	A 	213.152.29.60

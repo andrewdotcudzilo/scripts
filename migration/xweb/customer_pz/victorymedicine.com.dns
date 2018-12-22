@@ -1,0 +1,23 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	71.125.1.75
+mail 			IN 	A 	168.144.68.67
+@ 			IN 	A 	168.144.6.75
+newmail 			IN 	A 	63.138.190.154
+rdp 			IN 	A 	71.125.1.75
+webmail 			IN 	A 	71.125.1.75
+vimmail 			IN 	A 	71.125.1.75
+apps 			IN 	A 	71.125.1.76
+vpn 			IN 	A 	71.125.1.77
+@ 			IN 	MX 	1 victorymedicine-com.mail.protection.outlook.com.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.

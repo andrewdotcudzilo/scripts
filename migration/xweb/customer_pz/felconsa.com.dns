@@ -1,0 +1,22 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+@ 			IN 	A 	200.125.186.230
+smtp 			IN 	A 	200.125.186.230
+smtpin 			IN 	A 	200.125.186.230
+transportefelconsa 	IN 	CNAME 	@
+camaras1 		IN 	A 	200.125.186.227
+@ 			IN 	MX 	1 remote
+remote 			IN 	A 	200.125.186.230
+camaras2 		IN 	A 	200.125.186.229
+_autodiscover._tcp.felconsa.com.	IN	SRV	100 1 443	remote.felconsa.com.
+autodiscover		IN	A	200.125.186.230
+

@@ -1,0 +1,29 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.99
+mail 			IN 	A 	168.144.68.99
+tic 			IN 	A 	68.142.140.37
+ticfs 			IN 	A 	68.142.140.38
+netbot 			IN 	A 	63.226.94.20
+server1 			IN 	A 	63.226.94.24
+server2 			IN 	A 	63.226.94.25
+@ 			IN 	MX 	1 ms71271683.msv1.invalid.outlook.com.
+blackchamber 			IN 	A 	68.142.140.39
+mail.tic 			IN 	A 	63.226.94.23
+odessa 			IN 	A 	63.226.94.22
+@ 			IN 	MX 	1 technoimaging-com.mail.protection.outlook.com.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+msoid 			IN 	CNAME 	clientconfig.microsoftonline-p.net.
+@ 			IN 	TXT 	"vspf1 includespf.protection.outlook.com -all"
+@ 			IN 	MX 	50 mail.tic
+@ 			IN 	A 	52.38.139.114

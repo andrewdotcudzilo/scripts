@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.82
+mail 			IN 	A 	168.144.68.82
+@ 			IN 	A 	45.79.141.4
+zb14335360 			IN 	CNAME 	zmverify.zoho.com.
+@ 			IN 	MX 	10 mx.zoho.com.
+@ 			IN 	MX 	20 mx2.zoho.com.
+fr 			IN 	CNAME 	@

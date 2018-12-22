@@ -1,0 +1,42 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 aspmx.l.google.com.
+@ 			IN 	MX 	5 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	5 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	10 alt3.aspmx.l.google.com.
+@ 			IN 	MX 	10 aspmx3.googlemail.com.
+mail 			IN 	CNAME 	ghs.googlehosted.com.
+calendar 			IN 	CNAME 	ghs.googlehosted.com.
+docs 			IN 	CNAME 	ghs.googlehosted.com.
+sites 			IN 	CNAME 	ghs.googlehosted.com.
+production 			IN 	A 	184.73.166.232
+staging 			IN 	A 	184.73.166.232
+blog 			IN 	A 	184.73.166.232
+research 			IN 	A 	184.73.166.232
+styleguide 			IN 	A 	184.73.166.232
+translate 			IN 	A 	184.73.166.232
+gitlab 			IN 	A 	184.73.166.232
+wbn 			IN 	A 	184.73.166.232
+abadi 			IN 	A 	184.73.166.232
+worldbank 			IN 	A 	184.73.166.232
+abadi-wiki 			IN 	A 	184.73.166.232
+abadi-leaflet 			IN 	A 	184.73.166.232
+abadi-ol3js 			IN 	A 	184.73.166.232
+maps 			IN 	A 	184.73.166.232
+internal 			IN 	A 	184.73.166.232
+en 			IN 	A 	184.73.166.232
+ru 			IN 	A 	184.73.166.232
+fr 			IN 	A 	184.73.166.232
+cn 			IN 	A 	184.73.166.232
+admin 			IN 	A 	184.73.166.232
+ontwerp 			IN 	A 	184.73.166.232
+geoserver 			IN 	A 	184.73.166.232
+@ 			IN 	A 	184.73.166.232
+www 			IN 	A 	184.73.166.232

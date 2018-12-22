@@ -1,0 +1,35 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	87.236.139.19
+mail 			IN 	A 	93.188.194.114
+@ 			IN 	A 	168.144.110.7
+www 			IN 	CNAME 	@
+email 			IN 	A 	93.188.194.114
+autodiscover 			IN 	A 	93.188.194.114
+mobile 			IN 	A 	87.236.139.18
+@ 			IN 	TXT 	"vGtOo34tv adzc.takafulweb.com -all"
+@ 			IN 	TXT 	"MSms62278115"
+_sip._tls		IN	SRV	100	1	443	sipdir.online.lync.com.
+_sipfederationtls._tcp	IN	SRV	100	1	5061	sipfed.online.lync.com.
+sip			IN	CNAME	sipdir.online.lync.com.
+lyncdiscover		IN	CNAME	webdir.online.lync.com.
+enterpriseregistration	IN	CNAME	enterpriseregistration.windows.net.
+enterpriseenrollment	IN	CNAME	enterpriseenrollment.manage.microsoft.com.
+msoid			IN	CNAME	clientconfig.microsoftonline-p.net.
+@			IN	TXT	"2DPtLP1CwYzaMO/jKlYwaUeC5s2w01TcJcxTZ1WAoC7mcHA+3LiBELmYj0iBRku146q/Pc/gAY0YWTJQKEvF4w=="
+@                       IN      MX      10 takafulweb-com.mail.protection.outlook.com.
+@			IN	A	46.101.130.180
+mob			IN	A	46.101.130.180
+
+
+
+

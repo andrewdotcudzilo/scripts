@@ -1,0 +1,17 @@
+@ 			IN 	SOA 	ns5.softcomca.com. 	postmaster.softcomca.com. (
+			2018071203 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	ns5.softcomca.com.
+@ 			IN 	NS 	ns6.softcomca.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.124
+mail 			IN 	A 	213.199.154.234
+@ 			IN 	A 	213.199.154.234
+@ 			IN 	TXT 	MSms51693678
+@ 			IN 	MX 	1 btriangle-org.mail.protection.outlook.com.

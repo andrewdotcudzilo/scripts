@@ -1,0 +1,35 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+@ 			IN 	A 	168.144.57.31
+owa 			IN 	A 	63.229.61.56
+autodiscover 			IN 	A 	63.229.61.56
+video 			IN 	A 	63.229.61.51
+vpn 			IN 	A 	63.229.61.50
+kbox 			IN 	A 	63.229.61.57
+ftps 			IN 	A 	63.229.61.55
+mn 			IN 	A 	63.229.61.60
+colaex2 			IN 	A 	63.229.61.56
+ddpe-fe 			IN 	A 	63.229.61.61
+bi 			IN 	A 	63.229.61.59
+bidev 			IN 	A 	63.229.61.62
+colavkb1 			IN 	A 	63.229.61.57
+securemail 			IN 	A 	67.231.144.121
+omnicell 			IN 	A 	63.229.61.53
+psp 			IN 	A 	63.229.61.52
+newarkvideo 			IN 	A 	96.93.30.202
+rdstest1 			IN 	A 	65.122.152.145
+www 			IN 	CNAME 	@
+admanager 			IN 	A 	65.122.152.146
+rds1 			IN 	A 	65.122.152.147
+rds4 			IN 	A 	65.122.152.148
+@ 			IN 	MX 	10 recoveryinnovations-org.relay1g.spamh.com.
+@ 			IN 	MX 	20 recoveryinnovations-org.relay1h.spamh.com.
+@ 			IN 	MX 	30 recoveryinnovations-org.relay1i.spamh.com.

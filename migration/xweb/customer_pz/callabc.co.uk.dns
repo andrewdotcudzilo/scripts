@@ -1,0 +1,50 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.124
+mail 			IN 	A 	91.197.230.156
+@ 			IN 	A 	91.197.230.156
+advancerefurb. 			IN 	NS 	nscl5.myhosting.com.
+advancerefurb. 			IN 	NS 	nscl6.myhosting.com.
+cava. 			IN 	NS 	nscl5.myhosting.com.
+cava. 			IN 	NS 	nscl6.myhosting.com.
+cpc. 			IN 	NS 	nscl5.myhosting.com.
+cpc. 			IN 	NS 	nscl6.myhosting.com.
+dosborne. 			IN 	NS 	nscl5.myhosting.com.
+dosborne. 			IN 	NS 	nscl6.myhosting.com.
+directdist. 			IN 	NS 	nscl5.myhosting.com.
+directdist. 			IN 	NS 	nscl6.myhosting.com.
+cgfastenings. 			IN 	NS 	nscl5.myhosting.com.
+cgfastenings. 			IN 	NS 	nscl6.myhosting.com.
+hbro. 			IN 	NS 	nscl5.myhosting.com.
+hbro. 			IN 	NS 	nscl6.myhosting.com.
+italian. 			IN 	NS 	nscl5.myhosting.com.
+italian. 			IN 	NS 	nscl6.myhosting.com.
+macleod. 			IN 	NS 	nscl5.myhosting.com.
+macleod. 			IN 	NS 	nscl6.myhosting.com.
+shieldsauto. 			IN 	NS 	nscl5.myhosting.com.
+shieldsauto. 			IN 	NS 	nscl6.myhosting.com.
+tsl. 			IN 	NS 	nscl5.myhosting.com.
+tsl. 			IN 	NS 	nscl6.myhosting.com.
+waterside. 			IN 	NS 	nscl5.myhosting.com.
+waterside. 			IN 	NS 	nscl6.myhosting.com.
+rhadesign. 			IN 	NS 	nscl5.myhosting.com.
+rhadesign. 			IN 	NS 	nscl6.myhosting.com.
+monachyle. 			IN 	NS 	nscl5.myhosting.com.
+monachyle. 			IN 	NS 	nscl6.myhosting.com.
+ns1 			IN 	A 	50.115.16.251
+ns2 			IN 	A 	91.197.231.126
+filter.exchange.tsl 			IN 	A 	168.144.1.236
+@ 			IN 	MX 	10 callabc-co-uk.mail.protection.outlook.com.
+voicemail 			IN 	A 	91.197.230.156
+mail.voicemail 			IN 	A 	91.197.230.156
+voicemail 			IN 	MX 	10 mail.voicemail.callabc.co.uk.

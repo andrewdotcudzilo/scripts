@@ -1,0 +1,21 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.106
+mail 			IN 	A 	168.144.68.106
+@ 			IN 	A 	191.237.128.238
+download 			IN 	CNAME 	download.easygps.com.s3.amazonaws.com.
+awverify.www 			IN 	CNAME 	easygps.azurewebsites.net.
+awverify 			IN 	CNAME 	easygps.azurewebsites.net.
+oldwww 			IN 	A 	168.144.186.91
+azure 			IN 	CNAME 	easygps.azurewebsites.net.

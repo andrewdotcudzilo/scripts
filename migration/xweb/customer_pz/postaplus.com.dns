@@ -1,0 +1,31 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+168.187.136.6 			IN 	CNAME 	www.postaplus.com.
+emailadmin 			IN 	A 	168.144.1.21
+www 			IN 	A 	132.145.16.43
+cma 			IN 	A 	213.132.228.253
+email 			IN 	A 	168.187.136.19
+@ 			IN 	MX 	10 email
+168.187.136.19 			IN 	CNAME 	email.postaplus.com.
+synergy 			IN 	A 	213.132.228.252
+213.132.228.252 			IN 	CNAME 	switch.postaplus.com.
+213.132.228.253 			IN 	CNAME 	synergy.postaplus.com.
+168.187.136.7 			IN 	CNAME 	mybox.postaplus.com.
+mailservice 			IN 	A 	213.132.228.254
+email 			IN 	MX 	10 168.187.136.19
+postapbx 			IN 	A 	213.132.237.19
+213.132.237.19 			IN 	CNAME 	postapbx.postaplus.com.
+postascan 			IN 	A 	132.145.15.147
+168.187.136.12 			IN 	CNAME 	postascan.postaplus.com.
+webmail 			IN 	A 	91.140.230.100
+91.140.230.100 			IN 	CNAME 	webmail.postaplus.com.
+autodiscover 			IN 	A 	168.187.136.19
+mybox 			IN 	A 	132.145.16.43
+www.postaplus.com 			IN 	A 	168.144.14.149

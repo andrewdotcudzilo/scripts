@@ -1,0 +1,18 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+www 			IN 	CNAME 	@
+mail 			IN 	CNAME   outlook.office365.com
+@ 			IN 	A 	168.144.1.35
+@ 			IN 	MX 	10 rlcompton-com.mail.protection.outlook.com.
+autodiscover 		IN 	CNAME 	autodiscover.outlook.com.
+
+
+
+

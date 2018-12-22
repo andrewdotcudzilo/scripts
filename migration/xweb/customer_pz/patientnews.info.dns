@@ -1,0 +1,26 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	10 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.1.35
+mail 			IN 	A 	209.61.151.224
+@ 			IN 	A 	209.61.151.224
+email 			IN 	CNAME 	@
+mailgun.org 			IN 	A 	209.61.151.224
+mxa.mailgun.org 			IN 	MX 	10 mailgun.org
+@			IN	TXT	"v=spf1 include:mailgun.org ~all"
+@			IN	MX	10	mxb.mailgun.org.
+smtp._domainkey		IN	TXT	"k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2ZZjhMQhgjYdckxbbRxF4kEaIksx2YjRpJUmF4t3oV0/WK/x/o2pjyIYhm8/kdWb4z9Jzexxy7jloYTlGQKjsfkc2iZlcXBW/ENU3f8kuZnV1dpc48m1IUywyx9VbV60QrGhgeN8K7rCqCn8Ob7xHVRWbpgew/1LoFzE14wyD0wIDAQAB"
+
+
+
+

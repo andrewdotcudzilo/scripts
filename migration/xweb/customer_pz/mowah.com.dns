@@ -1,0 +1,27 @@
+@ 			IN 	SOA 	NSCL5.MYHOSTING.COM. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS      NSCL5.MYHOSTING.COM.
+@ 			IN 	NS      NSCL6.MYHOSTING.COM.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.66
+mail 			IN 	A 	168.144.68.66
+@ 			IN 	A 	168.144.109.15
+@ 			IN 	MX      0 mowah-com.mail.protection.outlook.com.
+@                       IN      TXT     T5t-56R-OpT
+@			IN	TXT	MS=80B0422CC5024EE679D4430A427E0DA9FCC3DC02
+@			IN	TXT	MS=ms63207097
+autodiscover            IN      CNAME   autodiscover.outlook.com.
+lyncdiscover            IN      CNAME   webdir.online.lync.com.
+sip                     IN      CNAME   sipdir.online.lync.com.
+enterpriseregistration  IN      CNAME   enterpriseregistration.windows.net.
+enterpriseenrollment    IN      CNAME   enterpriseenrollment.manage.microsoft.com.
+@                       IN      TXT     "v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls.mowah.com.               IN      SRV     100     1      443      sipdir.online.lync.com.
+_sipfederationtls._tcp.mowah.com.  IN      SRV    100      1     5061     sipfed.online.lync.com. 

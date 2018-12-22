@@ -1,0 +1,36 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.108
+mail 			IN 	A 	168.144.68.108
+@ 			IN 	A 	168.144.209.51
+photos 			IN 	CNAME 	photos.topicshow.com.s3.amazonaws.com.
+uat 			IN 	CNAME 	uat.topicshow.com.s3.amazonaws.com.
+photocollage 			IN 	A 	168.144.229.121
+photocarousel 			IN 	A 	168.144.229.127
+startup 			IN 	A 	72.14.203.121
+pilot 			IN 	A 	168.144.229.66
+photogallery 			IN 	A 	168.144.229.172
+photogrid 			IN 	A 	168.144.229.178
+photocollageapp 			IN 	A 	168.144.229.164
+photostory 			IN 	A 	168.144.229.186
+pics 			IN 	CNAME 	pics.topicshow.com.s3.amazonaws.com.
+showpics 			IN 	A 	168.144.229.202
+snapgrid 			IN 	A 	168.144.229.66
+snap 			IN 	CNAME 	snap.topicshow.com.s3.amazonaws.com.
+snapframe 			IN 	A 	168.144.229.66
+snapstory 			IN 	A 	168.144.229.66
+photoframe 			IN 	A 	168.144.229.66
+framepic 			IN 	CNAME 	framepic.topicshow.com.s3.amazonaws.com.
+app 			IN 	A 	168.144.229.66
+img 			IN 	CNAME 	img.topicshow.com.s3.amazonaws.com.

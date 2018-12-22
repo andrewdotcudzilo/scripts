@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ex7 			IN 	A 	168.144.1.185
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.112
+mail 			IN 	A 	168.144.68.112
+@ 			IN 	A 	168.144.221.9
+sharepoint 			IN 	A 	168.144.1.237
+@ 			IN 	MX 	10 tonywin01.lab.myhosting.me.s9a1.psmtp.com.
+autodiscover 			IN 	CNAME 	autodiscover-redirect.myhosting.com.
+ex 			IN 	CNAME 	ex.myhosting.com.

@@ -1,0 +1,21 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.101
+mail 			IN 	A 	168.144.68.101
+@ 			IN 	A 	168.144.167.24
+blog 			IN 	CNAME 	ghs.google.com.
+promotional 			IN 	A 	199.0.184.165
+@ 			IN 	TXT 	"vgoogle-site-verificationl1 FgCBrPC2XB0ZSAvgzQqSPnnGNdkmJZeXXCGU8v3Q"
+@ 			IN 	TXT 	"google-site-verificationl1 FgCBrPC2XB0ZSAvgzQqSPnnGNdkmJZeXXCGU8v3Q"
+h2t5vdo7c26l.promotional 			IN 	CNAME 	gv-r6h65eirfjppht.dv.googlehosted.com.

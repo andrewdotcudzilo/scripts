@@ -1,0 +1,31 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	fiber
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	80.241.222.104
+mail 			IN 	A 	80.241.222.104
+@ 			IN 	A 	185.17.144.50
+myftp 			IN 	A 	78.188.186.200
+myftpizmir 			IN 	A 	95.6.33.242
+myftpadana 			IN 	A 	85.96.190.202
+mysql 			IN 	A 	78.188.186.200
+ftpizmir 			IN 	CNAME 	myftpizmir
+ftpadana 			IN 	CNAME 	myftpadana
+dosya 			IN 	CNAME 	fiber
+sql 			IN 	CNAME 	mysql
+fiber 			IN 	A 	195.175.56.114
+ftp2 			IN 	CNAME 	myftp
+antep 			IN 	A 	195.175.29.10
+ftpantep 			IN 	CNAME 	antep
+izmiradsl1 			IN 	A 	78.186.179.236
+izmirftp 			IN 	CNAME 	myftpizmir
+izmirwdsl 			IN 	A 	195.244.36.150

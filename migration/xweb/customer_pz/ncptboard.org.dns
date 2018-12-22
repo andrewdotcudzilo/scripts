@@ -1,0 +1,29 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	10 office
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.124
+mail 			IN 	A 	168.144.68.124
+@ 			IN 	A 	24.172.18.186
+office 			IN 	A 	24.172.18.186
+@			IN	TXT	"v=spf1 mx a ip4:24.172.18.186 a:outbound.mailhop.org ~all"
+;186.18.172.24.IN-ADDR.ARPA. 186			IN	PTR	office.ncptboard.org.
+remote			IN	A	24.172.18.186
+autodiscover		IN	A	24.172.18.186
+
+
+
+
+
+
+
+

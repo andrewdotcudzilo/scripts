@@ -1,0 +1,23 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+@ 			IN 	TXT 	"vspf1 ip4168.144.250.024 includemail2web.com all"
+mail 			IN 	A 	212.58.3.43
+webmail 			IN 	A 	212.58.3.43
+imap 			IN 	A 	212.58.3.43
+autodiscover 			IN 	A 	212.58.3.43
+smtp 			IN 	A 	212.58.3.43
+pop3 			IN 	A 	212.58.3.43
+@ 			IN 	MX 	10 mail.adminyazilim.com.
+@ 			IN 	MX 	20 mailbackup3.doruk.net.tr.
+@ 			IN 	A 	212.58.3.66
+ns 			IN 	A 	212.58.3.66
+lists 			IN 	A 	212.58.3.43
+www 			IN 	A 	212.58.3.66
+ftp 			IN 	A 	212.58.3.66
