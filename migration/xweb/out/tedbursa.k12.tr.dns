@@ -1,0 +1,24 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.114
+mail 			IN 	A 	168.144.68.114
+@ 			IN 	A 	66.113.224.216
+@ 			IN 	TXT 	"v=spf1 include:spf.protection.outlook.com -all"
+autodiscover 		IN 	CNAME 	autodiscover.outlook.com.
+@ 			IN 	MX 	1 tedbursa-k12-tr.mail.protection.outlook.com.
+_sip._tls.tedbursa.k12.tr. IN	SRV	100	1	443	sipdir.online.lync.com.
+_sipfederationtls._tcp.tedbursa.k12.tr. IN	SRV  100	1	5061	sipfed.online.lync.com.
+sip			IN	CNAME	sipdir.online.lync.com.
+lyncdiscover 		IN 	CNAME 	webdir.online.lync.com.
+enterpriseregistration 	IN 	CNAME 	enterpriseregistration.windows.net.
+enterpriseenrollment 	IN 	CNAME 	enterpriseenrollment.manage.microsoft.com.

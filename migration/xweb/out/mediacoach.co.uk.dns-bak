@@ -1,0 +1,16 @@
+@ 			IN 	SOA 	ns.softcomca.com. 	postmaster.softcomca.com. (
+			2013100301 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	ns.softcomca.com.
+@ 			IN 	NS 	ns2.softcomca.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.86
+mail 			IN 	A 	168.144.68.86
+@ 			IN 	A 	66.113.224.47

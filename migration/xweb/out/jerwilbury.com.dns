@@ -1,0 +1,37 @@
+;
+;
+
+@                       IN	SOA	nscl5.myhosting.com.	postmaster.myhosting.com.	(
+			2018110101 ; serial number
+			21600      ; refresh [6h]		
+			3600       ; retry   [1h]		
+			691200     ; expire  [8d]		
+            3600)     ; minimum TTL [1h]
+
+
+;
+;  Zone NS records
+;
+
+@                       IN	NS	nscl5.myhosting.com.
+@                       IN	NS	nscl6.myhosting.com.
+
+;
+;  Zone records
+
+
+
+
+
+@                       IN     A         168.144.55.29
+@                       IN     MX    1   ASPMX.L.GOOGLE.COM.
+@                       IN     MX    5   ALT1.ASPMX.L.GOOGLE.COM.
+@                       IN     MX    5   ALT2.ASPMX.L.GOOGLE.COM.
+@                       IN     MX    10   ASPMX2.GOOGLEMAIL.COM.
+@                       IN     MX    10   ASPMX3.GOOGLEMAIL.COM. 
+ftp                     IN     CNAME     @
+www                     IN     CNAME     @
+blog			IN     A     66.113.225.34
+mail			IN     CNAME	ghs.google.com.
+start			IN     CNAME    ghs.google.com.
+site			IN     CNAME    ghs.google.com.

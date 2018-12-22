@@ -39,17 +39,21 @@ def check(v, i, o, s, x, m, f):
             print ("Excluding domain: "+file_base+" from dns updates.")
             return
 
-    print(i+f+" is the read file");
-
     with open(str(i+f), "r") as thisFile:
         myfile=thisFile.read()
 
         for key in m:
             if key in myfile:
-                write_output=False
+                write_output=True
                 myfile=myfile.replace(key, m[key])
 
     if write_output:
+
+        # figure out serial date updates between two envs
+
+
+
+
         of=open(str(o+f), "w")
         of.write(myfile)
         of.close

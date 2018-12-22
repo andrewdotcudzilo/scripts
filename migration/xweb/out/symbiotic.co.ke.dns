@@ -1,0 +1,33 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.118
+mail 			IN 	A 	168.144.68.118
+@ 			IN 	A 	66.113.224.186
+projects 			IN 	A 	139.162.144.30
+docs 			IN 	CNAME 	@
+code 			IN 	A 	178.79.154.210
+float 			IN 	CNAME 	symbiotic.co.ke.
+sandbox 			IN 	A 	178.79.154.210
+lookup 			IN 	A 	178.79.154.210
+lotto 			IN 	A 	178.79.154.210
+fupi 			IN 	A 	178.79.154.210
+habari 			IN 	A 	178.79.154.210
+funnel 			IN 	A 	178.79.154.210
+catalyst 			IN 	A 	178.79.154.210
+fulfillment 			IN 	A 	178.79.154.210
+blackbox 			IN 	CNAME 	blackbox.co.ke.
+tumasms 			IN 	CNAME 	tumasms.com.
+@ 			IN 	TXT 	"vspf1 ip4168.144.250.024 includemail2web.com all"
+leads 			IN 	A 	167.99.135.169
+abacus 			IN 	A 	139.162.163.84

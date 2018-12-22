@@ -1,0 +1,37 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2018110101 ; serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+@ 			IN 	A 	66.113.224.166
+mailfilter4 			IN 	A 	64.78.61.233
+mailfilter5 			IN 	A 	64.78.61.228
+support 			IN 	A 	66.113.224.166
+activation 			IN 	A 	184.73.178.73
+galaxy 			IN 	A 	184.73.178.73
+go 			IN 	A 	184.73.178.73
+@ 			IN 	MX 	10 aspmx.l.google.com.
+@ 			IN 	MX 	20 alt1.aspmx.l.google.com.
+@ 			IN 	MX 	20 alt2.aspmx.l.google.com.
+@ 			IN 	MX 	30 aspmx2.googlemail.com.
+@ 			IN 	MX 	30 aspmx3.googlemail.com.
+@ 			IN 	MX 	30 aspmx4.googlemail.com.
+@ 			IN 	MX 	30 aspmx5.googlemail.com.
+mail 			IN 	CNAME 	ghs.google.com.
+activate 			IN 	A 	184.73.173.189
+techairsalesaxcel 			IN 	A 	174.129.3.106
+tpptest 			IN 	A 	38.100.17.215
+tbactivate 			IN 	A 	184.73.178.73
+testappkey 			IN 	A 	184.73.178.73
+chryslerpoc 			IN 	A 	38.100.17.218
+www 			IN 	CNAME 	@
+build 			IN 	A 	184.73.178.73
+chrysler 			IN 	A 	38.100.17.218
+demoeasyask 			IN 	A 	38.100.17.218
+heatcraft 			IN 	A 	38.100.17.218
