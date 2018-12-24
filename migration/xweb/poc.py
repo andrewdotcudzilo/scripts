@@ -1,4 +1,4 @@
-import os, sys, datetime, getopt
+import os, sys, datetime, getopt, re
 
 def usage():
     print("DNS ZONE FILE UPDATE SCRIPT - andrew.cudzilo@hostwaycorp.com")
@@ -39,25 +39,29 @@ def check(v, i, o, s, x, m, f):
             print ("Excluding domain: "+file_base+" from dns updates.")
             return
 
-    with open(str(i+f), "r") as thisFile:
+    with open(str(i+"/"+f), "r") as thisFile:
         myfile=thisFile.read()
-
         for key in m:
+
             if key in myfile:
-                write_output=True
-                myfile=myfile.replace(key, m[key])
+                if re.search("\s"+key+"\s", myfile):
+                    myfile=re.sub("\s"+key+"\s", " "+m[key]+" ", myfile)
+                    write_output=True
 
     if write_output:
-
-        # figure out serial date updates between two envs
-
-
-
-
-        of=open(str(o+f), "w")
+        #classic
+        if(re.search("\d{10}\s+;\s+serial", myfile)):
+            myfile=re.sub("\d{10}\s+;\s+serial", s+" serial", myfile)
+        #oncloud
+        else:
+            match=re.search("\(\d{10}\s{1}", myfile).group(0)
+            serial=int(match[1:])
+            serial+=1
+            myfile=re.sub("\(\d{10}\s{1}", "("+serial+" ", myfile)
+        #ddd
+        of=open(str(o+"/"+f), "w")
         of.write(myfile)
         of.close
-
 
 def main():
     try:
