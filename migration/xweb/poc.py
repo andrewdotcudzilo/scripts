@@ -4,24 +4,25 @@ def usage():
     print("DNS ZONE FILE UPDATE SCRIPT - andrew.cudzilo@hostwaycorp.com")
     print("python poc.py <options,args> as follows")
     print("-h --help : display this help")
-    print("-i --input-dir <path> : required :path to the zone file directory")
-    print("-o --output-dir <path> : required: path to the output zone file directory for changes")
-    print("-s --serial-date <val> : optional :the serial number/date to set updates to : default to NOW()")
+    print("-i --input-dir <path> : required : path to the zone file directory")
+    print("-o --output-dir <path> : required:  path to the output zone file directory for changes")
+    print("-s --serial-date <val> : optional : the serial number/date to set updates to : default to NOW()")
     print("-v --verbose : optional : increased reporting")
     print("-x --exclude-file <file> : optional : domains listed in this file will not be updated")
     print("-m --map-file <file> : required : csv delim of src_ip,dst_ip translation/updates")
+    print(" -- note -- only traverses single directory level --")
 
 def check_folder(fol):
     if not fol: return false;
     if fol is None: return false;
     return ( os.path.isdir(fol))
 
-
 def check_file(fil):
     if not fil: return false;
     if fil is None: return false;
     return os.path.isfile(fil)
 
+# checks if string d exists in array e
 def exclude(d, e):
     return d in e
 
@@ -30,37 +31,38 @@ def print_error(str):
     print(str)
     raise SystemExit(2)
 
-
+# check and write output of regex-based search and replace
 def check(v, i, o, s, x, m, f):
     write_output=False
     file_base=os.path.splitext(os.path.basename(f))[0]
 
+    #ignore if in exclustion list
     if(exclude(file_base,x)):
-            print ("Excluding domain: "+file_base+" from dns updates.")
-            return
+            print ("Excluding domain: "+file_base+" from dns updates.");  return;
 
+    #open file, weak check for string, then strong check
+    # so 168.144.1.1 does not match 168.144.1.11, etc
     with open(str(i+"/"+f), "r") as thisFile:
         myfile=thisFile.read()
         for key in m:
-
             if key in myfile:
                 if re.search("\s"+key+"\s", myfile):
                     myfile=re.sub("\s"+key, " "+m[key], myfile)
                     write_output=True
 
     if write_output:
-        #classic
+        #classic serial date is simple date+xx
         if(re.search("\d{10}\s+;\s+serial", myfile)):
             myfile=re.sub("\d{10}\s+;\s+serial", s+" serial", myfile)
-        #oncloud
+        #oncloud seems to use separate serial, so we just increase the searial # by 1
         elif(re.search("\(\d{10}\s{1}", myfile)):
-
             match=re.search("\(\d{10}\s{1}", myfile).group(0)
             serial=int(match[1:])
             serial+=1
             myfile=re.sub("\(\d{10}\s{1}", "("+str(serial)+" ", myfile)
         
         if(v): print("file: "+f+" domain: "+file_base+" updated")
+        
         of=open(str(o+"/"+f), "w")
         of.write(myfile)
         of.close
@@ -81,8 +83,6 @@ def main():
     mapfile='';
     zonedir_in=None
     zonedir_out=None
-    debug=True
-    bail=False
     errmsg='';
 
     for o,a in opts:
@@ -111,12 +111,14 @@ def main():
     if(not zonedir_out): errmsg+="Zone output dir not provided\n";
     if(errmsg): usage(); print_error(errmsg);
 
+    #map list of src-str to dst-srt
     maplist={}
     with open(mapfile) as f:
         for line in f:
             (key,val)=line.strip().split(',')
             maplist[key]=val
 
+    #file list to update based on limiters
     filelist=[]
     ext=[ ".dns", "." ]
     for filename in os.listdir(zonedir_in):
@@ -124,11 +126,13 @@ def main():
             if(filename.endswith(tuple(ext))):
                 filelist.append(filename)
    
+    #read/build exclusion list
     excludes=[]
     if(exclude):
         with open(excludefile) as f:
             excludes=f.read().splitlines()
 
+    # counts for status
     count_map=len(maplist)
     count_files=len(filelist)
     count_excludes=len(excludes)
