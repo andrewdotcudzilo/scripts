@@ -45,7 +45,7 @@ def check(v, i, o, s, x, m, f):
 
             if key in myfile:
                 if re.search("\s"+key+"\s", myfile):
-                    myfile=re.sub("\s"+key+"\s", " "+m[key]+" ", myfile)
+                    myfile=re.sub("\s"+key, " "+m[key], myfile)
                     write_output=True
 
     if write_output:
@@ -53,12 +53,14 @@ def check(v, i, o, s, x, m, f):
         if(re.search("\d{10}\s+;\s+serial", myfile)):
             myfile=re.sub("\d{10}\s+;\s+serial", s+" serial", myfile)
         #oncloud
-        else:
+        elif(re.search("\(\d{10}\s{1}", myfile)):
+
             match=re.search("\(\d{10}\s{1}", myfile).group(0)
             serial=int(match[1:])
             serial+=1
-            myfile=re.sub("\(\d{10}\s{1}", "("+serial+" ", myfile)
-        #ddd
+            myfile=re.sub("\(\d{10}\s{1}", "("+str(serial)+" ", myfile)
+        
+        if(v): print("file: "+f+" domain: "+file_base+" updated")
         of=open(str(o+"/"+f), "w")
         of.write(myfile)
         of.close
@@ -73,7 +75,7 @@ def main():
         print_error(str(err))
 
     verbose=True
-    serialdate=datetime.datetime.today().strftime('%Y-%m-%d-%H-%M-%s')
+    serialdate=datetime.datetime.today().strftime('%Y%m%d')+"01"
     exclude=False
     excludefile=None
     mapfile='';
@@ -115,15 +117,20 @@ def main():
             (key,val)=line.strip().split(',')
             maplist[key]=val
 
-    for root, dirs, files in os.walk(zonedir_in):
-        pass
-
+    filelist=[]
+    ext=[ ".dns", "." ]
+    for filename in os.listdir(zonedir_in):
+        if os.path.isfile(os.path.join(zonedir_in, filename)):
+            if(filename.endswith(tuple(ext))):
+                filelist.append(filename)
+   
+    excludes=[]
     if(exclude):
         with open(excludefile) as f:
             excludes=f.read().splitlines()
 
     count_map=len(maplist)
-    count_files=len(files)
+    count_files=len(filelist)
     count_excludes=len(excludes)
     count=1
 
@@ -134,7 +141,7 @@ def main():
         print("Number of zone files considered: "+str(count_files))
         print("Number of excluded domains: "+str(count_excludes))
 
-    for file in files:
+    for file in filelist:
         if(verbose):
             print("File "+str(count)+" of "+str(count_files))
             count +=1
