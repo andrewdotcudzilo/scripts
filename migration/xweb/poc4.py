@@ -83,10 +83,15 @@ def check(v, i, o, s, x, m, f, fp, classic, odin):
                     writeZoneFile = True
 
             if(odin):
-                arpa_key_list = key.split(".")
-                arpa_key_list.reverse()
-                arpa_key = ".".join(arpa_key_list)
-                print(arpa_key)
+                src_arpa_list = key.split(".")
+                src_arpa_list.reverse()
+                src_arpa=".".join(src_arpa_list)
+
+                if src_arpa in myfile:
+                    dst_arpa_list = m[key].split(".")
+                    dst_arpa_list.reverse()
+                    dst_arpa = ".".join(dst_arpa_list)
+                    print(src_arpa+" to "+dst_arpa)
 
     # we had a match above, so we're writing output, update the serial based
     # on env
