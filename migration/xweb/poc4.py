@@ -24,25 +24,18 @@ def usage():
 
 
 def check_folder(fol):
-    if not fol:
-        return false
-    if fol is None:
-        return false
+    if not fol: return false
+    if fol is None: return false
     return (os.path.isdir(fol))
 
 
 def check_file(fil):
-    if not fil:
-        return false
-    if fil is None:
-        return false
+    if not fil: return false
+    if fil is None: return false
     return os.path.isfile(fil)
 
 # checks if string d exists in array e
-
-
-def exclude(d, e):
-    return d in e
+def exclude(d, e): return d in e
 
 
 def print_error(str):
@@ -52,14 +45,11 @@ def print_error(str):
 
 # check and write output of regex-based search and replace
 # f[filename with {.,.dns}]=fullpath
-
-
-def check(v, i, o, s, x, m, f, fp, classic, odin):
-    writeZoneFile = False
-    writeArpaFile = False
+def check(v, o, s, x, m, f, fp, classic, odin):
+    writeOutput = False
 
     domain = os.path.splitext(os.path.basename(f))[0]
-    full_path_out = str(o + "/" + fp)
+    path_out = str(o + "/" + fp)
 
     # ignore if in exclustion list
     if(exclude(domain, x)):
@@ -70,56 +60,144 @@ def check(v, i, o, s, x, m, f, fp, classic, odin):
     # if so, do hard regex search and substitute as needed
     with(open(fp)) as thisFile:
         myfile = thisFile.read()
+
+
+        # for each ip in the src->dst mapping
+        for key in m:
+            if key in myfile:
+                #handle a case where source IP has matched
+                pattern = "\s" + key + "\s"
+                if(re.search(pattern, myfile)): # a more specific match so we don't get partials
+                    myfile=normalUpdate(pattern, m[key], myfile, classic, odin) #normal update
+                    myfile=serialUpdate(s, myfile, classic, odin) #serial update
+                    writeOutput=True
+                    
+    if(writeOutput): writeOut(myfile, path_out)
+    #end output
+#end function
+            
+def arpacheck(v, o, x, m, f, fp):
+    writeOutput=False
+    path_out=str(o+"/"+fp)
+    myoutput=""
+
+    #excludes are tricky, need to match the host line not the arpa to make sure we're not updating an exclude
+    with(open(fp)) as thisFile:
+        myfile = thisFile.readlines();
+
+    for line in myfile:
+
         for key in m:
 
-            # this will handle normal src to dst ip mapping
-            if key in myfile:
-                pattern = "\s" + key + "\s"
-                if(re.search(pattern, myfile)):
-                    if(classic):
-                        myfile = re.sub(pattern, m[key], myfile)
-                    elif(odin):
-                        myfile = re.sub(pattern, m[key] + "\n", myfile)
-                    writeZoneFile = True
+            source_ip=key
+            dest_ip=m[key]
 
-            if(odin):
-                src_arpa_list = key.split(".")
-                src_arpa_list.reverse()
-                src_arpa=".".join(src_arpa_list)
+            source_ip_list=key.split(".")
+            tmp_source_ip_list=source_ip_list[:] #copy
+            tmp_source_ip_list.reverse()
+            arpa_source_ip = ".".join(tmp_source_ip_list)
 
-                if src_arpa in myfile:
-                    dst_arpa_list = m[key].split(".")
-                    dst_arpa_list.reverse()
-                    dst_arpa = ".".join(dst_arpa_list)
-                    print(src_arpa+" to "+dst_arpa)
+            dest_ip_list=dest_ip.split(".")
+            tmp_dest_ip_list=dest_ip_list[:] #copy
+            tmp_dest_ip_list.reverse()
+            arpa_dest_ip = ".".join(tmp_dest_ip_list)
 
-    # we had a match above, so we're writing output, update the serial based
-    # on env
-    if writeZoneFile:
-        if(classic):
-            if(re.search("\d{10}\s+;\s+serial", myfile)):
-                myfile = re.sub("\d{10}\s+;\s+serial", s + " serial", myfile)
-        elif(odin):
-            if(re.search("\(\d{10}\s{1}", myfile)):
-                match = re.search("\(\d{10}\s{1}", myfile).group(0)
-                serial = int(match[1:])
-                serial += 1
-                myfile = re.sub(
-                    "\(\d{10}\s{1}", "(" + str(serial) + " ", myfile)
+            updateLine=False
+            if(re.search("^"+arpa_source_ip+".IN-ADDR.ARPA.", line)):
+                if(v): print("we have an arpa match on "+arpa_source_ip)
+                updateLine=True
 
-    if writeZoneFile:
-        if(v):
-            print("file: " + f + " domain: " + f + " updated")
+                for exclude in x:
+                    if exclude in line: 
+                        updateLine=False
+                        print("Excluding arpa line "+line+" because of exclude "+exclude)
 
-        if not os.path.exists(os.path.dirname(full_path_out)):
-            try:
-                os.makedirs(os.path.dirname(full_path_out))
-            except OSError as exc:
-                if exc.errno != errno.EEXIST:
-                    raise
 
-        with open(full_path_out, "w") as o:
-            o.write(myfile)
+                if(updateLine):
+                    line=re.sub("^"+arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA.", line)
+                    print("new line = "+line)
+                    writeOutput=True
+        
+        myoutput+=line
+        #done for loop line
+    #now we need output update(new file)
+
+    if(writeOutput):
+        path_out=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), path_out)
+        path_out=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), path_out)
+        writeOut(myoutput, path_out)
+# end arpacheck
+
+def arpa_rebuild(v,o,m,f,fp):
+    writeOutput=false
+    path_out=str(o+"/"+fp)
+    changeMade=False
+
+    with(open(fp)) as thisFile:
+        myfile=thisFile.readlines()
+
+    for line in myfile:
+        for key in m:
+
+            source_ip=key
+            dest_ip=m[key]
+
+            source_ip_list=key.split(".")
+            del source_ip_list[-1]
+            tmp_source_ip_list=source_ip_list[:] # copy
+            arp_source_ip=".".join(tmp_source_ip_list)
+
+            dest_ip_list=dest_ip.split(".")
+            del dest_ip_list[-1]
+            tmp_dest_ip_list=dest_ip_list[:] # copy
+            arp_dest_ip=".".join(tmp_dest_ip_list)
+
+            if(re.search("^"+arp_source_ip, myfile)):
+                line=re.sub("^"+arp_source_ip+".IN-ADDR.ARPA.", apr_dest_ip+".IN-ADDR.ARPA.", myfile)
+                changeMade=True
+
+        myoutput+=line
+
+    mynewoutput=""
+    if(changeMade):
+        for line in myfile:
+            if "reverse_zones" in line:
+                line=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), line)
+                line=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), line)
+            mynewoutput+=line    
+
+    if(changeMade):
+        path_out=re.sub(arp_source_ip+".IN-ADDR.ARPA.", arp_dest_ip+".IN-ADDR.ARPA", path_out)
+        writeOut(mynewoutput, path_out)
+
+
+
+def normalUpdate(source, target, s, classic, odin):
+    if(classic): return re.sub(source, " "+target+" ", s)
+    elif(odin): return re.sub(source, " "+target+" \n", s)
+    else: return False
+
+def serialUpdate(serial, s, classic, odin):
+    if(classic): return re.sub("\d{10}\s+;\s+serial", searial + " serial", s)
+    elif(odin):
+        return s;
+#        if(re.search("\(\d{10}\s{1}", d)):
+#                match = re.search("\(\d{10}\s{1}", myfile).group(0)
+#                serial = int(match[1:])
+#                serial += 1
+#                return(re.sub("\(\d{10}\s{1}", "(" + str(serial) + " ", s)
+#        else: 
+#            return 0;
+
+def writeOut(s, path_out, v=False):
+    if not os.path.exists(os.path.dirname(path_out)):
+        try:
+            os.makedirs(os.path.dirname(path_out))
+        except OSError as e:
+            if x.errno != errno.EEXIST:
+                raise
+    with(open(path_out,"w")) as o:
+        o.write(s)
 
 
 def main():
@@ -137,7 +215,7 @@ def main():
     exclude_file = None
     zonedir_in = None
     zonedir_out = None
-    verbose = True
+    verbose = False
     serialdate = datetime.datetime.today().strftime('%Y%m%d') + "01"
     map_file = None
     mapfile = ''
@@ -204,7 +282,7 @@ def main():
     # read/build exclusion list
     excludes = []
     if(exclude):
-        with open(excludefile) as f:
+        with open(exclude_file) as f:
             excludes = f.read().splitlines()
 
     # counts for status
@@ -223,8 +301,11 @@ def main():
         if(verbose):
             print("File " + str(count) + " of " + str(count_files))
             count += 1
-        check(verbose, zonedir_in, zonedir_out, serialdate,
+        check(verbose, zonedir_out, serialdate,
               excludes, maplist, file, file_list[file], classic, odin)
+        if(odin): 
+            arpacheck(verbose, zonedir_out, excludes, maplist, file, file_list[file])
+            arpa_rebuild(verbose, zonedir_out, maplist, file, file_list[file])
 
 if __name__ == "__main__":
     main()
