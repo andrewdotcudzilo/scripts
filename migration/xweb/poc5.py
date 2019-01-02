@@ -82,19 +82,19 @@ def check(v, i, o, s, x, m, f, fp, classic, odin):
                         myfile = re.sub(pattern, m[key] + "\n", myfile)
                     writeZoneFile = True
 
-			# handles the reverse dns records....in progress
+                        # handles the reverse dns records....in progress
             if(odin):
                 src_arpa_list = key.split(".")
-				src_arpa_list_rev = src_arpa_list
+                    src_arpa_list_rev = src_arpa_list
 
                 src_arpa_list_rev.reverse()
-                src_arpa=".".join(src_arpa_list_rev)
+                src_arpa = ".".join(src_arpa_list_rev)
 
                 if src_arpa in myfile:
                     dst_arpa_list = m[key].split(".")
                     dst_arpa_list.reverse()
                     dst_arpa = ".".join(dst_arpa_list)
-                    print(src_arpa+" to "+dst_arpa+" from file "+fp)
+                    print(src_arpa + " to " + dst_arpa + " from file " + fp)
 
     # we had a match above, so we're writing output, update the serial based
     # on env
@@ -140,7 +140,7 @@ def main():
     exclude_file = None
     zonedir_in = None
     zonedir_out = None
-    verbose = False 
+    verbose = False
     serialdate = datetime.datetime.today().strftime('%Y%m%d') + "01"
     map_file = None
     mapfile = ''
