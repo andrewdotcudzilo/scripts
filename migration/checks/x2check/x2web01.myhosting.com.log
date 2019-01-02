@@ -1,0 +1,18 @@
+[Tue Jan 01 21:15:02 2019] [warn] NameVirtualHost secure.mail2web.com:443 has no VirtualHosts
+[Tue Jan 01 21:15:02 2019] [warn] NameVirtualHost secure.myhosting.net:443 has no VirtualHosts
+VirtualHost configuration:
+wildcard NameVirtualHosts and _default_ servers:
+*:443                  is a NameVirtualHost
+         default server x2web01.myhosting.com (/etc/apache2/apache2.conf:434)
+         port 443 namevhost x2web01.myhosting.com (/etc/apache2/apache2.conf:434)
+*:80                   is a NameVirtualHost
+         default server x2web01.myhosting.com (/etc/apache2/apache2.conf:423)
+         port 80 namevhost x2web01.myhosting.com (/etc/apache2/apache2.conf:423)
+         port 80 namevhost external.x2web01.myhosting.com (/etc/apache2/sites-enabled/000-default:1)
+         port 80 namevhost adriang.x2web01.test (/etc/apache2/sites-enabled/adriang.x2web01.test.conf:2)
+         port 80 namevhost anton.myhosting.net (/etc/apache2/sites-enabled/anton.myhosting.net.conf:2)
+         port 80 namevhost joomla.test (/etc/apache2/sites-enabled/joomla.test.conf:2)
+         port 80 namevhost nickh.test (/etc/apache2/sites-enabled/nickh.test.conf:2)
+         port 80 namevhost rickyl.test (/etc/apache2/sites-enabled/rickyl.test.conf:2)
+         port 80 namevhost x.ians.test (/etc/apache2/sites-enabled/x.ians.test.conf:2)
+Syntax OK
