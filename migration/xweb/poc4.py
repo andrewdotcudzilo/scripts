@@ -35,7 +35,12 @@ def check_file(fil):
     return os.path.isfile(fil)
 
 # checks if string d exists in array e
-def exclude(d, e): return d in e
+def exclude(d, e): return d in e;
+
+def return_arpa_ip(mylist):
+    l=mylist[:]
+    l.reverse()
+    return(".".join(l))
 
 
 def print_error(str):
@@ -44,7 +49,6 @@ def print_error(str):
     raise SystemExit(2)
 
 # check and write output of regex-based search and replace
-# f[filename with {.,.dns}]=fullpath
 def check(v, o, s, x, m, f, fp, classic, odin):
     writeOutput = False
 
@@ -62,116 +66,96 @@ def check(v, o, s, x, m, f, fp, classic, odin):
         myfile = thisFile.read()
 
 
-        # for each ip in the src->dst mapping
-        for key in m:
-            if key in myfile:
-                #handle a case where source IP has matched
-                pattern = "\s" + key + "\s"
-                if(re.search(pattern, myfile)): # a more specific match so we don't get partials
-                    myfile=normalUpdate(pattern, m[key], myfile, classic, odin) #normal update
-                    myfile=serialUpdate(s, myfile, classic, odin) #serial update
-                    writeOutput=True
-                    
+    # for each ip in the src->dst mapping
+    for key in m:
+        if key in myfile:
+            #handle a case where source IP has matched
+            pattern = "\s" + key + "\s"
+            if(re.search(pattern, myfile)): # a more specific match so we don't get partials
+                myfile=normalUpdate(pattern, m[key], myfile, classic, odin) #normal update
+                myfile=serialUpdate(s, myfile, classic, odin) #serial update
+                writeOutput=True
     if(writeOutput): writeOut(myfile, path_out)
-    #end output
-#end function
-            
+
+# checks the file for an instance of source->dest arpa ip to update
 def arpacheck(v, o, x, m, f, fp):
     writeOutput=False
     path_out=str(o+"/"+fp)
-    myoutput=""
+    file_string=""
 
-    #excludes are tricky, need to match the host line not the arpa to make sure we're not updating an exclude
+    # these are the general odin linked arpa files, where whole subnets are defined
+    # therefor we need to iterate then line be unfortunetly for our checks
+
     with(open(fp)) as thisFile:
-        myfile = thisFile.readlines();
-
+        myfile=thisFile.readlines()
+    
     for line in myfile:
-
         for key in m:
-
+            excludeLine=False
+            #we need to translate the source ip to arpa ip
             source_ip=key
             dest_ip=m[key]
 
             source_ip_list=key.split(".")
-            tmp_source_ip_list=source_ip_list[:] #copy
-            tmp_source_ip_list.reverse()
-            arpa_source_ip = ".".join(tmp_source_ip_list)
+            arpa_source_ip=return_arpa_ip(source_ip_list)
 
-            dest_ip_list=dest_ip.split(".")
-            tmp_dest_ip_list=dest_ip_list[:] #copy
-            tmp_dest_ip_list.reverse()
-            arpa_dest_ip = ".".join(tmp_dest_ip_list)
-
-            updateLine=False
             if(re.search("^"+arpa_source_ip+".IN-ADDR.ARPA.", line)):
-                if(v): print("we have an arpa match on "+arpa_source_ip)
-                updateLine=True
+                #check excludes
+                for ex in x:
+                    if ex in line: excludeLine=True
 
-                for exclude in x:
-                    if exclude in line: 
-                        updateLine=False
-                        print("Excluding arpa line "+line+" because of exclude "+exclude)
-
-
-                if(updateLine):
+                if not excludeLine:
+                    dest_ip_list=m[key].split(".")
+                    arpa_dest_ip=return_arpa_ip(dest_ip_list)
                     line=re.sub("^"+arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA.", line)
-                    print("new line = "+line)
                     writeOutput=True
-        
-        myoutput+=line
-        #done for loop line
-    #now we need output update(new file)
+        #done for, add back line
+        file_string+=line
 
-    if(writeOutput):
-        path_out=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), path_out)
-        path_out=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), path_out)
-        writeOut(myoutput, path_out)
-# end arpacheck
+        if writeOutput: 
+            #changes detected; need to update arpa reference of path of file
+            path_out=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), path_out)
+            path_out=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), path_out)
+            writeOut(file_string, path_out)
 
+# this intends to rebuild the pathing for the 1.2.3.IN-ADDR.ARPA files that build
+# the structure of the reverse zones
 def arpa_rebuild(v,o,m,f,fp):
     writeOutput=False
     path_out=str(o+"/"+fp)
-    changeMade=False
-    myoutput=""
+    updateNeeded=False
 
     with(open(fp)) as thisFile:
         myfile=thisFile.read()
 
     for key in m:
 
-        source_ip=key
-        dest_ip=m[key]
-
         source_ip_list=key.split(".")
         del source_ip_list[-1]
-        tmp_source_ip_list=source_ip_list[:] # copy
-        tmp_source_ip_list.reverse()
-        arp_source_ip=".".join(tmp_source_ip_list)
+        arpa_source_ip=return_arpa_ip(source_ip_list)
 
-        dest_ip_list=dest_ip.split(".")
-        del dest_ip_list[-1]
-        tmp_dest_ip_list=dest_ip_list[:] # copy
-        tmp_dest_ip_list.reverse()
-        arp_dest_ip=".".join(tmp_dest_ip_list)
+        if(re.search("^"+arpa_source_ip, myfile)):
 
+            dest_ip_list=m[key].split(",")
+            del dest_ip_list[-1]
+            arpa_dest_ip=return_arpa_ip(dest_ip_list)
 
-        if(re.search("^"+arp_source_ip, myfile)):
-            myfile=re.sub("^"+arp_source_ip+".IN-ADDR.ARPA.", arp_dest_ip+".IN-ADDR.ARPA.", myfile)
-            changeMade=True
+            myfile=re.sub("^"+arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA.", myfile)
+            updateNeeded=True
 
-    mynewoutput=""
-    if(changeMade):
-        print("in changemade")
+    file_string=""
+    if(updateNeeded):
+        #need to go line by line her to change the exact line
         for line in myfile.splitlines():
             if "reverse_zones" in line:
-                print("found the reverse lines")
                 line=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), line)
                 line=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), line)
-            mynewoutput+=line+"\n"    
+            file_string+=line+"\n"
 
-    if(changeMade):
-        path_out=re.sub(arp_source_ip+".IN-ADDR.ARPA.", arp_dest_ip+".IN-ADDR.ARPA", path_out)
-        writeOut(mynewoutput, path_out)
+    if(updateNeeded):
+        path_out=re.sub(arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA", path_out)
+        writeOut(file_string, path_out)
+        #check this???
 
 
 
@@ -304,10 +288,10 @@ def main():
         if(verbose):
             print("File " + str(count) + " of " + str(count_files))
             count += 1
-#        check(verbose, zonedir_out, serialdate,
-#              excludes, maplist, file, file_list[file], classic, odin)
+        check(verbose, zonedir_out, serialdate,
+              excludes, maplist, file, file_list[file], classic, odin)
         if(odin): 
- #           arpacheck(verbose, zonedir_out, excludes, maplist, file, file_list[file])
+            arpacheck(verbose, zonedir_out, excludes, maplist, file, file_list[file])
             arpa_rebuild(verbose, zonedir_out, maplist, file, file_list[file])
 
 if __name__ == "__main__":
