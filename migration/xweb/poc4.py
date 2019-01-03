@@ -109,8 +109,8 @@ def arpacheck(v, o, x, m, f, fp):
                     arpa_dest_ip=return_arpa_ip(dest_ip_list)
                     line=re.sub("^"+arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA.", line)
                     writeOutput=True
+                    file_string+=line
         #done for, add back line
-        file_string+=line
 
         if writeOutput: 
             #changes detected; need to update arpa reference of path of file
@@ -128,29 +128,38 @@ def arpa_rebuild(v,o,m,f,fp):
     with(open(fp)) as thisFile:
         myfile=thisFile.read()
 
+
+    update_src_key=False
+    update_dst_key=False
     for key in m:
 
         source_ip_list=key.split(".")
         del source_ip_list[-1]
         arpa_source_ip=return_arpa_ip(source_ip_list)
+        
 
         if(re.search("^"+arpa_source_ip, myfile)):
 
-            dest_ip_list=m[key].split(",")
+            dest_ip_list=m[key].split(".")
             del dest_ip_list[-1]
             arpa_dest_ip=return_arpa_ip(dest_ip_list)
 
             myfile=re.sub("^"+arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA.", myfile)
+
+            update_src_key=source_ip_list
+            update_dst_key=dest_ip_list
             updateNeeded=True
+
 
     file_string=""
     if(updateNeeded):
-        #need to go line by line her to change the exact line
+    #need to go line by line her to change the exact line
         for line in myfile.splitlines():
             if "reverse_zones" in line:
-                line=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), line)
-                line=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), line)
+                line=re.sub(str(update_src_key[0]), str(update_dst_key[0]), line)
+                line=re.sub(str(update_src_key[1]), str(update_dst_key[1]), line)
             file_string+=line+"\n"
+
 
     if(updateNeeded):
         path_out=re.sub(arpa_source_ip+".IN-ADDR.ARPA.", arpa_dest_ip+".IN-ADDR.ARPA", path_out)
