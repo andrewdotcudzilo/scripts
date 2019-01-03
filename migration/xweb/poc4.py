@@ -129,42 +129,45 @@ def arpacheck(v, o, x, m, f, fp):
 # end arpacheck
 
 def arpa_rebuild(v,o,m,f,fp):
-    writeOutput=false
+    writeOutput=False
     path_out=str(o+"/"+fp)
     changeMade=False
+    myoutput=""
 
     with(open(fp)) as thisFile:
-        myfile=thisFile.readlines()
+        myfile=thisFile.read()
 
-    for line in myfile:
-        for key in m:
+    for key in m:
 
-            source_ip=key
-            dest_ip=m[key]
+        source_ip=key
+        dest_ip=m[key]
 
-            source_ip_list=key.split(".")
-            del source_ip_list[-1]
-            tmp_source_ip_list=source_ip_list[:] # copy
-            arp_source_ip=".".join(tmp_source_ip_list)
+        source_ip_list=key.split(".")
+        del source_ip_list[-1]
+        tmp_source_ip_list=source_ip_list[:] # copy
+        tmp_source_ip_list.reverse()
+        arp_source_ip=".".join(tmp_source_ip_list)
 
-            dest_ip_list=dest_ip.split(".")
-            del dest_ip_list[-1]
-            tmp_dest_ip_list=dest_ip_list[:] # copy
-            arp_dest_ip=".".join(tmp_dest_ip_list)
+        dest_ip_list=dest_ip.split(".")
+        del dest_ip_list[-1]
+        tmp_dest_ip_list=dest_ip_list[:] # copy
+        tmp_dest_ip_list.reverse()
+        arp_dest_ip=".".join(tmp_dest_ip_list)
 
-            if(re.search("^"+arp_source_ip, myfile)):
-                line=re.sub("^"+arp_source_ip+".IN-ADDR.ARPA.", apr_dest_ip+".IN-ADDR.ARPA.", myfile)
-                changeMade=True
 
-        myoutput+=line
+        if(re.search("^"+arp_source_ip, myfile)):
+            myfile=re.sub("^"+arp_source_ip+".IN-ADDR.ARPA.", arp_dest_ip+".IN-ADDR.ARPA.", myfile)
+            changeMade=True
 
     mynewoutput=""
     if(changeMade):
-        for line in myfile:
+        print("in changemade")
+        for line in myfile.splitlines():
             if "reverse_zones" in line:
+                print("found the reverse lines")
                 line=re.sub(str(source_ip_list[0]), str(dest_ip_list[0]), line)
                 line=re.sub(str(source_ip_list[1]), str(dest_ip_list[1]), line)
-            mynewoutput+=line    
+            mynewoutput+=line+"\n"    
 
     if(changeMade):
         path_out=re.sub(arp_source_ip+".IN-ADDR.ARPA.", arp_dest_ip+".IN-ADDR.ARPA", path_out)
@@ -301,10 +304,10 @@ def main():
         if(verbose):
             print("File " + str(count) + " of " + str(count_files))
             count += 1
-        check(verbose, zonedir_out, serialdate,
-              excludes, maplist, file, file_list[file], classic, odin)
+#        check(verbose, zonedir_out, serialdate,
+#              excludes, maplist, file, file_list[file], classic, odin)
         if(odin): 
-            arpacheck(verbose, zonedir_out, excludes, maplist, file, file_list[file])
+ #           arpacheck(verbose, zonedir_out, excludes, maplist, file, file_list[file])
             arpa_rebuild(verbose, zonedir_out, maplist, file, file_list[file])
 
 if __name__ == "__main__":
