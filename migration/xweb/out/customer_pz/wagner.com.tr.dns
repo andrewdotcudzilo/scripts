@@ -1,0 +1,37 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.115
+mail 			IN 	A 	88.255.153.214
+@ 			IN 	A  66.113.224.172 
+posta 			IN 	A 	88.255.153.214
+exc 			IN 	A 	88.255.153.214
+www 			IN 	CNAME 	@
+ftp 			IN 	CNAME 	@
+mail2 			IN 	A 	168.144.68.121
+mail91 			IN 	A 	77.79.81.181
+mail92 			IN 	A 	91.93.120.151
+mail93 			IN 	A 	77.79.81.183
+mail94 			IN 	A 	91.93.120.153
+@ 			IN 	TXT 	"vspf1 a mx at1spf.outsmtp.com all"
+mx1 			IN 	A 	77.79.88.83
+mx2 			IN 	A 	91.93.155.251
+mx3 			IN 	A 	91.93.155.243
+mx4 			IN 	A 	77.79.88.81
+@ 			IN 	MX 	5 mx1
+@ 			IN 	MX 	6 mx2
+@ 			IN 	MX 	7 mx3
+@ 			IN 	MX 	8 mx4
+@ 			IN 	MX 	9 posta
+autodiscover 		IN 	CNAME 	mail
+_autodiscover._tcp.wagner.com.tr.   3600  IN  SRV  0 0  443 mail.wagner.com.tr.
+
+
+

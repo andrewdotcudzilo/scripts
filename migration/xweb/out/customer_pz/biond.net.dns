@@ -1,0 +1,35 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			180) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.98
+mail 			IN 	A 	168.144.68.98
+@ 			IN 	A 	74.220.213.150
+vpn 			IN 	A 	208.88.108.162
+collab 			IN 	A 	208.88.108.162
+ftp.public 			IN 	A 	208.88.108.162
+testportal 			IN 	A 	208.88.108.162
+monitoring 			IN 	A 	206.80.46.154
+sub 			IN 	A  66.113.224.95 
+project 			IN 	A 	72.14.203.121
+docs 			IN 	A 	72.14.203.121
+video 			IN 	A 	72.14.203.121
+calendar 			IN 	A 	72.14.203.121
+sites 			IN 	A 	72.14.203.121
+start 			IN 	A 	72.14.203.121
+gmail 			IN 	A 	72.14.203.121
+main 			IN 	A 	72.14.203.121
+intranet 			IN 	A 	72.14.203.121
+voip 			IN 	A 	208.88.108.162
+w 			IN 	CNAME 	ghs.google.com.
+nsd 			IN 	A 	66.70.54.161
+nms 			IN 	A 	206.80.46.154
+tickets 			IN 	A 	66.70.54.161

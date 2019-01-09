@@ -1,0 +1,24 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.111
+mail 			IN 	A 	168.144.68.111
+@ 			IN 	A  66.113.225.32 
+download 			IN 	A 	80.227.108.242
+dubaivpn 			IN 	A 	91.73.173.174
+connect 			IN 	A 	80.227.108.242
+rbt 			IN 	A 	80.227.108.242
+@ 			IN 	MX 	5 64.233.188.26
+@ 			IN 	MX 	10 173.194.72.27
+@ 			IN 	MX 	5 74.125.200.26
+@ 			IN 	MX 	10 74.125.25.27
+@ 			IN 	MX 	1 173.194.65.27

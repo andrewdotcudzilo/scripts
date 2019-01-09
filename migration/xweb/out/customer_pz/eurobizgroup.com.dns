@@ -1,0 +1,20 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	10 ex7
+ex7 			IN 	A 	168.144.1.185
+autodiscover 			IN 	A 	168.144.1.186
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.115
+mail 			IN 	A 	168.144.68.115
+@ 			IN 	A  66.113.224.182 
+@ 			IN 	TXT 	"v=spf1 ip4:168.144.250.0/24 include:mail2web.com -all"
+r446mom6spff 			IN 	CNAME 	gv-jffvnwv46fb7n7.dv.googlehosted.com.

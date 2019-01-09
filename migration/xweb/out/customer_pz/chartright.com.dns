@@ -1,0 +1,40 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+smtp 			IN 	A 	38.140.223.202
+mail 			IN 	A 	38.140.223.202
+@ 			IN 	A 	104.196.233.117
+webmail 			IN 	A 	38.140.223.202
+vpn 			IN 	A 	68.179.115.194
+vnc 			IN 	A 	68.179.115.197
+sms 			IN 	A 	68.179.115.197
+www2 			IN 	A  66.113.224.194 
+video 			IN 	A 	68.179.115.197
+terminal 			IN 	A 	68.179.115.195
+@ 			IN 	MX 	5 mx2.mailhop.org.
+documents 			IN 	CNAME 	chartright.egnyte.com.
+vnc2 			IN 	A 	68.179.121.97
+oldwww 			IN 	A 	216.83.138.115
+www 			IN 	A 	104.196.233.117
+csp 			IN 	A 	68.179.115.197
+mobileiron 			IN 	A 	68.179.115.199
+eforms 			IN 	A 	68.179.115.197
+cspdemo 			IN 	A 	68.179.115.197
+xenapp 			IN 	A 	68.179.115.195
+mail2 			IN 	A 	68.179.115.193
+@ 			IN 	MX 	2 mail2
+service 			IN 	A 	68.179.115.197
+qpulse 			IN 	A 	68.179.115.196
+xenapp2 			IN 	A 	68.179.115.203
+vpn2 			IN 	A 	38.140.223.203
+blog 			IN 	A 	68.179.115.198
+watch 			IN 	A 	68.179.115.197
+payment 			IN 	A 	68.179.115.197

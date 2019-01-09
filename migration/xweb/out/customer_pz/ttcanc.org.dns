@@ -1,0 +1,19 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	A  66.113.224.108 
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.78
+mail 			IN 	A 	168.144.68.78
+www 			IN 	A  66.113.224.108 
+@ 			IN 	A  66.113.224.108 
+top 			IN 	A 	41.220.118.182
+databases 			IN 	A  66.113.224.108 
+www.northerncorridor.org 			IN 	CNAME 	@

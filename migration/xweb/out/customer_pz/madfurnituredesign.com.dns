@@ -1,0 +1,26 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@			IN	MX	0 madfurnituredesign-com.mail.protection.partner.outlook.cn.
+ftp 			IN 	CNAME 	@
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.115
+mail 			IN 	A 	168.144.68.115
+@ 			IN 	A  66.113.224.180 
+ex7 			IN 	A 	168.144.1.185
+www 			IN 	A 	198.185.159.136
+@ 			IN 	TXT 	"vspf1 ip4168.144.250.024 includemail2web.com asmtp.antispamcloud.com -all"
+@			IN	TXT	"v=spf1 include:spf.protection.partner.outlook.cn -all"
+@ 			IN 	TXT 	"MSms57617211"
+autodiscover 		IN 	CNAME 	autodiscover.partner.outlook.cn.
+sip 			IN 	CNAME 	sipdir.online.partner.lync.cn.
+lyncdiscover 		IN 	CNAME 	webdir.online.partner.lync.cn.
+msoid 			IN 	CNAME 	clientconfig.partner.microsoftonline-p.net.cn.
+_sip._tls.madfurnituredesign.com.	3600	IN	SRV	100	1	443	sipdir.online.partner.lync.cn.
+_sipfederationtls._tcp.madfurnituredesign.com.	3600	IN	SRV	100	1	5061	sipfed.online.partner.lync.cn.

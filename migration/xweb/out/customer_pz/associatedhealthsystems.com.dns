@@ -1,0 +1,30 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.75
+mail 			IN 	A 	168.144.68.75
+@ 			IN 	A  66.113.224.228 
+buy 			IN 	A 	168.144.44.14
+antispam 		IN 	A 	65.61.202.151
+remote 			IN 	A 	142.179.93.95
+ts 			IN 	A 	64.251.84.3
+vpn 			IN 	A 	64.251.84.34
+@ 			IN 	TXT 	"google-site-verification9X5eB5GtYRHkZIoTUFfeAAQ7o8-FfdWnsLSzscmbAiA"
+lujk25pil65d 		IN 	CNAME 	gv-vjl7d4n3pcnvhr.dv.googlehosted.com.
+autodiscover 		IN 	CNAME 	autodiscover.outlook.com.
+msoid 			IN 	CNAME 	clientconfig.microsoftonline-p.net.
+@ 			IN 	MX 	1 associatedhealthsystems-com.mail.protection.outlook.com.
+sip 			IN 	CNAME 	sipdir.online.lync.com.
+lyncdiscover 		IN 	CNAME 	webdir.online.lync.com.
+@			IN	TXT	"v=spf1 include:spf.protection.outlook.com include:smtp.com ~all"
+_sip._tls		IN	SRV	1 100 443 	sipdir.online.lync.com.
+_sipfederationtls._tcp	IN	SRV	1 100 5061	sipfed.online.lync.com.

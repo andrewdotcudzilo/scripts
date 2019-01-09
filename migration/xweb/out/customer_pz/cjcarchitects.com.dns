@@ -1,0 +1,25 @@
+@ 			IN 	SOA 	nscl3.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl3.myhosting.com.
+@ 			IN 	NS 	nscl4.myhosting.com.
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	216.201.242.70
+mail 			IN 	A 	216.201.242.70
+@ 			IN 	A 	168.144.200.8
+vpn 			IN 	A 	216.201.242.70
+ext 			IN 	A  66.113.224.78 
+out 			IN 	A 	168.144.200.8
+bim 			IN 	A 	216.201.242.70
+omail 			IN 	A 	168.144.68.109
+ftp 			IN 	A 	216.201.242.70
+relay1 			IN 	A 	76.76.133.130
+relay2 			IN 	A 	174.47.149.6
+barracuda84115244285 			IN 	CNAME 	@
+@ 			IN 	MX 	10 d170154a.ess.barracudanetworks.com.
+@ 			IN 	MX 	20 d170154b.ess.barracudanetworks.com.

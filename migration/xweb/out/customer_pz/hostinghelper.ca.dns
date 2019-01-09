@@ -1,0 +1,22 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+mail 			IN 	A 	168.144.68.68
+@ 			IN 	A  66.113.224.59 
+@ 			IN 	MX 	20 168.144.68.68
+test 			IN 	A 	168.144.68.68
+smpt 			IN 	A 	168.144.68.68
+@ 			IN 	TXT 	"this is a test"
+@ 			IN 	A 	192.21.21.1
+@ 			IN 	A 	192.21.21.1
+tonytest 			IN 	A 	1.1.1.1
+intercom.domainkey 			IN 	CNAME 	46eed4cf-7d4f-4d07-97ee-d69c8c0e85db.dkim.intercom.io.

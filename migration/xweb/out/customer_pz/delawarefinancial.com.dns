@@ -1,0 +1,21 @@
+@ 			IN 	SOA 	nscl1.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl1.myhosting.com.
+@ 			IN 	NS 	nscl2.myhosting.com.
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 			IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.102
+mail 			IN 	A 	168.144.68.102
+@ 			IN 	A 	168.144.169.138
+x 			IN 	A  66.113.225.88 
+@ 			IN 	TXT 	"MSms41469775"
+@ 			IN 	MX 	10 delawarefinancial-com.mail.protection.outlook.com.
+autodiscover 			IN 	CNAME 	autodiscover.outlook.com.
+@ 			IN 	TXT 	"vspf1 includespf.protection.outlook.com -all"
+msoid 			IN 	CNAME 	clientconfig.microsoftonline-p.net.

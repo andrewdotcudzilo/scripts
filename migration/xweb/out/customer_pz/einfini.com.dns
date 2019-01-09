@@ -1,0 +1,18 @@
+@ 			IN 	SOA 	nscl5.myhosting.com. 	postmaster.myhosting.com. (
+			2019010801 serial number
+			21600 ; refresh
+			3600 ; retry
+			691200 ; expire
+			3600) ; minimum TTL
+
+@ 			IN 	NS 	nscl5.myhosting.com.
+@ 			IN 	NS 	nscl6.myhosting.com.
+@ 			IN 	MX 	1 mail
+ftp 			IN 	CNAME 	@
+www 			IN 	CNAME 	@
+emailadmin 		IN 	A 	168.144.1.21
+smtp 			IN 	A 	168.144.68.113
+mail 			IN 	A 	168.144.68.113
+@ 			IN 	A  66.113.224.225 
+@ 			IN 	TXT 	"v=spf1 a:jobdivabk.com ip4:66.111.12.232/29 a:jobdiva.com ip4:64.147.106.2 mx ~all"
+jobs 			IN 	A 	64.147.106.95
