@@ -14,11 +14,14 @@ def usage(error_string=None):
     print(
         "-x --exclude-file <file> : optional : domains listed in this file will not be updated")
     print("-m --map-file <file> : required : csv delim of src_ip,dst_ip translation/updates")
-    if error_string: raise SystemExit(1); else raise SystemExit;
+    if error_string:
+        raise SystemExit(1)
+    else: 
+        raise SystemExit(0)
 
 
 def check_folder(string): return (os.path.isdir(string));
-def check_file(string): return os.path.isfile(string));
+def check_file(string): return os.path.isfile(string);
 def write_output_file(fs, fp, v=False):
     if not os.path.exists(os.path.dirname(fp)):
         try:
@@ -57,7 +60,10 @@ def process_file(o_dir, ser, ex, maplist, f, fp, v=False):
                 myfile=update_serial(ser, myfile, v)
                 write_output=True
 
-    if(write_output): write_output_file(myfile, path_out, v)
+    if(write_output):
+        if(v):
+            print(" "+domain+" will be updated")
+        write_output_file(myfile, file_out, v)
 #end process file:
 
 def main():
@@ -66,8 +72,7 @@ def main():
             "help", "input-directory=", "output-directory=", "serial-date=", "verbose", "exclude-file=", "map-file="
         ])
     except getopt.GetoptError as err:
-        usage()
-        print_error(str(err))
+        usage(str(err))
 
     exclude_file=None
     zonedir_in=None
@@ -75,13 +80,13 @@ def main():
     verbose=False
     serialdate =  datetime.datetime.today().strftime('%Y%m%d') + "01"
     map_file=None
-    err_msg=None
+    err_msg=""
 
     for o, a in opts:
         if o in ("-h", "--help"): usage();
         elif o in ("-i", "--input-directory"):
             if(check_folder(a)): zonedir_in=a;
-            else: err_msg += "Zone files input directory not found/provided\n";
+            else: err_msg += "Zone files input directory not found\n";
         elif o in ("-o", "--output-directory"): zonedir_out=a;
         elif o in ("-s", "--serial-date"): serialdate=a;
         elif o in ("-x", "--exclude-file"):
@@ -95,8 +100,8 @@ def main():
             err_msg += "Invalid parameters provided via command line\n"
             assert False, "Unhandled option"
 
-    if not zonedir_in: err_msg+="Zone files input directory not provided\n";
-    if not zonedir_out: err_msg+="Zone files output directory not provided\n";
+    if map_file is None: err_msg+="Mapping file not provide d.\n"
+    
     if err_msg: usage(err_msg);
 
     #end opts, read files in
@@ -105,9 +110,11 @@ def main():
     #x.x.x.x,y.y.y.y where x is source ip and y is translated ip
     map_list={}
     with open(map_file) as mf:
-        for line in mf:
-            (key, val)=line.strip.split(",")
-            maplist[key]=val
+        for line in mf.readlines():
+            (key, val)=line.strip().split(",")
+            map_list[key]=val
+    if (len(map_list)==0):
+        usage("No IP mappings found in map file")
 
     #get complete file list
     file_list={}
@@ -120,6 +127,8 @@ def main():
     if(exclude_file):
         with open(exclude_file) as ef:
             excludes=ef.read().splitlines()
+        if(len(excludes)==0):
+            usage("No exclusions found in provided exclude file")
 
     #counts for verbose
     c_map=len(map_list)
@@ -135,9 +144,10 @@ def main():
 
     for file in file_list:
         if verbose:
-            sys.stdout.write("\r File"+str(count)+" of "+str(c_files))
+            sys.stdout.write("\r File:  "+str(count)+" of "+str(c_files))
             sys.stdout.flush()
             count+=1
-        process_file(zonedir_out, serial, excludes, map_list, file, file_list[file], verbose)
+        process_file(zonedir_out, serialdate, excludes, map_list, file, file_list[file], verbose)
 
-
+if __name__ == "__main__":
+    main()
