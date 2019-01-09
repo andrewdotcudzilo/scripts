@@ -46,7 +46,10 @@ def process_file(o_dir, ser, ex, maplist, f, fp, v=False):
     domain=os.path.splitext(os.path.basename(f))[0]
     file_out = str(o_dir+"/"+fp)
 
-    if(in_exclude(ex, domain, v)): return;
+    if(in_exclude(ex, domain, v)): 
+        if(v):
+            print(" "+domain+" skipped because of exclusion")
+        return;
 
     with(open(fp)) as zf:
         myfile=zf.read()
