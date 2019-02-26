@@ -1,0 +1,772 @@
+]0;andrewcu@rvzlin05:~[andrewcu@rvzlin05 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin05:~[andrewcu@rvzlin05 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin07.caex.com - 10.16.113.124 - rvzlin07.caex.com
+]0;andrewcu@rvzlin07:~[andrewcu@rvzlin07 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin07:~[andrewcu@rvzlin07 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin15.caex.com - 10.16.113.120 - rvzlin15.caex.com
+]0;andrewcu@rvzlin15:~[andrewcu@rvzlin15 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin15:~[andrewcu@rvzlin15 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin24.caex.com - 10.16.113.210 - rvzlin24.caex.com
+]0;andrewcu@rvzlin24:~[andrewcu@rvzlin24 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin24:~[andrewcu@rvzlin24 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin28.caex.com - 10.16.113.159 - rvzlin28.caex.com
+]0;andrewcu@rvzlin28:~[andrewcu@rvzlin28 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin28:~[andrewcu@rvzlin28 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin33.caex.com - 10.16.113.184 - rvzlin33.caex.com
+]0;andrewcu@rvzlin33:~[andrewcu@rvzlin33 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin33:~[andrewcu@rvzlin33 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin37.caex.com - 10.16.113.194 - rvzlin37.caex.com
+]0;andrewcu@rvzlin37:~[andrewcu@rvzlin37 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin37:~[andrewcu@rvzlin37 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin38.caex.com - 10.16.113.197 - rvzlin38.caex.com
+]0;andrewcu@rvzlin38:~[andrewcu@rvzlin38 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin38:~[andrewcu@rvzlin38 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin39.caex.com - 10.16.113.217 - rvzlin39.caex.com
+]0;andrewcu@rvzlin39:~[andrewcu@rvzlin39 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin39:~[andrewcu@rvzlin39 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin40.caex.com - 10.16.113.219 - rvzlin40.caex.com
+]0;andrewcu@rvzlin40:~[andrewcu@rvzlin40 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin40:~[andrewcu@rvzlin40 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin41.caex.com - 10.16.113.155 - rvzlin41.caex.com
+]0;andrewcu@rvzlin41:~[andrewcu@rvzlin41 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin41:~[andrewcu@rvzlin41 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin42.caex.com - 10.16.113.158 - rvzlin42.caex.com
+]0;andrewcu@rvzlin42:~[andrewcu@rvzlin42 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin42:~[andrewcu@rvzlin42 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+]0;andrewcu@rvzlin43:~[?1034h[andrewcu@rvzlin43 ~]$ hostname
+rvzlin43.caex.com
+--
+]0;andrewcu@rvzlin44:~[andrewcu@rvzlin44 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin44:~[andrewcu@rvzlin44 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin45.caex.com - 10.16.113.211 - rvzlin45.caex.com
+]0;andrewcu@rvzlin45:~[andrewcu@rvzlin45 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin45:~[andrewcu@rvzlin45 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin46.caex.com - 10.16.113.129 - rvzlin46.caex.com
+]0;andrewcu@rvzlin46:~[andrewcu@rvzlin46 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin46:~[andrewcu@rvzlin46 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin47.caex.com - 10.16.113.215 - rvzlin47.caex.com
+]0;andrewcu@rvzlin47:~[andrewcu@rvzlin47 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin47:~[andrewcu@rvzlin47 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin48.caex.com - 10.16.113.70 - rvzlin48.caex.com
+]0;andrewcu@rvzlin48:~[andrewcu@rvzlin48 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin48:~[andrewcu@rvzlin48 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin49.caex.com - 10.16.113.76 - rvzlin49.caex.com
+]0;andrewcu@rvzlin49:~[andrewcu@rvzlin49 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin49:~[andrewcu@rvzlin49 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin50.caex.com - 10.16.113.73 - rvzlin50.caex.com
+]0;andrewcu@rvzlin50:~[andrewcu@rvzlin50 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin50:~[andrewcu@rvzlin50 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin51.caex.com - 10.16.113.209 - rvzlin51.caex.com
+]0;andrewcu@rvzlin51:~[andrewcu@rvzlin51 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin51:~[andrewcu@rvzlin51 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin53.caex.com - 10.16.113.85 - rvzlin53.caex.com
+]0;andrewcu@rvzlin53:~[andrewcu@rvzlin53 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin53:~[andrewcu@rvzlin53 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin54.caex.com - 10.16.113.160 - rvzlin54.caex.com
+]0;andrewcu@rvzlin54:~[andrewcu@rvzlin54 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin54:~[andrewcu@rvzlin54 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin55.caex.com - 10.16.113.81 - rvzlin55.caex.com
+]0;andrewcu@rvzlin55:~[andrewcu@rvzlin55 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin55:~[andrewcu@rvzlin55 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin56.caex.com - 10.16.113.83 - rvzlin56.caex.com
+]0;andrewcu@rvzlin56:~[andrewcu@rvzlin56 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin56:~[andrewcu@rvzlin56 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin57.caex.com - 10.16.113.82 - rvzlin57.caex.com
+]0;andrewcu@rvzlin57:~[andrewcu@rvzlin57 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin57:~[andrewcu@rvzlin57 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin58.caex.com - 10.16.113.235 - rvzlin58.caex.com
+]0;andrewcu@rvzlin58:~[andrewcu@rvzlin58 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin58:~[andrewcu@rvzlin58 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin59.caex.com - 10.16.113.231 - rvzlin59.caex.com
+]0;andrewcu@rvzlin59:~[andrewcu@rvzlin59 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin59:~[andrewcu@rvzlin59 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin60.caex.com - 10.16.113.196 - rvzlin60.caex.com
+]0;andrewcu@rvzlin60:~[andrewcu@rvzlin60 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin60:~[andrewcu@rvzlin60 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin61.caex.com - 10.16.113.230 - rvzlin61.caex.com
+]0;andrewcu@rvzlin61:~[andrewcu@rvzlin61 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin61:~[andrewcu@rvzlin61 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin62.caex.com - 10.16.113.233 - rvzlin62.caex.com
+]0;andrewcu@rvzlin62:~[andrewcu@rvzlin62 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin62:~[andrewcu@rvzlin62 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin63.caex.com - 10.16.113.60 - rvzlin63.caex.com
+]0;andrewcu@rvzlin63:~[andrewcu@rvzlin63 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin63:~[andrewcu@rvzlin63 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin64.caex.com - 10.16.113.44 - rvzlin64.caex.com
+]0;andrewcu@rvzlin64:~[andrewcu@rvzlin64 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin64:~[andrewcu@rvzlin64 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin65.caex.com - 10.16.113.68 - rvzlin65.caex.com
+]0;andrewcu@rvzlin65:~[andrewcu@rvzlin65 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin65:~[andrewcu@rvzlin65 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin66.caex.com - 10.16.113.63 - rvzlin66.caex.com
+]0;andrewcu@rvzlin66:~[andrewcu@rvzlin66 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin66:~[andrewcu@rvzlin66 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin67.caex.com - 10.16.113.57 - rvzlin67.caex.com
+]0;andrewcu@rvzlin67:~[andrewcu@rvzlin67 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin67:~[andrewcu@rvzlin67 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin68.caex.com - 10.16.113.67 - rvzlin68.caex.com
+]0;andrewcu@rvzlin68:~[andrewcu@rvzlin68 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin68:~[andrewcu@rvzlin68 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin69.caex.com - 10.16.113.66 - rvzlin69.caex.com
+]0;andrewcu@rvzlin69:~[andrewcu@rvzlin69 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin69:~[andrewcu@rvzlin69 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin70.caex.com - 10.16.113.150 - rvzlin70.caex.com
+]0;andrewcu@rvzlin70:~[andrewcu@rvzlin70 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin70:~[andrewcu@rvzlin70 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin71.caex.com - 10.16.113.151 - rvzlin71.caex.com
+]0;andrewcu@rvzlin71:~[andrewcu@rvzlin71 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin71:~[andrewcu@rvzlin71 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin72.caex.com - 10.16.113.65 - rvzlin72.caex.com
+]0;andrewcu@rvzlin72:~[andrewcu@rvzlin72 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin72:~[andrewcu@rvzlin72 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin73.caex.com - 10.16.113.64 - rvzlin73.caex.com
+]0;andrewcu@rvzlin73:~[andrewcu@rvzlin73 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin73:~[andrewcu@rvzlin73 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin75.caex.com - 10.16.113.242 - rvzlin75.caex.com
+]0;andrewcu@rvzlin75:~[andrewcu@rvzlin75 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin75:~[andrewcu@rvzlin75 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin76.caex.com - 10.16.113.240 - rvzlin76.caex.com
+]0;andrewcu@rvzlin76:~[andrewcu@rvzlin76 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin76:~[andrewcu@rvzlin76 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin77.caex.com - 10.16.113.241 - rvzlin77.caex.com
+]0;andrewcu@rvzlin77:~[andrewcu@rvzlin77 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin77:~[andrewcu@rvzlin77 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin78.caex.com - 10.16.113.244 - rvzlin78.caex.com
+]0;andrewcu@rvzlin78:~[andrewcu@rvzlin78 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin78:~[andrewcu@rvzlin78 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin79.caex.com - 10.16.113.243 - rvzlin79.caex.com
+]0;andrewcu@rvzlin79:~[andrewcu@rvzlin79 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin79:~[andrewcu@rvzlin79 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin80.caex.com - 10.16.113.246 - rvzlin80.caex.com
+]0;andrewcu@rvzlin80:~[andrewcu@rvzlin80 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin80:~[andrewcu@rvzlin80 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin81.caex.com - 10.16.113.247 - rvzlin81.caex.com
+]0;andrewcu@rvzlin81:~[andrewcu@rvzlin81 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin81:~[andrewcu@rvzlin81 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin82.caex.com - 10.16.113.226 - rvzlin82.caex.com
+]0;andrewcu@rvzlin82:~[andrewcu@rvzlin82 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin82:~[andrewcu@rvzlin82 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin83.caex.com - 10.16.113.224 - rvzlin83.caex.com
+]0;andrewcu@rvzlin83:~[andrewcu@rvzlin83 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin83:~[andrewcu@rvzlin83 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+]0;andrewcu@rvzlin84:~[?1034h[andrewcu@rvzlin84 ~]$ hostname
+rvzlin84.caex.com
+--
+]0;andrewcu@rvzlin85:~[andrewcu@rvzlin85 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin85:~[andrewcu@rvzlin85 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin86.caex.com - 10.16.113.232 - rvzlin86.caex.com
+]0;andrewcu@rvzlin86:~[andrewcu@rvzlin86 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin86:~[andrewcu@rvzlin86 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin87.caex.com - 10.16.113.122 - rvzlin87.caex.com
+]0;andrewcu@rvzlin87:~[andrewcu@rvzlin87 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin87:~[andrewcu@rvzlin87 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin88.caex.com - 10.16.113.111 - rvzlin88.caex.com
+]0;andrewcu@rvzlin88:~[andrewcu@rvzlin88 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin88:~[andrewcu@rvzlin88 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin90.caex.com - 10.16.113.214 - rvzlin90.caex.com
+]0;andrewcu@rvzlin90:~[andrewcu@rvzlin90 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin90:~[andrewcu@rvzlin90 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin91.caex.com - 10.16.113.239 - rvzlin91.caex.com
+]0;andrewcu@rvzlin91:~[andrewcu@rvzlin91 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin91:~[andrewcu@rvzlin91 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+rvzlin92.caex.com - 10.16.113.223 - rvzlin92.caex.com
+]0;andrewcu@rvzlin92:~[andrewcu@rvzlin92 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@rvzlin92:~[andrewcu@rvzlin92 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin02.caex.com - 10.16.113.55 - vzlin02.caex.com
+]0;andrewcu@vzlin02:~[andrewcu@vzlin02 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin02:~[andrewcu@vzlin02 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin03.caex.com - 10.16.113.228 - vzlin03.caex.com
+]0;andrewcu@vzlin03:~[andrewcu@vzlin03 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin03:~[andrewcu@vzlin03 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin04.caex.com - 10.16.113.225 - vzlin04.caex.com
+]0;andrewcu@vzlin04:~[andrewcu@vzlin04 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin04:~[andrewcu@vzlin04 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin05.caex.com - 10.16.113.222 - vzlin05.caex.com
+]0;andrewcu@vzlin05:~[andrewcu@vzlin05 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin05:~[andrewcu@vzlin05 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin06.caex.com - 10.16.113.53 - vzlin06.caex.com
+]0;andrewcu@vzlin06:~[andrewcu@vzlin06 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin06:~[andrewcu@vzlin06 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin07.caex.com - 10.16.113.50 - vzlin07.caex.com
+]0;andrewcu@vzlin07:~[andrewcu@vzlin07 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin07:~[andrewcu@vzlin07 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin08.caex.com - 10.16.113.220 - vzlin08.caex.com
+]0;andrewcu@vzlin08:~[andrewcu@vzlin08 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin08:~[andrewcu@vzlin08 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin09.caex.com - 10.16.113.43 - vzlin09.caex.com
+]0;andrewcu@vzlin09:~[andrewcu@vzlin09 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin09:~[andrewcu@vzlin09 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin10.caex.com - 10.16.113.48 - vzlin10.caex.com
+]0;andrewcu@vzlin10:~[andrewcu@vzlin10 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin10:~[andrewcu@vzlin10 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin11.caex.com - 10.16.113.51 - vzlin11.caex.com
+]0;andrewcu@vzlin11:~[andrewcu@vzlin11 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin11:~[andrewcu@vzlin11 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin12.caex.com - 10.16.113.52 - vzlin12.caex.com
+]0;andrewcu@vzlin12:~[andrewcu@vzlin12 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin12:~[andrewcu@vzlin12 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin13.caex.com - 10.16.113.9 - vzlin13.caex.com
+]0;andrewcu@vzlin13:~[andrewcu@vzlin13 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin13:~[andrewcu@vzlin13 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+]0;andrewcu@vzlin14:~[?1034h[andrewcu@vzlin14 ~]$ hostname
+vzlin14.caex.com
+--
+]0;andrewcu@vzlin15:~[andrewcu@vzlin15 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin15:~[andrewcu@vzlin15 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin16.caex.com - 10.16.113.71 - vzlin16.caex.com
+]0;andrewcu@vzlin16:~[andrewcu@vzlin16 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin16:~[andrewcu@vzlin16 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin20.caex.com - 10.16.113.79 - vzlin20.caex.com
+]0;andrewcu@vzlin20:~[andrewcu@vzlin20 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin20:~[andrewcu@vzlin20 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin21.caex.com - 10.16.113.84 - vzlin21.caex.com
+]0;andrewcu@vzlin21:~[andrewcu@vzlin21 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin21:~[andrewcu@vzlin21 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin22.caex.com - 10.16.113.72 - vzlin22.caex.com
+]0;andrewcu@vzlin22:~[andrewcu@vzlin22 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin22:~[andrewcu@vzlin22 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin24.caex.com - 10.16.113.88 - vzlin24.caex.com
+]0;andrewcu@vzlin24:~[andrewcu@vzlin24 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin24:~[andrewcu@vzlin24 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin26.caex.com - 10.16.113.90 - vzlin26.caex.com
+]0;andrewcu@vzlin26:~[andrewcu@vzlin26 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin26:~[andrewcu@vzlin26 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin34.caex.com - 10.16.113.139 - vzlin34.caex.com
+]0;andrewcu@vzlin34:~[andrewcu@vzlin34 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin34:~[andrewcu@vzlin34 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin35.caex.com - 10.16.113.216 - vzlin35.caex.com
+]0;andrewcu@vzlin35:~[andrewcu@vzlin35 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin35:~[andrewcu@vzlin35 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin36.caex.com - 10.16.113.249 - vzlin36.caex.com
+]0;andrewcu@vzlin36:~[andrewcu@vzlin36 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin36:~[andrewcu@vzlin36 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin37.caex.com - 10.16.113.156 - vzlin37.caex.com
+]0;andrewcu@vzlin37:~[andrewcu@vzlin37 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin37:~[andrewcu@vzlin37 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin38.caex.com - 10.16.113.234 - vzlin38.caex.com
+]0;andrewcu@vzlin38:~[andrewcu@vzlin38 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin38:~[andrewcu@vzlin38 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin39.caex.com - 10.16.113.218 - vzlin39.caex.com
+]0;andrewcu@vzlin39:~[andrewcu@vzlin39 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin39:~[andrewcu@vzlin39 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin40.caex.com - 10.16.113.138 - vzlin40.caex.com
+]0;andrewcu@vzlin40:~[andrewcu@vzlin40 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin40:~[andrewcu@vzlin40 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin41.caex.com - 10.16.113.61 - vzlin41.caex.com
+]0;andrewcu@vzlin41:~[andrewcu@vzlin41 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin41:~[andrewcu@vzlin41 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin42.caex.com - 10.16.113.152 - vzlin42.caex.com
+]0;andrewcu@vzlin42:~[andrewcu@vzlin42 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin42:~[andrewcu@vzlin42 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin43.caex.com - 10.16.113.30 - vzlin43.caex.com
+--
+]0;andrewcu@vzlin44:~[andrewcu@vzlin44 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin44:~[andrewcu@vzlin44 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin45.caex.com - 10.16.113.132 - vzlin45.caex.com
+]0;andrewcu@vzlin45:~[andrewcu@vzlin45 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin45:~[andrewcu@vzlin45 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin46.caex.com - 10.16.113.86 - vzlin46.caex.com
+]0;andrewcu@vzlin46:~[andrewcu@vzlin46 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin46:~[andrewcu@vzlin46 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin47.caex.com - 10.16.113.245 - vzlin47.caex.com
+--
+]0;andrewcu@vzlin49:~[andrewcu@vzlin49 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin49:~[andrewcu@vzlin49 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin50.caex.com - 10.16.113.221 - vzlin50.caex.com
+]0;andrewcu@vzlin50:~[andrewcu@vzlin50 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin50:~[andrewcu@vzlin50 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin51.caex.com - 10.16.113.32 - vzlin51.caex.com
+]0;andrewcu@vzlin51:~[andrewcu@vzlin51 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin51:~[andrewcu@vzlin51 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin52.caex.com - 10.16.113.253 - vzlin52.caex.com
+]0;andrewcu@vzlin52:~[andrewcu@vzlin52 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin52:~[andrewcu@vzlin52 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+]0;andrewcu@vzlin53:~[?1034h[andrewcu@vzlin53 ~]$ hostname
+vzlin53.caex.com
+--
+]0;andrewcu@vzlin54:~[andrewcu@vzlin54 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin54:~[andrewcu@vzlin54 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+]0;andrewcu@vzlin55:~[?1034h[andrewcu@vzlin55 ~]$ hostname
+vzlin55.caex.com
+--
+]0;andrewcu@vzlin56:~[andrewcu@vzlin56 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin56:~[andrewcu@vzlin56 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin57.caex.com - 10.16.113.238 - vzlin57.caex.com
+]0;andrewcu@vzlin57:~[andrewcu@vzlin57 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin57:~[andrewcu@vzlin57 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
+--
+
+vzlin58.caex.com - 10.16.113.106 - vzlin58.caex.com
+]0;andrewcu@vzlin58:~[andrewcu@vzlin58 ~]$ cat /etc/redhat-release
+CentOS release 6.10 (Final)
+]0;andrewcu@vzlin58:~[andrewcu@vzlin58 ~]$ cat /vz/template/centos/6/x86_64/config/os/default/repositories
+$CE_SERVER/centos/5/os/x86_64
+$CE_SERVER/centos/5/updates/x86_64
