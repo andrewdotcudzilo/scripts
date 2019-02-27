@@ -1,0 +1,4707 @@
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@﻿10.16.113.91
+ssh: Could not resolve hostname \357\273\27710.16.113.91: Name or service not known 
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.98
+Warning: Permanently added '10.16.113.98' (RSA) to the list of known hosts.
+andrewcu@10.16.113.98's password: 
+Last login: Wed Feb 27 12:55:02 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin02:~[andrewcu@rvzlin02 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.254.8
+
+Link
+addr:10.16.113.98
+]0;andrewcu@rvzlin02:~[andrewcu@rvzlin02 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.99
+Warning: Permanently added '10.16.113.99' (RSA) to the list of known hosts.
+andrewcu@10.16.113.99's password: 
+Last login: Wed Feb 27 12:55:05 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin03:~[andrewcu@rvzlin03 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.99
+
+Link
+addr:108.59.254.9
+]0;andrewcu@rvzlin03:~[andrewcu@rvzlin03 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.102
+Warning: Permanently added '10.16.113.102' (RSA) to the list of known hosts.
+andrewcu@10.16.113.102's password: 
+Last login: Wed Feb 27 12:55:07 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin04:~[andrewcu@rvzlin04 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.102
+
+Link
+addr:108.59.253.5
+]0;andrewcu@rvzlin04:~[andrewcu@rvzlin04 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.58
+Warning: Permanently added '10.16.113.58' (RSA) to the list of known hosts.
+andrewcu@10.16.113.58's password: 
+Last login: Wed Feb 27 12:55:09 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin05:~[?1034h[andrewcu@rvzlin05 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.162.5
+
+Link
+addr:10.16.113.58
+]0;andrewcu@rvzlin05:~[andrewcu@rvzlin05 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.104
+Warning: Permanently added '10.16.113.104' (RSA) to the list of known hosts.
+andrewcu@10.16.113.104's password: 
+Last login: Wed Feb 27 12:55:11 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+]0;andrewcu@rvzlin06:~[andrewcu@rvzlin06 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.104
+
+Link
+addr:108.59.253.7
+]0;andrewcu@rvzlin06:~[andrewcu@rvzlin06 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.124
+Warning: Permanently added '10.16.113.124' (RSA) to the list of known hosts.
+andrewcu@10.16.113.124's password: 
+Last login: Wed Feb 27 12:55:14 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin07:~[?1034h[andrewcu@rvzlin07 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.169.5
+
+Link
+addr:10.216.224.186
+
+Link
+addr:10.16.113.124
+]0;andrewcu@rvzlin07:~[andrewcu@rvzlin07 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.110
+Warning: Permanently added '10.16.113.110' (RSA) to the list of known hosts.
+andrewcu@10.16.113.110's password: 
+Last login: Wed Feb 27 12:55:16 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin08:~[andrewcu@rvzlin08 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.251.5
+
+Link
+addr:10.16.113.110
+]0;andrewcu@rvzlin08:~[andrewcu@rvzlin08 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.112
+Warning: Permanently added '10.16.113.112' (RSA) to the list of known hosts.
+andrewcu@10.16.113.112's password: 
+Last login: Wed Feb 27 12:55:18 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin09:~[andrewcu@rvzlin09 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.178.5
+
+Link
+addr:10.16.113.112
+]0;andrewcu@rvzlin09:~[andrewcu@rvzlin09 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.114
+Warning: Permanently added '10.16.113.114' (RSA) to the list of known hosts.
+andrewcu@10.16.113.114's password: 
+Last login: Wed Feb 27 12:55:20 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin10:~[andrewcu@rvzlin10 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.251.6
+
+Link
+addr:10.16.113.114
+]0;andrewcu@rvzlin10:~[andrewcu@rvzlin10 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.116
+Warning: Permanently added '10.16.113.116' (RSA) to the list of known hosts.
+andrewcu@10.16.113.116's password: 
+Last login: Wed Feb 27 12:55:23 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin11:~[andrewcu@rvzlin11 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.251.7
+
+Link
+addr:10.16.113.116
+]0;andrewcu@rvzlin11:~[andrewcu@rvzlin11 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.115
+Warning: Permanently added '10.16.113.115' (RSA) to the list of known hosts.
+andrewcu@10.16.113.115's password: 
+Last login: Wed Feb 27 12:55:26 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin12:~[andrewcu@rvzlin12 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.252.5
+
+Link
+addr:10.16.113.115
+]0;andrewcu@rvzlin12:~[andrewcu@rvzlin12 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.118
+Warning: Permanently added '10.16.113.118' (RSA) to the list of known hosts.
+andrewcu@10.16.113.118's password: 
+Last login: Wed Feb 27 12:55:28 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+NOTE: Some problems appeared when installing Parallels Virtual Automation.
+Please check the /root/vzinstall.log file for details.
+]0;andrewcu@rvzlin13:~[andrewcu@rvzlin13 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.252.9
+
+Link
+addr:10.16.113.118
+]0;andrewcu@rvzlin13:~[andrewcu@rvzlin13 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.119
+Warning: Permanently added '10.16.113.119' (RSA) to the list of known hosts.
+andrewcu@10.16.113.119's password: 
+Last login: Wed Feb 27 12:55:31 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin14:~[andrewcu@rvzlin14 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.252.7
+
+Link
+addr:10.16.113.119
+]0;andrewcu@rvzlin14:~[andrewcu@rvzlin14 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.120
+Warning: Permanently added '10.16.113.120' (RSA) to the list of known hosts.
+andrewcu@10.16.113.120's password: 
+Last login: Wed Feb 27 12:55:33 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin15:~[?1034h[andrewcu@rvzlin15 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.250.5
+
+Link
+addr:10.108.59.249
+
+Link
+addr:10.108.59.251
+
+Link
+addr:10.216.224.166
+
+Link
+addr:10.216.224.179
+
+Link
+addr:10.216.224.180
+
+Link
+addr:
+
+Link
+addr:
+
+Link
+addr:
+
+Link
+addr:
+
+Link
+addr:10.16.113.120
+]0;andrewcu@rvzlin15:~[andrewcu@rvzlin15 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.121
+Warning: Permanently added '10.16.113.121' (RSA) to the list of known hosts.
+andrewcu@10.16.113.121's password: 
+Last login: Wed Feb 27 12:55:36 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin16:~[andrewcu@rvzlin16 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.250.6
+
+Link
+addr:10.16.113.121
+]0;andrewcu@rvzlin16:~[andrewcu@rvzlin16 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.123
+Warning: Permanently added '10.16.113.123' (RSA) to the list of known hosts.
+andrewcu@10.16.113.123's password: 
+Last login: Wed Feb 27 12:55:38 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin17:~[andrewcu@rvzlin17 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.250.7
+
+Link
+addr:10.16.113.123
+]0;andrewcu@rvzlin17:~[andrewcu@rvzlin17 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.133
+Warning: Permanently added '10.16.113.133' (RSA) to the list of known hosts.
+andrewcu@10.16.113.133's password: 
+Last login: Wed Feb 27 12:55:40 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin18:~[andrewcu@rvzlin18 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.249.5
+
+Link
+addr:10.16.113.133
+]0;andrewcu@rvzlin18:~[andrewcu@rvzlin18 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.126
+Warning: Permanently added '10.16.113.126' (RSA) to the list of known hosts.
+andrewcu@10.16.113.126's password: 
+Last login: Wed Feb 27 12:55:43 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin19:~[andrewcu@rvzlin19 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.249.6
+
+Link
+addr:10.16.113.126
+]0;andrewcu@rvzlin19:~[andrewcu@rvzlin19 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.127
+Warning: Permanently added '10.16.113.127' (RSA) to the list of known hosts.
+andrewcu@10.16.113.127's password: 
+Last login: Wed Feb 27 12:55:45 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin20:~[andrewcu@rvzlin20 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.186.5
+
+Link
+addr:10.16.113.127
+]0;andrewcu@rvzlin20:~[andrewcu@rvzlin20 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.136
+Warning: Permanently added '10.16.113.136' (RSA) to the list of known hosts.
+andrewcu@10.16.113.136's password: 
+Last login: Wed Feb 27 12:55:47 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin22:~[andrewcu@rvzlin22 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.185.5
+
+Link
+addr:10.16.113.136
+]0;andrewcu@rvzlin22:~[andrewcu@rvzlin22 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.137
+Warning: Permanently added '10.16.113.137' (RSA) to the list of known hosts.
+andrewcu@10.16.113.137's password: 
+Last login: Wed Feb 27 12:55:49 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin23:~[andrewcu@rvzlin23 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.185.6
+
+Link
+addr:10.16.113.137
+]0;andrewcu@rvzlin23:~[andrewcu@rvzlin23 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.210
+Warning: Permanently added '10.16.113.210' (RSA) to the list of known hosts.
+andrewcu@10.16.113.210's password: 
+Last login: Wed Feb 27 12:55:52 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin24:~[?1034h[andrewcu@rvzlin24 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.171.6
+
+Link
+addr:10.16.113.210
+]0;andrewcu@rvzlin24:~[andrewcu@rvzlin24 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.147
+Warning: Permanently added '10.16.113.147' (RSA) to the list of known hosts.
+andrewcu@10.16.113.147's password: 
+Last login: Wed Feb 27 12:55:54 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin25:~[andrewcu@rvzlin25 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.183.7
+
+Link
+addr:10.16.113.147
+]0;andrewcu@rvzlin25:~[andrewcu@rvzlin25 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.149
+Warning: Permanently added '10.16.113.149' (RSA) to the list of known hosts.
+andrewcu@10.16.113.149's password: 
+Last login: Wed Feb 27 12:55:56 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin26:~[andrewcu@rvzlin26 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.184.5
+
+Link
+addr:10.16.113.149
+]0;andrewcu@rvzlin26:~[andrewcu@rvzlin26 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.157
+Warning: Permanently added '10.16.113.157' (RSA) to the list of known hosts.
+andrewcu@10.16.113.157's password: 
+Last login: Wed Feb 27 12:55:59 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin27:~[andrewcu@rvzlin27 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.184.6
+
+Link
+addr:10.16.113.157
+]0;andrewcu@rvzlin27:~[andrewcu@rvzlin27 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.159
+Warning: Permanently added '10.16.113.159' (RSA) to the list of known hosts.
+andrewcu@10.16.113.159's password: 
+Last login: Wed Feb 27 12:56:01 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin28:~[?1034h[andrewcu@rvzlin28 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.249.8
+
+Link
+addr:10.216.224.186
+
+Link
+addr:10.16.113.159
+]0;andrewcu@rvzlin28:~[andrewcu@rvzlin28 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.163
+Warning: Permanently added '10.16.113.163' (RSA) to the list of known hosts.
+andrewcu@10.16.113.163's password: 
+Last login: Wed Feb 27 12:56:04 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin29:~[andrewcu@rvzlin29 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.182.7
+
+Link
+addr:10.16.113.163
+]0;andrewcu@rvzlin29:~[andrewcu@rvzlin29 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.179
+Warning: Permanently added '10.16.113.179' (RSA) to the list of known hosts.
+andrewcu@10.16.113.179's password: 
+Last login: Wed Feb 27 12:56:06 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+]0;andrewcu@rvzlin30:~[andrewcu@rvzlin30 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.181.7
+
+Link
+addr:10.16.113.179
+]0;andrewcu@rvzlin30:~[andrewcu@rvzlin30 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.181
+Warning: Permanently added '10.16.113.181' (RSA) to the list of known hosts.
+andrewcu@10.16.113.181's password: 
+Last login: Wed Feb 27 12:56:09 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin31:~[andrewcu@rvzlin31 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.181.8
+
+Link
+addr:10.16.113.181
+]0;andrewcu@rvzlin31:~[andrewcu@rvzlin31 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.183
+Warning: Permanently added '10.16.113.183' (RSA) to the list of known hosts.
+andrewcu@10.16.113.183's password: 
+Last login: Wed Feb 27 12:56:11 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+NOTE: Some problems appeared when installing Parallels Virtual Automation.
+Please check the /root/vzinstall.log file for details.
+]0;andrewcu@rvzlin32:~[andrewcu@rvzlin32 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.255.4
+
+Link
+addr:10.16.113.183
+]0;andrewcu@rvzlin32:~[andrewcu@rvzlin32 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.184
+Warning: Permanently added '10.16.113.184' (RSA) to the list of known hosts.
+andrewcu@10.16.113.184's password: 
+Last login: Wed Feb 27 12:56:14 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin33:~[?1034h[andrewcu@rvzlin33 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.162.6
+
+Link
+addr:10.16.113.184
+]0;andrewcu@rvzlin33:~[andrewcu@rvzlin33 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.188
+Warning: Permanently added '10.16.113.188' (RSA) to the list of known hosts.
+andrewcu@10.16.113.188's password: 
+Last login: Wed Feb 27 12:56:17 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+]0;andrewcu@rvzlin34:~[andrewcu@rvzlin34 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.183.5
+
+Link
+addr:10.16.113.188
+]0;andrewcu@rvzlin34:~[andrewcu@rvzlin34 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.190
+Warning: Permanently added '10.16.113.190' (RSA) to the list of known hosts.
+andrewcu@10.16.113.190's password: 
+Last login: Wed Feb 27 12:56:20 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin35:~[andrewcu@rvzlin35 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.180.7
+
+Link
+addr:10.16.113.190
+]0;andrewcu@rvzlin35:~[andrewcu@rvzlin35 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.192
+Warning: Permanently added '10.16.113.192' (RSA) to the list of known hosts.
+andrewcu@10.16.113.192's password: 
+Last login: Wed Feb 27 12:56:23 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin36:~[andrewcu@rvzlin36 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.179.7
+
+Link
+addr:10.16.113.192
+]0;andrewcu@rvzlin36:~[andrewcu@rvzlin36 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.194
+Warning: Permanently added '10.16.113.194' (RSA) to the list of known hosts.
+andrewcu@10.16.113.194's password: 
+Last login: Wed Feb 27 12:56:26 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin37:~[?1034h[andrewcu@rvzlin37 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.179.8
+
+Link
+addr:10.16.113.194
+]0;andrewcu@rvzlin37:~[andrewcu@rvzlin37 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.197
+Warning: Permanently added '10.16.113.197' (RSA) to the list of known hosts.
+andrewcu@10.16.113.197's password: 
+Last login: Wed Feb 27 12:56:28 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin38:~[?1034h[andrewcu@rvzlin38 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.179.9
+
+Link
+addr:10.16.113.197
+]0;andrewcu@rvzlin38:~[andrewcu@rvzlin38 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.217
+Warning: Permanently added '10.16.113.217' (RSA) to the list of known hosts.
+andrewcu@10.16.113.217's password: 
+Last login: Wed Feb 27 12:56:31 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin39:~[?1034h[andrewcu@rvzlin39 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.178.6
+
+Link
+addr:10.16.113.217
+]0;andrewcu@rvzlin39:~[andrewcu@rvzlin39 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.219
+Warning: Permanently added '10.16.113.219' (RSA) to the list of known hosts.
+andrewcu@10.16.113.219's password: 
+Last login: Wed Feb 27 12:56:34 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin40:~[?1034h[andrewcu@rvzlin40 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.178.4
+
+Link
+addr:10.16.113.219
+]0;andrewcu@rvzlin40:~[andrewcu@rvzlin40 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.155
+Warning: Permanently added '10.16.113.155' (RSA) to the list of known hosts.
+andrewcu@10.16.113.155's password: 
+Last login: Wed Feb 27 12:56:36 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin41:~[?1034h[andrewcu@rvzlin41 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.177.5
+
+Link
+addr:10.16.113.155
+]0;andrewcu@rvzlin41:~[andrewcu@rvzlin41 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.158
+Warning: Permanently added '10.16.113.158' (RSA) to the list of known hosts.
+andrewcu@10.16.113.158's password: 
+Last login: Wed Feb 27 12:56:38 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin42:~[?1034h[andrewcu@rvzlin42 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.177.6
+
+Link
+addr:10.16.113.158
+]0;andrewcu@rvzlin42:~[andrewcu@rvzlin42 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.213
+Warning: Permanently added '10.16.113.213' (RSA) to the list of known hosts.
+andrewcu@10.16.113.213's password: 
+Last login: Wed Feb 27 12:56:41 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin43:~[?1034h[andrewcu@rvzlin43 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.177.7
+
+Link
+addr:10.16.113.213
+]0;andrewcu@rvzlin43:~[andrewcu@rvzlin43 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.212
+Warning: Permanently added '10.16.113.212' (RSA) to the list of known hosts.
+andrewcu@10.16.113.212's password: 
+Last login: Wed Feb 27 12:56:44 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin44:~[?1034h[andrewcu@rvzlin44 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.176.6
+
+Link
+addr:10.16.113.212
+]0;andrewcu@rvzlin44:~[andrewcu@rvzlin44 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.211
+Warning: Permanently added '10.16.113.211' (RSA) to the list of known hosts.
+andrewcu@10.16.113.211's password: 
+Last login: Wed Feb 27 12:56:46 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin45:~[?1034h[andrewcu@rvzlin45 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.176.5
+
+Link
+addr:10.16.113.211
+]0;andrewcu@rvzlin45:~[andrewcu@rvzlin45 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.129
+Warning: Permanently added '10.16.113.129' (RSA) to the list of known hosts.
+andrewcu@10.16.113.129's password: 
+Last login: Wed Feb 27 12:56:49 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin46:~[?1034h[andrewcu@rvzlin46 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.176.7
+
+Link
+addr:10.16.113.129
+]0;andrewcu@rvzlin46:~[andrewcu@rvzlin46 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.215
+Warning: Permanently added '10.16.113.215' (RSA) to the list of known hosts.
+andrewcu@10.16.113.215's password: 
+Last login: Wed Feb 27 12:56:52 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin47:~[?1034h[andrewcu@rvzlin47 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.172.5
+
+Link
+addr:10.16.113.215
+]0;andrewcu@rvzlin47:~[andrewcu@rvzlin47 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.70
+Warning: Permanently added '10.16.113.70' (RSA) to the list of known hosts.
+andrewcu@10.16.113.70's password: 
+Last login: Wed Feb 27 12:56:54 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin48:~[?1034h[andrewcu@rvzlin48 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.175.6
+
+Link
+addr:10.16.113.70
+]0;andrewcu@rvzlin48:~[andrewcu@rvzlin48 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.76
+Warning: Permanently added '10.16.113.76' (RSA) to the list of known hosts.
+andrewcu@10.16.113.76's password: 
+Last login: Wed Feb 27 12:56:56 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin49:~[?1034h[andrewcu@rvzlin49 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.175.5
+
+Link
+addr:10.16.113.76
+]0;andrewcu@rvzlin49:~[andrewcu@rvzlin49 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.73
+Warning: Permanently added '10.16.113.73' (RSA) to the list of known hosts.
+andrewcu@10.16.113.73's password: 
+Last login: Wed Feb 27 12:56:59 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin50:~[?1034h[andrewcu@rvzlin50 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.175.4
+
+Link
+addr:10.16.113.73
+]0;andrewcu@rvzlin50:~[andrewcu@rvzlin50 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.209
+Warning: Permanently added '10.16.113.209' (RSA) to the list of known hosts.
+andrewcu@10.16.113.209's password: 
+Last login: Wed Feb 27 12:57:02 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin51:~[?1034h[andrewcu@rvzlin51 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.174.5
+
+Link
+addr:10.16.113.209
+]0;andrewcu@rvzlin51:~[andrewcu@rvzlin51 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.85
+Warning: Permanently added '10.16.113.85' (RSA) to the list of known hosts.
+andrewcu@10.16.113.85's password: 
+Last login: Wed Feb 27 12:57:04 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin53:~[?1034h[andrewcu@rvzlin53 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.174.7
+
+Link
+addr:10.16.113.85
+]0;andrewcu@rvzlin53:~[andrewcu@rvzlin53 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.160
+Warning: Permanently added '10.16.113.160' (RSA) to the list of known hosts.
+andrewcu@10.16.113.160's password: 
+Last login: Wed Feb 27 12:57:07 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin54:~[?1034h[andrewcu@rvzlin54 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.161.4
+
+Link
+addr:10.16.113.160
+]0;andrewcu@rvzlin54:~[andrewcu@rvzlin54 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.81
+Warning: Permanently added '10.16.113.81' (RSA) to the list of known hosts.
+andrewcu@10.16.113.81's password: 
+Last login: Wed Feb 27 12:57:09 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin55:~[?1034h[andrewcu@rvzlin55 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.172.6
+
+Link
+addr:10.16.113.81
+]0;andrewcu@rvzlin55:~[andrewcu@rvzlin55 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.83
+Warning: Permanently added '10.16.113.83' (RSA) to the list of known hosts.
+andrewcu@10.16.113.83's password: 
+Last login: Wed Feb 27 12:57:11 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin56:~[?1034h[andrewcu@rvzlin56 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.172.4
+
+Link
+addr:10.16.113.83
+]0;andrewcu@rvzlin56:~[andrewcu@rvzlin56 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.82
+Warning: Permanently added '10.16.113.82' (RSA) to the list of known hosts.
+andrewcu@10.16.113.82's password: 
+Last login: Wed Feb 27 12:57:14 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin57:~[?1034h[andrewcu@rvzlin57 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.174.8
+
+Link
+addr:10.16.113.82
+]0;andrewcu@rvzlin57:~[andrewcu@rvzlin57 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.235
+Warning: Permanently added '10.16.113.235' (RSA) to the list of known hosts.
+andrewcu@10.16.113.235's password: 
+Last login: Wed Feb 27 12:57:16 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin58:~[?1034h[andrewcu@rvzlin58 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.171.5
+
+Link
+addr:10.16.113.235
+]0;andrewcu@rvzlin58:~[andrewcu@rvzlin58 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.231
+Warning: Permanently added '10.16.113.231' (RSA) to the list of known hosts.
+andrewcu@10.16.113.231's password: 
+Last login: Wed Feb 27 12:57:19 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin59:~[?1034h[andrewcu@rvzlin59 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.170.4
+
+Link
+addr:10.16.113.231
+]0;andrewcu@rvzlin59:~[andrewcu@rvzlin59 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.196
+Warning: Permanently added '10.16.113.196' (RSA) to the list of known hosts.
+andrewcu@10.16.113.196's password: 
+Last login: Wed Feb 27 12:57:21 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin60:~[?1034h[andrewcu@rvzlin60 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.170.7
+
+Link
+addr:10.16.113.196
+]0;andrewcu@rvzlin60:~[andrewcu@rvzlin60 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.230
+Warning: Permanently added '10.16.113.230' (RSA) to the list of known hosts.
+andrewcu@10.16.113.230's password: 
+Last login: Wed Feb 27 12:57:24 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin61:~[?1034h[andrewcu@rvzlin61 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.170.6
+
+Link
+addr:10.16.113.230
+]0;andrewcu@rvzlin61:~[andrewcu@rvzlin61 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.233
+Warning: Permanently added '10.16.113.233' (RSA) to the list of known hosts.
+andrewcu@10.16.113.233's password: 
+Last login: Wed Feb 27 12:57:27 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin62:~[?1034h[andrewcu@rvzlin62 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.171.4
+
+Link
+addr:10.16.113.233
+]0;andrewcu@rvzlin62:~[andrewcu@rvzlin62 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.60
+Warning: Permanently added '10.16.113.60' (RSA) to the list of known hosts.
+andrewcu@10.16.113.60's password: 
+Last login: Wed Feb 27 12:57:29 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin63:~[?1034h[andrewcu@rvzlin63 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.169.4
+
+Link
+addr:10.16.113.60
+]0;andrewcu@rvzlin63:~[andrewcu@rvzlin63 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.44
+Warning: Permanently added '10.16.113.44' (RSA) to the list of known hosts.
+andrewcu@10.16.113.44's password: 
+Last login: Wed Feb 27 12:57:32 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin64:~[?1034h[andrewcu@rvzlin64 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.166.5
+
+Link
+addr:10.16.113.44
+]0;andrewcu@rvzlin64:~[andrewcu@rvzlin64 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.68
+Warning: Permanently added '10.16.113.68' (RSA) to the list of known hosts.
+andrewcu@10.16.113.68's password: 
+Last login: Wed Feb 27 12:57:34 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin65:~[?1034h[andrewcu@rvzlin65 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.162.4
+
+Link
+addr:10.16.113.68
+]0;andrewcu@rvzlin65:~[andrewcu@rvzlin65 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.63
+Warning: Permanently added '10.16.113.63' (RSA) to the list of known hosts.
+andrewcu@10.16.113.63's password: 
+Last login: Wed Feb 27 12:57:37 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin66:~[?1034h[andrewcu@rvzlin66 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.169.6
+
+Link
+addr:10.16.113.63
+]0;andrewcu@rvzlin66:~[andrewcu@rvzlin66 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.57
+Warning: Permanently added '10.16.113.57' (RSA) to the list of known hosts.
+andrewcu@10.16.113.57's password: 
+Last login: Wed Feb 27 12:57:40 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin67:~[?1034h[andrewcu@rvzlin67 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.164.6
+
+Link
+addr:10.16.113.57
+]0;andrewcu@rvzlin67:~[andrewcu@rvzlin67 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.67
+Warning: Permanently added '10.16.113.67' (RSA) to the list of known hosts.
+andrewcu@10.16.113.67's password: 
+Last login: Wed Feb 27 12:57:44 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+NOTE: Some problems appeared when installing Parallels Virtual Automation.
+Please check the /root/vzinstall.log file for details.
+]0;andrewcu@rvzlin68:~[?1034h[andrewcu@rvzlin68 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.166.4
+
+Link
+addr:10.16.113.67
+]0;andrewcu@rvzlin68:~[andrewcu@rvzlin68 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.66
+Warning: Permanently added '10.16.113.66' (RSA) to the list of known hosts.
+andrewcu@10.16.113.66's password: 
+Last login: Wed Feb 27 12:57:47 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin69:~[?1034h[andrewcu@rvzlin69 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.180.4
+
+Link
+addr:10.16.113.66
+]0;andrewcu@rvzlin69:~[andrewcu@rvzlin69 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.150
+Warning: Permanently added '10.16.113.150' (RSA) to the list of known hosts.
+andrewcu@10.16.113.150's password: 
+Last login: Wed Feb 27 12:57:49 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin70:~[?1034h[andrewcu@rvzlin70 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.253.6
+
+Link
+addr:10.16.113.150
+]0;andrewcu@rvzlin70:~[andrewcu@rvzlin70 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.151
+Warning: Permanently added '10.16.113.151' (RSA) to the list of known hosts.
+andrewcu@10.16.113.151's password: 
+Last login: Wed Feb 27 12:57:51 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin71:~[?1034h[andrewcu@rvzlin71 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.166.6
+
+Link
+addr:10.16.113.151
+]0;andrewcu@rvzlin71:~[andrewcu@rvzlin71 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.65
+Warning: Permanently added '10.16.113.65' (RSA) to the list of known hosts.
+andrewcu@10.16.113.65's password: 
+Last login: Wed Feb 27 12:57:54 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin72:~[?1034h[andrewcu@rvzlin72 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.164.4
+
+Link
+addr:10.16.113.65
+]0;andrewcu@rvzlin72:~[andrewcu@rvzlin72 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.64
+Warning: Permanently added '10.16.113.64' (RSA) to the list of known hosts.
+andrewcu@10.16.113.64's password: 
+Last login: Wed Feb 27 12:57:57 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin73:~[?1034h[andrewcu@rvzlin73 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.164.5
+
+Link
+addr:10.16.113.64
+]0;andrewcu@rvzlin73:~[andrewcu@rvzlin73 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.242
+Warning: Permanently added '10.16.113.242' (RSA) to the list of known hosts.
+andrewcu@10.16.113.242's password: 
+Last login: Wed Feb 27 12:57:59 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin75:~[?1034h[andrewcu@rvzlin75 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.169.5
+
+Link
+addr:10.16.113.242
+]0;andrewcu@rvzlin75:~[andrewcu@rvzlin75 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.240
+Warning: Permanently added '10.16.113.240' (RSA) to the list of known hosts.
+andrewcu@10.16.113.240's password: 
+Last login: Wed Feb 27 12:58:02 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin76:~[?1034h[andrewcu@rvzlin76 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.161.5
+
+Link
+addr:10.16.113.240
+]0;andrewcu@rvzlin76:~[andrewcu@rvzlin76 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.241
+Warning: Permanently added '10.16.113.241' (RSA) to the list of known hosts.
+andrewcu@10.16.113.241's password: 
+Last login: Wed Feb 27 12:58:05 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin77:~[?1034h[andrewcu@rvzlin77 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.161.6
+
+Link
+addr:10.16.113.241
+]0;andrewcu@rvzlin77:~[andrewcu@rvzlin77 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.244
+Warning: Permanently added '10.16.113.244' (RSA) to the list of known hosts.
+andrewcu@10.16.113.244's password: 
+Last login: Wed Feb 27 12:58:07 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin78:~[?1034h[andrewcu@rvzlin78 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.167.5
+
+Link
+addr:10.16.113.244
+]0;andrewcu@rvzlin78:~[andrewcu@rvzlin78 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.243
+Warning: Permanently added '10.16.113.243' (RSA) to the list of known hosts.
+andrewcu@10.16.113.243's password: 
+Last login: Wed Feb 27 12:58:10 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin79:~[?1034h[andrewcu@rvzlin79 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.167.7
+
+Link
+addr:10.16.113.243
+]0;andrewcu@rvzlin79:~[andrewcu@rvzlin79 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.246
+Warning: Permanently added '10.16.113.246' (RSA) to the list of known hosts.
+andrewcu@10.16.113.246's password: 
+Last login: Wed Feb 27 12:58:12 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin80:~[?1034h[andrewcu@rvzlin80 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.161.4
+
+Link
+addr:10.16.113.246
+]0;andrewcu@rvzlin80:~[andrewcu@rvzlin80 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.247
+Warning: Permanently added '10.16.113.247' (RSA) to the list of known hosts.
+andrewcu@10.16.113.247's password: 
+Last login: Wed Feb 27 12:58:15 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin81:~[?1034h[andrewcu@rvzlin81 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.161.5
+
+Link
+addr:10.16.113.247
+]0;andrewcu@rvzlin81:~[andrewcu@rvzlin81 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.226
+Warning: Permanently added '10.16.113.226' (RSA) to the list of known hosts.
+andrewcu@10.16.113.226's password: 
+Last login: Wed Feb 27 12:58:17 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin82:~[?1034h[andrewcu@rvzlin82 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.162.5
+
+Link
+addr:10.16.113.226
+]0;andrewcu@rvzlin82:~[andrewcu@rvzlin82 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.224
+Warning: Permanently added '10.16.113.224' (RSA) to the list of known hosts.
+andrewcu@10.16.113.224's password: 
+Last login: Wed Feb 27 12:58:20 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin83:~[?1034h[andrewcu@rvzlin83 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.162.4
+
+Link
+addr:10.16.113.224
+]0;andrewcu@rvzlin83:~[andrewcu@rvzlin83 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.227
+Warning: Permanently added '10.16.113.227' (RSA) to the list of known hosts.
+andrewcu@10.16.113.227's password: 
+Last login: Wed Feb 27 12:58:22 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin84:~[?1034h[andrewcu@rvzlin84 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.164.4
+
+Link
+addr:10.16.113.227
+]0;andrewcu@rvzlin84:~[andrewcu@rvzlin84 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.74
+Warning: Permanently added '10.16.113.74' (RSA) to the list of known hosts.
+andrewcu@10.16.113.74's password: 
+Last login: Wed Feb 27 12:58:24 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin85:~[?1034h[andrewcu@rvzlin85 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.164.5
+
+Link
+addr:10.16.113.74
+]0;andrewcu@rvzlin85:~[andrewcu@rvzlin85 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.232
+Warning: Permanently added '10.16.113.232' (RSA) to the list of known hosts.
+andrewcu@10.16.113.232's password: 
+Last login: Wed Feb 27 12:58:27 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin86:~[?1034h[andrewcu@rvzlin86 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:108.59.250.8
+
+Link
+addr:10.16.113.232
+]0;andrewcu@rvzlin86:~[andrewcu@rvzlin86 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.122
+Warning: Permanently added '10.16.113.122' (RSA) to the list of known hosts.
+andrewcu@10.16.113.122's password: 
+Last login: Wed Feb 27 12:58:31 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin87:~[?1034h[andrewcu@rvzlin87 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.164.7
+
+Link
+addr:10.16.113.122
+]0;andrewcu@rvzlin87:~[andrewcu@rvzlin87 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.111
+Warning: Permanently added '10.16.113.111' (RSA) to the list of known hosts.
+andrewcu@10.16.113.111's password: 
+Last login: Wed Feb 27 12:58:34 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin88:~[?1034h[andrewcu@rvzlin88 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.165.4
+
+Link
+addr:10.16.113.111
+]0;andrewcu@rvzlin88:~[andrewcu@rvzlin88 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.8
+Unable to negotiate with 10.16.113.8 port 22: no matching host key type found. Their offer: ssh-dss 
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.214
+Warning: Permanently added '10.16.113.214' (RSA) to the list of known hosts.
+andrewcu@10.16.113.214's password: 
+Last login: Wed Feb 27 12:58:37 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin90:~[?1034h[andrewcu@rvzlin90 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.167.4
+
+Link
+addr:10.108.59.251
+
+Link
+addr:10.108.59.254
+
+Link
+addr:10.108.59.255
+
+Link
+addr:10.216.224.166
+
+Link
+addr:10.216.224.179
+
+Link
+addr:10.216.224.180
+
+Link
+addr:10.216.224.184
+
+Link
+addr:10.216.224.185
+
+Link
+addr:10.216.224.183
+
+Link
+addr:10.216.224.171
+
+Link
+addr:10.216.224.170
+
+Link
+addr:10.16.113.214
+]0;andrewcu@rvzlin90:~[andrewcu@rvzlin90 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.239
+Warning: Permanently added '10.16.113.239' (RSA) to the list of known hosts.
+andrewcu@10.16.113.239's password: 
+Last login: Wed Feb 27 12:58:39 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin91:~[?1034h[andrewcu@rvzlin91 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:192.30.167.5
+
+Link
+addr:10.108.59.255
+
+Link
+addr:10.216.224.181
+
+Link
+addr:10.216.224.182
+
+Link
+addr:10.216.224.186
+
+Link
+addr:10.216.224.171
+
+Link
+addr:10.16.113.239
+]0;andrewcu@rvzlin91:~[andrewcu@rvzlin91 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.223
+Warning: Permanently added '10.16.113.223' (RSA) to the list of known hosts.
+andrewcu@10.16.113.223's password: 
+Last login: Wed Feb 27 12:58:42 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@rvzlin92:~[?1034h[andrewcu@rvzlin92 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:216.224.182.9
+
+Link
+addr:10.16.113.223
+]0;andrewcu@rvzlin92:~[andrewcu@rvzlin92 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.140
+Warning: Permanently added '10.16.113.140' (RSA) to the list of known hosts.
+andrewcu@10.16.113.140's password: 
+Last login: Wed Feb 27 12:58:45 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+NOTE: Some problems appeared when installing Parallels Virtual Automation.
+Please check the /root/vzinstall.log file for details.
+]0;andrewcu@rvzlinbu02:~[andrewcu@rvzlinbu02 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.140
+
+Link
+addr:
+]0;andrewcu@rvzlinbu02:~[andrewcu@rvzlinbu02 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.144
+Warning: Permanently added '10.16.113.144' (RSA) to the list of known hosts.
+andrewcu@10.16.113.144's password: 
+Last login: Wed Feb 27 12:58:49 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+[sudo] password for andrewcu: 
+
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-5    OK             -       -       256K    42840.6   RiW    ON     
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p8    OK             u0   1.82 TB   SATA  -   /c0/e0/slt0  TOSHIBA MG03ACA200  
+p9    OK             u0   1.82 TB   SATA  -   /c0/e0/slt1  TOSHIBA MG03ACA200  
+p10   OK             u0   1.82 TB   SATA  -   /c0/e0/slt2  TOSHIBA MG03ACA200  
+p11   OK             u0   1.82 TB   SATA  -   /c0/e0/slt3  TOSHIBA MG03ACA200  
+p12   OK             u0   1.82 TB   SATA  -   /c0/e0/slt4  TOSHIBA MG03ACA200  
+p13   OK             u0   1.82 TB   SATA  -   /c0/e0/slt5  TOSHIBA MG03ACA200  
+p14   OK             u0   1.82 TB   SATA  -   /c0/e0/slt6  TOSHIBA MG03ACA200  
+p15   OK             u0   1.82 TB   SATA  -   /c0/e0/slt7  TOSHIBA MG03ACA200  
+p16   OK             u0   1.82 TB   SATA  -   /c0/e0/slt8  TOSHIBA MG03ACA200  
+p17   OK             u0   1.82 TB   SATA  -   /c0/e0/slt9  TOSHIBA MG03ACA200  
+p18   OK             u0   1.82 TB   SATA  -   /c0/e0/slt10 TOSHIBA MG03ACA200  
+p19   OK             u0   1.82 TB   SATA  -   /c0/e0/slt11 TOSHIBA MG03ACA200  
+p20   OK             u0   1.82 TB   SATA  -   /c0/e0/slt12 TOSHIBA MG03ACA200  
+p21   OK             u0   1.82 TB   SATA  -   /c0/e0/slt13 TOSHIBA MG03ACA200  
+p22   ECC-ERROR      u0   1.82 TB   SATA  -   /c0/e0/slt14 TOSHIBA MG03ACA200  
+p23   OK             u0   1.82 TB   SATA  -   /c0/e0/slt15 TOSHIBA MG03ACA200  
+p24   OK             u0   1.82 TB   SATA  -   /c0/e0/slt16 TOSHIBA MG03ACA200  
+p25   OK             u0   1.82 TB   SATA  -   /c0/e0/slt17 TOSHIBA MG03ACA200  
+p26   OK             u0   1.82 TB   SATA  -   /c0/e0/slt18 TOSHIBA MG03ACA200  
+p27   OK             u0   1.82 TB   SATA  -   /c0/e0/slt19 TOSHIBA MG03ACA200  
+p28   OK             u0   1.82 TB   SATA  -   /c0/e0/slt20 TOSHIBA MG03ACA200  
+p29   OK             u0   1.82 TB   SATA  -   /c0/e0/slt21 TOSHIBA MG03ACA200  
+p30   OK             u0   1.82 TB   SATA  -   /c0/e0/slt22 TOSHIBA MG03ACA200  
+p31   OK             u0   1.82 TB   SATA  -   /c0/e0/slt23 TOSHIBA MG03ACA200  
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           Yes       OK        OK       OK       127    xx-xxx-xxxx  
+
+]0;andrewcu@rvzlinbu03:~[?1034h[andrewcu@rvzlinbu03 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.55
+Warning: Permanently added '10.16.113.55' (RSA) to the list of known hosts.
+andrewcu@10.16.113.55's password: 
+Last login: Wed Feb 27 12:59:00 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin02:~[?1034h[andrewcu@vzlin02 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.48.8
+
+Link
+addr:10.16.113.55
+]0;andrewcu@vzlin02:~[andrewcu@vzlin02 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.228
+Warning: Permanently added '10.16.113.228' (RSA) to the list of known hosts.
+andrewcu@10.16.113.228's password: 
+Last login: Wed Feb 27 12:59:02 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin03:~[?1034h[andrewcu@vzlin03 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.134.6
+
+Link
+addr:10.16.113.228
+]0;andrewcu@vzlin03:~[andrewcu@vzlin03 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.225
+Warning: Permanently added '10.16.113.225' (RSA) to the list of known hosts.
+andrewcu@10.16.113.225's password: 
+Last login: Wed Feb 27 12:59:04 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin04:~[?1034h[andrewcu@vzlin04 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.134.4
+
+Link
+addr:10.16.113.225
+]0;andrewcu@vzlin04:~[andrewcu@vzlin04 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.222
+Warning: Permanently added '10.16.113.222' (RSA) to the list of known hosts.
+andrewcu@10.16.113.222's password: 
+Last login: Wed Feb 27 12:59:07 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin05:~[?1034h[andrewcu@vzlin05 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.92.5
+
+Link
+addr:10.16.113.222
+]0;andrewcu@vzlin05:~[andrewcu@vzlin05 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.53
+Warning: Permanently added '10.16.113.53' (RSA) to the list of known hosts.
+andrewcu@10.16.113.53's password: 
+Last login: Wed Feb 27 12:59:09 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin06:~[?1034h[andrewcu@vzlin06 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.155.5
+
+Link
+addr:10.16.113.53
+]0;andrewcu@vzlin06:~[andrewcu@vzlin06 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.50
+Warning: Permanently added '10.16.113.50' (RSA) to the list of known hosts.
+andrewcu@10.16.113.50's password: 
+Last login: Wed Feb 27 12:59:11 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin07:~[?1034h[andrewcu@vzlin07 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.155.7
+
+Link
+addr:10.16.113.50
+]0;andrewcu@vzlin07:~[andrewcu@vzlin07 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.220
+Warning: Permanently added '10.16.113.220' (RSA) to the list of known hosts.
+andrewcu@10.16.113.220's password: 
+Last login: Wed Feb 27 12:59:13 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin08:~[?1034h[andrewcu@vzlin08 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.91.4
+
+Link
+addr:10.16.113.220
+]0;andrewcu@vzlin08:~[andrewcu@vzlin08 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.43
+Warning: Permanently added '10.16.113.43' (RSA) to the list of known hosts.
+andrewcu@10.16.113.43's password: 
+Last login: Wed Feb 27 12:59:15 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin09:~[?1034h[andrewcu@vzlin09 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.91.5
+
+Link
+addr:10.16.113.43
+]0;andrewcu@vzlin09:~[andrewcu@vzlin09 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.48
+Warning: Permanently added '10.16.113.48' (RSA) to the list of known hosts.
+andrewcu@10.16.113.48's password: 
+Last login: Wed Feb 27 12:59:17 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin10:~[?1034h[andrewcu@vzlin10 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.144.6
+
+Link
+addr:10.16.113.48
+]0;andrewcu@vzlin10:~[andrewcu@vzlin10 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.51
+Warning: Permanently added '10.16.113.51' (RSA) to the list of known hosts.
+andrewcu@10.16.113.51's password: 
+Last login: Wed Feb 27 12:59:19 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin11:~[?1034h[andrewcu@vzlin11 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.151.5
+
+Link
+addr:10.16.113.51
+]0;andrewcu@vzlin11:~[andrewcu@vzlin11 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.52
+Warning: Permanently added '10.16.113.52' (RSA) to the list of known hosts.
+andrewcu@10.16.113.52's password: 
+Last login: Wed Feb 27 12:59:23 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin12:~[?1034h[andrewcu@vzlin12 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.92.4
+
+Link
+addr:10.16.113.52
+]0;andrewcu@vzlin12:~[andrewcu@vzlin12 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.9
+Warning: Permanently added '10.16.113.9' (RSA) to the list of known hosts.
+andrewcu@10.16.113.9's password: 
+Last login: Wed Feb 27 12:59:25 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin13:~[?1034h[andrewcu@vzlin13 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.134.5
+
+Link
+addr:10.16.113.9
+]0;andrewcu@vzlin13:~[andrewcu@vzlin13 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.229
+Warning: Permanently added '10.16.113.229' (RSA) to the list of known hosts.
+andrewcu@10.16.113.229's password: 
+Last login: Wed Feb 27 12:59:28 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin14:~[?1034h[andrewcu@vzlin14 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.187.5
+
+Link
+addr:10.16.113.229
+]0;andrewcu@vzlin14:~[andrewcu@vzlin14 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.62
+Warning: Permanently added '10.16.113.62' (RSA) to the list of known hosts.
+andrewcu@10.16.113.62's password: 
+Last login: Wed Feb 27 12:59:31 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin15:~[?1034h[andrewcu@vzlin15 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.151.4
+
+Link
+addr:10.16.113.62
+]0;andrewcu@vzlin15:~[andrewcu@vzlin15 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.71
+Warning: Permanently added '10.16.113.71' (RSA) to the list of known hosts.
+andrewcu@10.16.113.71's password: 
+Last login: Wed Feb 27 12:59:33 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin16:~[?1034h[andrewcu@vzlin16 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.151.6
+
+Link
+addr:10.16.113.71
+]0;andrewcu@vzlin16:~[andrewcu@vzlin16 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.69
+Warning: Permanently added '10.16.113.69' (RSA) to the list of known hosts.
+andrewcu@10.16.113.69's password: 
+Last login: Wed Feb 27 12:59:36 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin17:~[andrewcu@vzlin17 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.69
+
+Link
+addr:168.144.38.8
+]0;andrewcu@vzlin17:~[andrewcu@vzlin17 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.75
+Warning: Permanently added '10.16.113.75' (RSA) to the list of known hosts.
+andrewcu@10.16.113.75's password: 
+Last login: Wed Feb 27 12:59:38 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin18:~[andrewcu@vzlin18 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.38.9
+
+Link
+addr:10.16.113.75
+]0;andrewcu@vzlin18:~[andrewcu@vzlin18 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.77
+Warning: Permanently added '10.16.113.77' (RSA) to the list of known hosts.
+andrewcu@10.16.113.77's password: 
+Last login: Wed Feb 27 12:59:40 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin19:~[andrewcu@vzlin19 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.77
+
+Link
+addr:168.144.38.10
+]0;andrewcu@vzlin19:~[andrewcu@vzlin19 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.79
+Warning: Permanently added '10.16.113.79' (RSA) to the list of known hosts.
+andrewcu@10.16.113.79's password: 
+Last login: Wed Feb 27 12:59:42 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin20:~[?1034h[andrewcu@vzlin20 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.85.5
+
+Link
+addr:10.16.113.79
+]0;andrewcu@vzlin20:~[andrewcu@vzlin20 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.84
+Warning: Permanently added '10.16.113.84' (RSA) to the list of known hosts.
+andrewcu@10.16.113.84's password: 
+Last login: Wed Feb 27 12:59:44 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin21:~[?1034h[andrewcu@vzlin21 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.48.6
+
+Link
+addr:10.168.144.28
+
+Link
+addr:10.168.144.38
+
+Link
+addr:10.168.144.82
+
+Link
+addr:10.5.85.11
+
+Link
+addr:10.168.144.87
+
+Link
+addr:10.168.144.91
+
+Link
+addr:10.168.144.92
+
+Link
+addr:10.168.144.97
+
+Link
+addr:10.168.144.159
+
+Link
+addr:10.168.144.170
+
+Link
+addr:10.168.144.196
+
+Link
+addr:10.168.144.251
+
+Link
+addr:10.168.144.254
+
+Link
+addr:10.5.217.10
+
+Link
+addr:10.16.113.84
+]0;andrewcu@vzlin21:~[andrewcu@vzlin21 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.72
+Warning: Permanently added '10.16.113.72' (RSA) to the list of known hosts.
+andrewcu@10.16.113.72's password: 
+Last login: Wed Feb 27 12:59:46 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin22:~[?1034h[andrewcu@vzlin22 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.251.5
+
+Link
+addr:10.16.113.72
+]0;andrewcu@vzlin22:~[andrewcu@vzlin22 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.87
+Warning: Permanently added '10.16.113.87' (RSA) to the list of known hosts.
+andrewcu@10.16.113.87's password: 
+Last login: Wed Feb 27 12:59:48 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin23:~[andrewcu@vzlin23 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.87
+
+Link
+addr:168.144.87.5
+]0;andrewcu@vzlin23:~[andrewcu@vzlin23 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.88
+Warning: Permanently added '10.16.113.88' (RSA) to the list of known hosts.
+andrewcu@10.16.113.88's password: 
+Last login: Wed Feb 27 12:59:51 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin24:~[?1034h[andrewcu@vzlin24 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.28.8
+
+Link
+addr:10.16.113.88
+]0;andrewcu@vzlin24:~[andrewcu@vzlin24 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.89
+Warning: Permanently added '10.16.113.89' (RSA) to the list of known hosts.
+andrewcu@10.16.113.89's password: 
+Last login: Wed Feb 27 12:59:54 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin25:~[andrewcu@vzlin25 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.87.7
+
+Link
+addr:10.16.113.89
+]0;andrewcu@vzlin25:~[andrewcu@vzlin25 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.90
+Warning: Permanently added '10.16.113.90' (RSA) to the list of known hosts.
+andrewcu@10.16.113.90's password: 
+Last login: Wed Feb 27 12:59:56 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin26:~[?1034h[andrewcu@vzlin26 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.144.5
+
+Link
+addr:10.16.113.90
+]0;andrewcu@vzlin26:~[andrewcu@vzlin26 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.92
+Warning: Permanently added '10.16.113.92' (RSA) to the list of known hosts.
+andrewcu@10.16.113.92's password: 
+Last login: Wed Feb 27 12:59:58 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin27:~[andrewcu@vzlin27 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.92
+
+Link
+addr:168.144.28.6
+]0;andrewcu@vzlin27:~[andrewcu@vzlin27 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.97
+Warning: Permanently added '10.16.113.97' (RSA) to the list of known hosts.
+andrewcu@10.16.113.97's password: 
+Last login: Wed Feb 27 13:00:00 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin28:~[andrewcu@vzlin28 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.97
+
+Link
+addr:168.144.28.7
+]0;andrewcu@vzlin28:~[andrewcu@vzlin28 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.109
+Warning: Permanently added '10.16.113.109' (RSA) to the list of known hosts.
+andrewcu@10.16.113.109's password: 
+Last login: Wed Feb 27 13:00:07 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin29:~[andrewcu@vzlin29 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.109
+
+Link
+addr:168.144.97.5
+]0;andrewcu@vzlin29:~[andrewcu@vzlin29 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.107
+Warning: Permanently added '10.16.113.107' (RSA) to the list of known hosts.
+andrewcu@10.16.113.107's password: 
+Last login: Wed Feb 27 13:00:09 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin31:~[andrewcu@vzlin31 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.97.7
+
+Link
+addr:10.16.113.107
+]0;andrewcu@vzlin31:~[andrewcu@vzlin31 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.135
+Warning: Permanently added '10.16.113.135' (RSA) to the list of known hosts.
+andrewcu@10.16.113.135's password: 
+Last login: Wed Feb 27 13:00:11 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin32:~[andrewcu@vzlin32 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.159.6
+
+Link
+addr:10.16.113.135
+]0;andrewcu@vzlin32:~[andrewcu@vzlin32 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.154
+Warning: Permanently added '10.16.113.154' (RSA) to the list of known hosts.
+andrewcu@10.16.113.154's password: 
+Last login: Wed Feb 27 13:00:14 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin33:~[andrewcu@vzlin33 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.159.7
+
+Link
+addr:10.16.113.154
+]0;andrewcu@vzlin33:~[andrewcu@vzlin33 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.139
+Warning: Permanently added '10.16.113.139' (RSA) to the list of known hosts.
+andrewcu@10.16.113.139's password: 
+Last login: Wed Feb 27 13:00:16 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin34:~[?1034h[andrewcu@vzlin34 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.251.2
+
+Link
+addr:10.16.113.139
+]0;andrewcu@vzlin34:~[andrewcu@vzlin34 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.216
+Warning: Permanently added '10.16.113.216' (RSA) to the list of known hosts.
+andrewcu@10.16.113.216's password: 
+Last login: Wed Feb 27 13:00:18 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin35:~[?1034h[andrewcu@vzlin35 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.170.5
+
+Link
+addr:10.16.113.216
+]0;andrewcu@vzlin35:~[andrewcu@vzlin35 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.249
+Warning: Permanently added '10.16.113.249' (RSA) to the list of known hosts.
+andrewcu@10.16.113.249's password: 
+Last login: Wed Feb 27 13:00:21 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin36:~[?1034h[andrewcu@vzlin36 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.251.4
+
+Link
+addr:10.16.113.249
+]0;andrewcu@vzlin36:~[andrewcu@vzlin36 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.156
+Warning: Permanently added '10.16.113.156' (RSA) to the list of known hosts.
+andrewcu@10.16.113.156's password: 
+Last login: Wed Feb 27 13:00:23 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin37:~[?1034h[andrewcu@vzlin37 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.82.6
+
+Link
+addr:10.16.113.156
+]0;andrewcu@vzlin37:~[andrewcu@vzlin37 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.234
+Warning: Permanently added '10.16.113.234' (RSA) to the list of known hosts.
+andrewcu@10.16.113.234's password: 
+Last login: Wed Feb 27 13:00:25 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin38:~[?1034h[andrewcu@vzlin38 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.170.4
+
+Link
+addr:10.16.113.234
+]0;andrewcu@vzlin38:~[andrewcu@vzlin38 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.218
+Warning: Permanently added '10.16.113.218' (RSA) to the list of known hosts.
+andrewcu@10.16.113.218's password: 
+Last login: Wed Feb 27 13:00:27 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin39:~[?1034h[andrewcu@vzlin39 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.48.5
+
+Link
+addr:10.16.113.218
+]0;andrewcu@vzlin39:~[andrewcu@vzlin39 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.138
+Warning: Permanently added '10.16.113.138' (RSA) to the list of known hosts.
+andrewcu@10.16.113.138's password: 
+Last login: Wed Feb 27 13:00:29 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin40:~[?1034h[andrewcu@vzlin40 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.170.6
+
+Link
+addr:10.16.113.138
+]0;andrewcu@vzlin40:~[andrewcu@vzlin40 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.61
+Warning: Permanently added '10.16.113.61' (RSA) to the list of known hosts.
+andrewcu@10.16.113.61's password: 
+Last login: Wed Feb 27 13:00:31 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin41:~[?1034h[andrewcu@vzlin41 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.196.252
+
+Link
+addr:10.16.113.61
+]0;andrewcu@vzlin41:~[andrewcu@vzlin41 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.152
+Warning: Permanently added '10.16.113.152' (RSA) to the list of known hosts.
+andrewcu@10.16.113.152's password: 
+Last login: Wed Feb 27 13:00:34 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin42:~[?1034h[andrewcu@vzlin42 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.87.4
+
+Link
+addr:10.16.113.152
+]0;andrewcu@vzlin42:~[andrewcu@vzlin42 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.30
+Warning: Permanently added '10.16.113.30' (RSA) to the list of known hosts.
+andrewcu@10.16.113.30's password: 
+Last login: Wed Feb 27 13:00:36 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin43:~[?1034h[andrewcu@vzlin43 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.196.5
+
+Link
+addr:10.16.113.30
+]0;andrewcu@vzlin43:~[andrewcu@vzlin43 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.80
+Warning: Permanently added '10.16.113.80' (RSA) to the list of known hosts.
+andrewcu@10.16.113.80's password: 
+Last login: Wed Feb 27 13:00:39 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin44:~[?1034h[andrewcu@vzlin44 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.144.4
+
+Link
+addr:10.16.113.80
+]0;andrewcu@vzlin44:~[andrewcu@vzlin44 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.132
+Warning: Permanently added '10.16.113.132' (RSA) to the list of known hosts.
+andrewcu@10.16.113.132's password: 
+Last login: Wed Feb 27 13:00:43 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin45:~[?1034h[andrewcu@vzlin45 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.159.4
+
+Link
+addr:10.16.113.132
+]0;andrewcu@vzlin45:~[andrewcu@vzlin45 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.86
+Warning: Permanently added '10.16.113.86' (RSA) to the list of known hosts.
+andrewcu@10.16.113.86's password: 
+Last login: Wed Feb 27 13:00:46 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin46:~[?1034h[andrewcu@vzlin46 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.85.4
+
+Link
+addr:10.16.113.86
+]0;andrewcu@vzlin46:~[andrewcu@vzlin46 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.245
+Warning: Permanently added '10.16.113.245' (RSA) to the list of known hosts.
+andrewcu@10.16.113.245's password: 
+Last login: Wed Feb 27 13:00:48 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin47:~[?1034h[andrewcu@vzlin47 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.82.5
+
+Link
+addr:10.16.113.245
+]0;andrewcu@vzlin47:~[andrewcu@vzlin47 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.56
+Warning: Permanently added '10.16.113.56' (RSA) to the list of known hosts.
+andrewcu@10.16.113.56's password: 
+Last login: Wed Feb 27 13:00:50 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin48:~[?1034h[andrewcu@vzlin48 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.187.4
+
+Link
+addr:10.16.113.56
+]0;andrewcu@vzlin48:~[andrewcu@vzlin48 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.128
+Warning: Permanently added '10.16.113.128' (RSA) to the list of known hosts.
+andrewcu@10.16.113.128's password: 
+Last login: Wed Feb 27 13:00:52 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin49:~[?1034h[andrewcu@vzlin49 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.27.4
+
+Link
+addr:10.16.113.128
+]0;andrewcu@vzlin49:~[andrewcu@vzlin49 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.221
+Warning: Permanently added '10.16.113.221' (RSA) to the list of known hosts.
+andrewcu@10.16.113.221's password: 
+Last login: Wed Feb 27 13:00:55 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin50:~[?1034h[andrewcu@vzlin50 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.27.5
+
+Link
+addr:10.16.113.221
+]0;andrewcu@vzlin50:~[andrewcu@vzlin50 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.32
+Warning: Permanently added '10.16.113.32' (RSA) to the list of known hosts.
+andrewcu@10.16.113.32's password: 
+Last login: Wed Feb 27 13:00:57 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin51:~[?1034h[andrewcu@vzlin51 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.9.4
+
+Link
+addr:10.16.113.32
+]0;andrewcu@vzlin51:~[andrewcu@vzlin51 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.253
+Warning: Permanently added '10.16.113.253' (RSA) to the list of known hosts.
+andrewcu@10.16.113.253's password: 
+Last login: Wed Feb 27 13:00:59 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin52:~[?1034h[andrewcu@vzlin52 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.175.4
+
+Link
+addr:10.16.113.253
+]0;andrewcu@vzlin52:~[andrewcu@vzlin52 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.252
+Warning: Permanently added '10.16.113.252' (RSA) to the list of known hosts.
+andrewcu@10.16.113.252's password: 
+Last login: Wed Feb 27 13:01:01 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin53:~[?1034h[andrewcu@vzlin53 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.175.6
+
+Link
+addr:10.16.113.252
+]0;andrewcu@vzlin53:~[andrewcu@vzlin53 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.164
+Warning: Permanently added '10.16.113.164' (RSA) to the list of known hosts.
+andrewcu@10.16.113.164's password: 
+Last login: Wed Feb 27 13:01:04 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin54:~[?1034h[andrewcu@vzlin54 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.5.4
+
+Link
+addr:10.168.144.85
+
+Link
+addr:10.16.113.164
+]0;andrewcu@vzlin54:~[andrewcu@vzlin54 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.250
+Warning: Permanently added '10.16.113.250' (RSA) to the list of known hosts.
+andrewcu@10.16.113.250's password: 
+Last login: Wed Feb 27 13:01:06 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin55:~[?1034h[andrewcu@vzlin55 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.5.6
+
+Link
+addr:10.5.85.11
+
+Link
+addr:10.168.144.170
+
+Link
+addr:10.16.113.250
+]0;andrewcu@vzlin55:~[andrewcu@vzlin55 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.6
+Warning: Permanently added '10.16.113.6' (RSA) to the list of known hosts.
+andrewcu@10.16.113.6's password: 
+Last login: Wed Feb 27 13:01:08 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin56:~[?1034h[andrewcu@vzlin56 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.97.10
+
+Link
+addr:10.16.113.6
+]0;andrewcu@vzlin56:~[andrewcu@vzlin56 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.238
+Warning: Permanently added '10.16.113.238' (RSA) to the list of known hosts.
+andrewcu@10.16.113.238's password: 
+Last login: Wed Feb 27 13:01:11 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin57:~[?1034h[andrewcu@vzlin57 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.92.7
+
+Link
+addr:10.16.113.238
+]0;andrewcu@vzlin57:~[andrewcu@vzlin57 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.106
+Warning: Permanently added '10.16.113.106' (RSA) to the list of known hosts.
+andrewcu@10.16.113.106's password: 
+Last login: Wed Feb 27 13:01:13 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+]0;andrewcu@vzlin58:~[?1034h[andrewcu@vzlin58 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:168.144.97.6
+
+Link
+addr:10.16.113.106
+]0;andrewcu@vzlin58:~[andrewcu@vzlin58 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@10.16.113.142
+Warning: Permanently added '10.16.113.142' (RSA) to the list of known hosts.
+andrewcu@10.16.113.142's password: 
+Last login: Wed Feb 27 13:01:15 2019 from 10.16.2.2
+
+Congratulations!
+
+You have successfully installed Parallels Virtuozzo Containers.
+
+Run the following command to create a regular Container:
+
+vzctl create 101
+
+To start the Container, use this command:
+
+vzctl start 101
+
+For more information on Parallels Virtuozzo Containers command-line tools,
+type "man virtuozzo" in the command line.
+
+NOTE: Some problems appeared when installing Parallels Virtual Automation.
+Please check the /root/vzinstall.log file for details.
+]0;andrewcu@vzlinbu02:~[andrewcu@vzlinbu02 ~]$ sudo /sbin/ifconfig | grep eth -A 1 | awk '{print $2}' 
+[sudo] password for andrewcu: 
+Link
+addr:10.16.113.142
+]0;andrewcu@vzlinbu02:~[andrewcu@vzlinbu02 ~]$  
+
+
+----
+ spawn ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no andrewcu@{}
+ssh: Could not resolve hostname {}: Name or service not known 
+
+
