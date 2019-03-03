@@ -13,19 +13,19 @@ exim -bp | grep '<>\|<"' | awk '{print $3}' | xargs -n1 exim -Mrm
 
 ### search auth senders; if sender has >$MAX_LIM_AUTH_SENDER emails in que,
 # consider it spam and deletes all messages.
-while read -r line
-do
-  if [[ ! -z  $line ]]
-  then
-    echo "Removing emails from Authenticated User: $line because count > $MAX_LIM_AUTH_SENDER"
-    echo "You should probably have already found/submitted abuse cases for these"
-    echo "accounts/emails"
-    grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' | sed -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
-  fi
+#while read -r line
+#do
+#  if [[ ! -z  $line ]]
+#  then
+#    echo "Removing emails from Authenticated User: $line because count > $MAX_LIM_AUTH_SENDER"
+#    echo "You should probably have already found/submitted abuse cases for these"
+#    echo "accounts/emails"
+#    grep -rl "$line" "$EXIM_PATH" |  sed -e 's@.*/@@' | sed -e 's/-[DHJ]$//' |  xargs -n1 exim -Mrm
+#  fi
 
-done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" 2>&1 | awk -F"_" {'print $2'} | \
-  awk -F"@" '{print $1 "@" $2}' | sort | uniq -c | sort -n | \
-  awk '{if($1==$1+0 && $1>"$MAX_LIMIT_PER_AUTH_SENDER")print $2}' | sed '/^\s*$/d')
+#done < <(grep -r "Authenticated-user:_.*" "$EXIM_PATH" 2>&1 | awk -F"_" {'print $2'} | \
+#  awk -F"@" '{print $1 "@" $2}' | sort | uniq -c | sort -n | \
+#  awk '{if($1==$1+0 && $1>"$MAX_LIMIT_PER_AUTH_SENDER")print $2}' | sed '/^\s*$/d')
 
 ### run exipick looking for large amount of messages with specific "From" email address
 # if they match our second conditional(s) they are deleted
@@ -53,7 +53,7 @@ do
     if [[ $DEL>0 ]]
     then
       echo "Removing $line emails"
-      grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+      grep -rl "$line" "$EXIM_PATH" |   sed -e 's@.*/@@' -e 's/-[DHJ]$//' | xargs -n1 exim -Mrm
     fi
   fi
 done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n | \
@@ -62,13 +62,13 @@ done < <(exipick -b | awk ' $2 == "From:" {print $3}' | sort | uniq -c| sort -n 
 
 while read -r line
 do
-  grep -rl "$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+  grep -rl "$line" "$EXIM_PATH" |  sed -e 's@.*/@@' -e 's/-[DHJ]$//' |  xargs -n1 exim -Mrm
 done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_blacklist)
 
 
 while read -r line
 do
-  grep -rl @"$line" "$EXIM_PATH" |  sed -e 's/^\.\///' -e 's/-[DHJ]$//' | sed 's/.*\///' | xargs -n1 exim -Mrm
+  grep -rl @"$line" "$EXIM_PATH" |   sed -e 's@.*/@@' -e 's/-[DHJ]$//' | xargs -n1 exim -Mrm
 done < <(/usr/bin/curl http://xsmtpsupport.mail2web.com/blacklists/local_sender_domain_blacklist)
 
 
