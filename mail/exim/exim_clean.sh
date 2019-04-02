@@ -1,9 +1,9 @@
 #!/bin/bash
 ### *Ultimate* exim mail cleanup script
 ### this is destructive, know what it does before you try using it.
-FROM_MIN_LIMIT=4
+FROM_MIN_LIMIT=25
 EXIM_PATH=/var/spool/exim4/input/
-MAX_LIM_AUTH_SENDER=75
+MAX_LIM_AUTH_SENDER=150
 
 # mail older than 7 days
 find /var/spool/exim4/{input,msglog} -type f -mtime +7 -name 1\* | xargs rm -v
