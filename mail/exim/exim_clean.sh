@@ -36,23 +36,15 @@ do
     #i found some linux hosts arent handling or statements correctly in regex
     DEL=0;
 
-    if [[ $(echo "$line" | grep "\.trade$") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "\.bid$") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "\.returns\.groups\.yahoo\.com$") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "\.win$") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "\.club$") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "support@caex.com") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "softcom.com") ]]
-      then DEL=1
-    elif [[ $(echo "$line" | grep "softcom.biz") ]]
-      then DEL=1
-
+    if [[ $(echo "$line" | grep "\.trade$") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "\.bid$") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "\.returns\.groups\.yahoo\.com$") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "\.win$") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "\.club$") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "support@caex.com") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "softcom.com") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "softcom.biz") ]]; then DEL=1;
+    elif [[ $(echo "$line" | grep "@aevl.co") ]]; then DEL=1;
     fi
 
     if [[ $DEL>0 ]]
