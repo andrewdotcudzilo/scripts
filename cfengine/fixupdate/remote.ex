@@ -8,10 +8,8 @@ spawn ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $name@$ser
 #match_max 1000000
 #set timeout 5
 expect "?assword:*" { send "$pass\r" }
-expect "$prompt" { send "sudo curl -s -k https://raw.githubusercontent.com/andrewdotcudzilo/scripts/master/cfengine/fixupdate/update.conf -o /var/cfengine/inputs/update.conf"
+expect "$prompt" { send "sudo curl -s -k https://raw.githubusercontent.com/andrewdotcudzilo/scripts/master/cfengine/fixupdate/update.conf -o /var/cfengine/inputs/update.conf\r" }
 expect "*andrewcu:*" { send "$pass\r" }
-expect "$prompt" { send "sudo cfagent --no-splay" }
-
-#sleep 15
-expect "$prompt"
+expect "$prompt" { send "sudo /usr/sbin/cfagent \r" }
+expect "$prompt" { send "sudo /etc/init.d/zabbix-agent restart\r" }
 puts $expect_out(buffer)
