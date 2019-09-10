@@ -1,0 +1,82 @@
+---
+rvzlin01.caex.com (﻿10.16.113.91):
+
+
+---
+rvzlin02.caex.com (10.16.113.98):
+
+VZSRV
+	owner_name="Turker Sokullu (SoftCom)"
+	status="ACTIVE"
+	version=4.0
+	owner_id=981302.3627920
+	hwid="CA4B.67E9.C506.1A1A.8516.F629.F5D0.B5C3"
+	serial="6A1A.C505.B8E6.AB66.E045.0E44.7A70.F715"
+	expiration="03/22/2019 20:00:00"
+	start_date="02/11/2019 19:00:00"
+	issue_date="02/12/2019 19:15:42"
+	graceperiod=43200 (43200)
+	license_update_date="03/12/2019 20:00:00"
+	key_number="VZ.03627920.0033"
+	cpu_total=2 (2)
+	ct_total=41 (9)
+	max_vzmc_users="unlimited"
+	max_vzcc_users="unlimited"
+	architecture="x86"
+	architecture="x86_64"
+	platform="Linux"
+	product="Virtuozzo"
+	vzpp_allowed=1
+	vzagent_allowed=1
+	backup_mgmt_allowed=1
+	workflow_mgmt_allowed=1
+	keyserver_host="ka.virtuozzo.com:5224"
+	nr_vms=0
+
+---
+rvzlin03.caex.com (10.16.113.99):
+
+VZSRV
+	owner_name="Turker Sokullu (SoftCom)"
+	status="ACTIVE"
+	version=4.0
+	owner_id=981302.3627919
+	hwid="D032.69EF.7A02.2AC0.CA09.DA36.43AF.737E"
+	serial="C3B8.5E2D.62AA.AB6B.87BE.D268.48CF.096D"
+	expiration="03/22/2019 20:00:00"
+	start_date="02/11/2019 19:00:00"
+	issue_date="02/12/2019 19:01:22"
+	graceperiod=43200 (43200)
+	license_update_date="03/12/2019 20:00:00"
+	key_number="VZ.03627919.0033"
+	cpu_total=2 (2)
+	ct_total=41 (16)
+	max_vzmc_users="unlimited"
+	max_vzcc_users="unlimited"
+	architecture="x86"
+	architecture="x86_64"
+	platform="Linux"
+	product="Virtuozzo"
+	vzpp_allowed=1
+	vzagent_allowed=1
+	backup_mgmt_allowed=1
+	workflow_mgmt_allowed=1
+	keyserver_host="ka.virtuozzo.com:5224"
+	nr_vms=0
+
+---
+rvzlin01.caex.com (﻿10.16.113.91):
+
+REMOTE$
+---
+rvzlin02.caex.com (10.16.113.98):
+
+REMOTE$
+---
+rvzlin03.caex.com (10.16.113.99):
+
+REMOTE$
+---
+rvzlin04.caex.com (10.16.113.102):
+
+REMOTE$
